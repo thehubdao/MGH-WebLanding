@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react'
+import Link from 'next/link'
 import emailjs from '@emailjs/browser'
 import SocialIcon from './socialIcon.component'
 
@@ -9,22 +10,22 @@ export default function Footer() {
   const sendEmail = (e: any) => {
     e.preventDefault(); // prevents the page from reloading when you hit “Send”
     console.log("form: ", form.current);
-    if(form.current) {
+    if (form.current) {
       emailjs.sendForm('service_8hzmvao', 'template_opwj61r', form.current, 'BCq4gKAN6cx6t2s-i')
-      .then((result: any) => {
-        setBtnLabel('subscribed!');
-        setTimeout(() => {
-          setBtnLabel('Let’s BUILD');
-          form.current?.reset();
-        }, 3000)
-      }, (error: any) => {
-        console.log(error);
-        setBtnLabel('error!');
-        setTimeout(() => {
-          setBtnLabel('Let’s BUILD');
-          form.current?.reset();
-        }, 3000)
-      });
+        .then((result: any) => {
+          setBtnLabel('subscribed!');
+          setTimeout(() => {
+            setBtnLabel('Let’s BUILD');
+            form.current?.reset();
+          }, 3000)
+        }, (error: any) => {
+          console.log(error);
+          setBtnLabel('error!');
+          setTimeout(() => {
+            setBtnLabel('Let’s BUILD');
+            form.current?.reset();
+          }, 3000)
+        });
     }
   };
   return (
@@ -58,19 +59,33 @@ export default function Footer() {
         {/* footer links */}
         <div className='w-5/6 xl:w-2/4 flex justify-around xl:items-center pt-20 xl:px-40 xl:pt-0 text-gray-normal'>
           <div>
-            <a href="#" className='text-xl block'>Home</a>
-            <p className='text-xl'>Treasury</p>
-            <p className='text-xl'>Tools</p>
-            <p className='text-xl'>Token</p>
-            <p className='text-xl'>Contributors</p>
-            <p className='text-xl'>Contribute</p>
+            <Link href='/'>
+              <p className='text-xl block'>Home</p>
+            </Link>
+            <Link href='/soon'>
+              <p className='text-xl'>Treasury</p>
+            </Link>
+            <Link href='/soon'>
+              <p className='text-xl'>Tools</p>
+            </Link>
+            <Link href='/soon'>
+              <p className='text-xl'>Token</p>
+            </Link>
+            <Link href='/soon'>
+              <p className='text-xl'>Contributors</p>
+            </Link>
+            <Link href='/soon'>
+              <p className='text-xl'>Contribute</p>
+            </Link>
           </div>
           <div className='text-right xl:text-left'>
             <a href="https://app.metagamehub.io/" target='_blank' rel='noreferrer' className='text-xl block'>MGH dApp</a>
             <a href="https://discord.com/invite/8WJVMDXZwH" target='_blank' rel='noreferrer' className='text-xl block'>Community</a>
             <a href="https://snapshot.org/#/metagamehub.eth" target='_blank' rel='noreferrer' className='text-xl block'>Voting</a>
             <a href="https://docs.metagamehub.io/" target='_blank' rel='noreferrer' className='text-xl block'>Learn more</a>
-            <p className='text-xl block'>FAQ</p>
+            <Link href='/soon'>
+              <p className='text-xl block'>FAQ</p>
+            </Link>
             <a href="https://github.com/metagamehub" target='_blank' rel='noreferrer' className='text-xl block'>GitHub</a>
           </div>
         </div>
@@ -78,7 +93,13 @@ export default function Footer() {
       {/* terms */}
       <div className='pt-24'>
         <p className='text-center text-[15px] text-gray-normal'>
-          Terms of Use | Privacy Policy
+          <Link href='/soon'>
+            <span>Terms of Use </span>
+          </Link>
+          |
+          <Link href='/soon'>
+            <span> Privacy Policy</span>
+          </Link>
         </p>
       </div>
     </>
