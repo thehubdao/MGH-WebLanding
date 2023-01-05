@@ -9,6 +9,14 @@ module.exports = {
       fontFamily: {
         'work': ['var(--work-font)', 'sans-serif'],
         'humane': ['var(--humane-font)', 'sans-serif']
+      },
+      colors: {
+        gray: {
+          light: '#A3AFBD',
+          normal: '#54575C',
+          dark: '#111111'
+        },
+        bg: '#F5F7FF'
       }
     },
   },

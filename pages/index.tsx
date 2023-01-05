@@ -15,7 +15,7 @@ function Card({imageUrl, children}: CardProps) {
         <Image src={imageUrl} width={292} height={331} alt={'card'} priority={true}/>
       </div>
       <div className='h-[95px] flex justify-center items-center'>
-        <div className='text-center text-[22px] text-[#a3afbd] font-semibold uppercase leading-none'>
+        <div className='text-center text-[22px] text-gray-light font-semibold uppercase leading-none'>
           {children}
         </div>
       </div>
@@ -70,7 +70,7 @@ export default function Home() {
         </div>
         {/* card section */}
         <div className='pb-32' id='hub'>
-          <h2 className='text-center text-5xl text-[#111111] font-light pb-16 pt-32'>Your Metaverse Home</h2>
+          <h2 className='text-center text-5xl text-gray-dark font-light pb-16 pt-32'>Your Metaverse Home</h2>
           <div className='flex justify-center flex-wrap xl:flex-nowrap gap-10 lg:gap-36 xl:gap-5 2xl:gap-20'>
             <Card imageUrl='/2.png'>
               <div>enter the<br/>Metaverse</div>

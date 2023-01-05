@@ -33,12 +33,12 @@ export default function Footer() {
       <div className='flex flex-col xl:flex-row justify-between items-center'>
         {/* footer contact */}
         <div className='xl:w-2/4 flex flex-col items-center'>
-          <p className='text-[#54575c] text-lg text-center font-semibold mb-6 mx-8'>
+          <p className='text-gray-normal text-lg text-center font-semibold mb-6 mx-8'>
             Stay up to date for the latest from MGH!
           </p>
           <form ref={form} onSubmit={sendEmail} className='bg-white h-[76px] xl:w-2/4 flex justify-between rounded-3xl overflow-hidden shadow-inner'>
             <input type="email" placeholder='Email Address' className='w-3/4 px-4 bg-transparent' name="user_email" />
-            <button className='rounded-2xl bg-black mr-4 my-4 w-36 flex justify-center items-center'>
+            <button className='rounded-2xl bg-gray-dark mr-4 my-4 w-36 flex justify-center items-center'>
               <span className='text-[15px] text-white'>{btnLabel}</span>
             </button>
           </form>
@@ -52,11 +52,11 @@ export default function Footer() {
             <SocialIcon imageUrl='/icons/ether.png' link='https://etherscan.io/token/0x8765b1a0eb57ca49be7eacd35b24a574d0203656' alt='etherscan link' />
           </div>
           <div className='pt-6'>
-            <p className='text-[15px] text-[#54575C]'>Business & Partnership Proposals</p>
+            <p className='text-[15px] text-gray-normal'>Business & Partnership Proposals</p>
           </div>
         </div>
         {/* footer links */}
-        <div className='w-5/6 xl:w-2/4 flex justify-around xl:items-center pt-20 xl:px-40 xl:pt-0'>
+        <div className='w-5/6 xl:w-2/4 flex justify-around xl:items-center pt-20 xl:px-40 xl:pt-0 text-gray-normal'>
           <div>
             <a href="#" className='text-xl block'>Home</a>
             <p className='text-xl'>Treasury</p>
@@ -77,7 +77,7 @@ export default function Footer() {
       </div>
       {/* terms */}
       <div className='pt-24'>
-        <p className='text-center text-[15px]'>
+        <p className='text-center text-[15px] text-gray-normal'>
           Terms of Use | Privacy Policy
         </p>
       </div>
