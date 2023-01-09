@@ -19,7 +19,7 @@ function Card({ imageUrl, children, url, newTab = false }: CardProps) {
           <Image src={imageUrl} width={292} height={331} alt={'card'} priority={true} />
         </div>
         <div className='h-[95px] flex justify-center items-center'>
-          <div className='text-center text-[22px] text-gray-light font-semibold uppercase leading-none'>
+          <div className='text-center text-xl text-gray-light font-semibold uppercase leading-none'>
             {children}
           </div>
         </div>
