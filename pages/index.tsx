@@ -11,6 +11,12 @@ interface CardProps {
   newTab?: boolean
 }
 
+interface CardLogoProps {
+  imageUrl: string,
+  url: string,
+  newTab?: boolean
+}
+
 function Card({ imageUrl, children, url, newTab = false }: CardProps) {
   return (
     <Link href={url} rel="noopener noreferrer" target={newTab?'_blank':'_self'}>
@@ -23,6 +29,16 @@ function Card({ imageUrl, children, url, newTab = false }: CardProps) {
             {children}
           </div>
         </div>
+      </div>
+    </Link>
+  )
+}
+
+function CardLogo({ imageUrl, url, newTab = false }: CardLogoProps) {
+  return (
+    <Link href={url} rel="noopener noreferrer" target={newTab?'_blank':'_self'}>
+      <div className='w-[294px] h-[128px] shadow rounded-[40px] border border-white cursor-pointer flex justify-center'>
+        <Image src={imageUrl} width={294} height={128} alt={'card'} priority={true} />
       </div>
     </Link>
   )
@@ -74,7 +90,7 @@ export default function Home() {
           </div>
         </div>
         {/* card section */}
-        <div className='pb-32' id='hub'>
+        <div id='hub'>
           <h2 className='text-center text-5xl text-gray-dark font-light pb-16 pt-32'>Your Metaverse Home</h2>
           <div className='flex justify-center flex-wrap xl:flex-nowrap gap-10 lg:gap-36 xl:gap-5 2xl:gap-20'>
             <Card imageUrl='/2.png' url='https://app.metagamehub.io/' newTab={true}>
@@ -89,6 +105,16 @@ export default function Home() {
             <Card imageUrl='/2.png' url='https://linktr.ee/metagamehub.dao' newTab={true}>
               <div>JOIN US</div>
             </Card>
+          </div>
+        </div>
+        {/* backed section */}
+        <div className='pb-32'>
+          <h2 className='text-center text-5xl text-gray-dark font-light pb-16 pt-32'>Backed by</h2>
+          <div className='flex justify-center flex-wrap xl:flex-nowrap gap-10 lg:gap-36 xl:gap-5 2xl:gap-20'>
+            <CardLogo imageUrl='/logos/polygon.png' url='https://polygon.technology/' newTab={true} />
+            <CardLogo imageUrl='/logos/sandbox.png' url='https://www.sandbox.game/en/' newTab={true} />
+            <CardLogo imageUrl='/logos/decentraland.png' url='https://decentraland.org/' newTab={true} />
+            <CardLogo imageUrl='/logos/brinc.png' url='https://www.brinc.io/' newTab={true} />
           </div>
         </div>
         <Footer />
