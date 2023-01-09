@@ -1,33 +1,7 @@
-import { useRef, useState } from 'react'
 import Link from 'next/link'
-import emailjs from '@emailjs/browser'
 import SocialIcon from './socialIcon.component'
 
 export default function Footer() {
-  const form = useRef<HTMLFormElement>(null);
-  const [btnLabel, setBtnLabel] = useState('Let’s BUILD')
-
-  const sendEmail = (e: any) => {
-    e.preventDefault(); // prevents the page from reloading when you hit “Send”
-    console.log("form: ", form.current);
-    if (form.current) {
-      emailjs.sendForm('service_8hzmvao', 'template_opwj61r', form.current, 'BCq4gKAN6cx6t2s-i')
-        .then((result: any) => {
-          setBtnLabel('subscribed!');
-          setTimeout(() => {
-            setBtnLabel('Let’s BUILD');
-            form.current?.reset();
-          }, 3000)
-        }, (error: any) => {
-          console.log(error);
-          setBtnLabel('error!');
-          setTimeout(() => {
-            setBtnLabel('Let’s BUILD');
-            form.current?.reset();
-          }, 3000)
-        });
-    }
-  };
   return (
     <>
       {/* footer */}
@@ -35,15 +9,9 @@ export default function Footer() {
         {/* footer contact */}
         <div className='xl:w-2/4 flex flex-col items-center'>
           <p className='text-gray-normal text-lg text-center font-semibold mb-6 mx-8'>
-            Stay up to date for the latest from MGH!
+          Business & Partnership Proposals
           </p>
-          <form ref={form} onSubmit={sendEmail} className='bg-white h-[76px] xl:w-2/4 flex justify-between rounded-3xl overflow-hidden shadow-inner'>
-            <input type="email" placeholder='Email Address' className='w-3/4 px-4 bg-transparent' name="user_email" />
-            <button className='rounded-2xl bg-gray-dark mr-4 my-4 w-36 flex justify-center items-center'>
-              <span className='text-[15px] text-white'>{btnLabel}</span>
-            </button>
-          </form>
-          <div className='flex justify-around xl:w-[57%] pt-12'>
+          <div className='flex justify-around xl:w-[57%] pt-4'>
             <SocialIcon imageUrl='/icons/medium.png' link='https://metagamehub.medium.com/' alt='medium link' />
             <SocialIcon imageUrl='/icons/instagram.png' link='https://www.instagram.com/metagamehub_dao/' alt='instagram link' />
             <SocialIcon imageUrl='/icons/linkedin.png' link='https://www.linkedin.com/company/metagamehub-dao/' alt='linkedin link' />
@@ -51,9 +19,7 @@ export default function Footer() {
             <SocialIcon imageUrl='/icons/telegram.png' link='https://t.me/metagamehub_dao' alt='telegram link' />
             <SocialIcon imageUrl='/icons/discord.png' link='https://discord.com/invite/8WJVMDXZwH' alt='discord link' />
             <SocialIcon imageUrl='/icons/ether.png' link='https://etherscan.io/token/0x8765b1a0eb57ca49be7eacd35b24a574d0203656' alt='etherscan link' />
-          </div>
-          <div className='pt-6'>
-            <p className='text-[15px] text-gray-normal'>Business & Partnership Proposals</p>
+            <SocialIcon imageUrl='/icons/email.png' link='mailto:info@thedac.info' alt='MetaGameHub DAO email' />
           </div>
         </div>
         {/* footer links */}
