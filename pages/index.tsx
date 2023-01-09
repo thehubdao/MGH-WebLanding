@@ -40,7 +40,7 @@ export default function Home() {
       {/* landing */}
       <main className='font-work pb-20'>
         <div className='flex justify-center items-center bg-[#3f8550] w-full h-screen text-white relative'>
-          <div className='absolute inset-0 w-full h-full bg-slate-400'>
+          <div className='absolute inset-0 w-full h-full bg-black'>
             <Scene />
           </div>
           <div className='absolute w-12 h-12 top-8 left-8 lg:top-24 lg:left-24 border-t border-l border-white'></div>
