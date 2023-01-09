@@ -26,31 +26,31 @@ input:focus-visible {
 }
 
 .shadow {
-  box-shadow: 6px 6px 12px #cdcfd8,
+  box-shadow: 6px 6px 12px #E9ECF6,
       -6px -6px 12px #ffffff;
   transition: box-shadow 0.5s ease-out;
 }
 
 .shadow:hover {
-  box-shadow: 12px 12px 24px #cdcfd8,
+  box-shadow: 12px 12px 24px #E9ECF6,
       -12px -12px 24px #ffffff;
       transition: box-shadow 0.2s ease-in;
 }
 
 /* .shadow-inner {
-  box-shadow: inset 4px 4px 8px #cdcfd8,
+  box-shadow: inset 4px 4px 8px #E9ECF6,
     inset -4px -4px 8px #ffffff;
 } */
 
 .shadow-inner {
-  box-shadow: inset 7px 7px 14px #cdcfd8,
+  box-shadow: inset 7px 7px 14px #E9ECF6,
     inset -7px -7px 14px #ffffff;
   font-size: 12px;
   transition: all 0.2s ease-in;
 }
 
 .shadow-inner:hover {
-  box-shadow: inset 4px 4px 8px #cdcfd8,
+  box-shadow: inset 4px 4px 8px #E9ECF6,
     inset -4px -4px 8px #ffffff;
   font-size: 14px;
 }

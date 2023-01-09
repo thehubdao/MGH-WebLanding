@@ -93,16 +93,16 @@ export default function Home() {
         <div id='hub'>
           <h2 className='text-center text-5xl text-gray-dark font-light pb-16 pt-32'>Your Metaverse Home</h2>
           <div className='flex justify-center flex-wrap xl:flex-nowrap gap-10 lg:gap-36 xl:gap-5 2xl:gap-20'>
-            <Card imageUrl='/2.png' url='https://app.metagamehub.io/' newTab={true}>
+            <Card imageUrl='/cards/1.png' url='https://app.metagamehub.io/' newTab={true}>
               <div>MGH APP</div>
             </Card>
-            <Card imageUrl='/2.png' url='/soon'>
+            <Card imageUrl='/cards/2.png' url='/soon'>
               <div>PRODUCT OFFERING</div>
             </Card>
-            <Card imageUrl='/2.png' url='https://docs.metagamehub.io/' newTab={true}>
+            <Card imageUrl='/cards/3.png' url='https://docs.metagamehub.io/' newTab={true}>
               <div>ABOUT MGH DAO</div>
             </Card>
-            <Card imageUrl='/2.png' url='https://linktr.ee/metagamehub.dao' newTab={true}>
+            <Card imageUrl='/cards/4.png' url='https://linktr.ee/metagamehub.dao' newTab={true}>
               <div>JOIN US</div>
             </Card>
           </div>
