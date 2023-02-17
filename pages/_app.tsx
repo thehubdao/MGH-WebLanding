@@ -3,8 +3,8 @@ import { Work_Sans } from '@next/font/google'
 import Humane from '@next/font/local'
 import type { AppProps } from 'next/app'
 
-const workSans = Work_Sans({ subsets: ['latin'] })
-const humane = Humane({ src: '../styles/fonts/Humane-Medium.woff2' })
+const workSans = Work_Sans({ subsets: ['latin'], display: 'block' })
+const humane = Humane({ src: '../styles/fonts/Humane-Medium.woff2', display: 'block' })
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
