@@ -97,7 +97,7 @@ export default function Home() {
               <div>MGH APP</div>
             </Card>
             <Card imageUrl='/cards/2.png' url='/soon'>
-              <div>PRODUCT OFFERING</div>
+              <div>B2B PRODUCT OFFERING</div>
             </Card>
             <Card imageUrl='/cards/3.png' url='https://docs.metagamehub.io/' newTab={true}>
               <div>ABOUT MGH DAO</div>
@@ -110,7 +110,7 @@ export default function Home() {
         {/* backed section */}
         <div className='pb-32'>
           <h2 className='text-center text-5xl text-gray-dark font-light pb-16 pt-32'>Backed by</h2>
-          <div className='flex justify-center flex-wrap xl:flex-nowrap gap-10 lg:gap-36 xl:gap-5 2xl:gap-20'>
+          <div className='flex justify-center flex-wrap gap-10 lg:gap-36 xl:gap-5 2xl:gap-20'>
             <CardLogo imageUrl='/logos/polygon.png' url='https://polygon.technology/' newTab={true} />
             <CardLogo imageUrl='/logos/sandbox.png' url='https://www.sandbox.game/en/' newTab={true} />
             <CardLogo imageUrl='/logos/decentraland.png' url='https://decentraland.org/' newTab={true} />
