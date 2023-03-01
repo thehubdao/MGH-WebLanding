@@ -97,7 +97,7 @@ export default function Home() {
         </div>
         {/* card section */}
         <div id='hub'>
-          <h2 className='text-center text-[35px] text-gray-dark font-light py-32 mt-32 tracking-[.25em]'>Your Metaverse Home</h2>
+          <h2 className='text-center text-[35px] text-gray-dark font-light py-32 mt-32 tracking-[.25em]'>Your METAVERSE Home</h2>
           <div className='flex justify-center flex-wrap gap-y-10 gap-x-56 xl:gap-x-10 2xl:gap-x-16'>
             <Card imageUrl='/cards/1.png' floatImageUrl='/cards/float/1.png' url='https://app.metagamehub.io/' newTab={true}>
               <div className='text-gray-normal'>
@@ -126,7 +126,7 @@ export default function Home() {
           </div>
         </div>
         {/* backed section */}
-        <div className='pb-32'>
+        <div className='pb-32 mb-32'>
           <h2 className='text-center text-5xl text-gray-dark font-light pb-32 pt-64'>Backed by</h2>
           <div className='flex justify-center flex-wrap gap-6 xl:gap-20'>
             <CardLogo imageUrl='/logos/polygon.png' url='https://polygon.technology/' newTab={true} />
