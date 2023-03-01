@@ -97,12 +97,12 @@ export default function Home() {
         </div>
         {/* card section */}
         <div id='hub'>
-          <h2 className='text-center text-[35px] text-gray-dark font-light py-32 mt-32 tracking-[.25em]'>Your METAVERSE Home</h2>
+          <h2 className='text-center text-[35px] text-gray-dark font-light py-32 mt-32 tracking-[.25em]'>Your Metaverse Home</h2>
           <div className='flex justify-center flex-wrap gap-y-10 gap-x-56 xl:gap-x-10 2xl:gap-x-16'>
             <Card imageUrl='/cards/1.png' floatImageUrl='/cards/float/1.png' url='https://app.metagamehub.io/' newTab={true}>
               <div className='text-gray-normal'>
                 <h2 className='font-poppins text-xl'>MGH APP</h2>
-                <p className='text-sm pt-1 font-semibold leading-none'>Save time in the metaverse</p>
+                <p className='text-sm pt-1 font-semibold leading-none'>Save time in the Metaverse</p>
               </div>
             </Card>
             <Card imageUrl='/cards/2.png' floatImageUrl='/cards/float/2.png' url='/soon'>
