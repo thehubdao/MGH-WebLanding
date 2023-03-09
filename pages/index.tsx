@@ -107,7 +107,7 @@ export default function Home() {
             </Card>
             <Card imageUrl='/cards/2.png' floatImageUrl='/cards/float/2.png' url='/soon'>
               <div className='text-gray-normal'>
-                <h2 className='font-poppins text-xl'>PRODUCT OFFERING</h2>
+                <h2 className='font-poppins text-xl'>TOOLS</h2>
                 <p className='text-sm pt-1 font-semibold leading-none'>For a simple Metaverse journey</p>
               </div>
             </Card>

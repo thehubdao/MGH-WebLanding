@@ -27,7 +27,7 @@ function LightFocus(props: any) {
 }
 
 function ImportScene() {
-  const gltf = useLoader(GLTFLoader, '/3d/3d-scene.glb')
+  const gltf = useLoader(GLTFLoader, '/3d/scene.glb')
   return (
     <primitive object={gltf.scene} toneMapped={false} />
   )
