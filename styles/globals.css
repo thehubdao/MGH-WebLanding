@@ -37,6 +37,18 @@ input:focus-visible {
       transition: box-shadow 0.2s ease-in;
 }
 
+.shadow-inverse {
+  box-shadow: 12px 12px 24px #E9ECF6,
+      -12px -12px 24px #ffffff;
+      transition: box-shadow 0.5s ease-in;
+}
+
+.shadow-inverse:hover {
+  box-shadow: 6px 6px 12px #E9ECF6,
+      -6px -6px 12px #ffffff;
+  transition: box-shadow 0.2s ease-out;
+}
+
 /* .shadow-inner {
   box-shadow: inset 4px 4px 8px #E9ECF6,
     inset -4px -4px 8px #ffffff;

@@ -105,7 +105,7 @@ export default function Home() {
                 <p className='text-sm pt-1 font-semibold leading-none'>Save time in the Metaverse</p>
               </div>
             </Card>
-            <Card imageUrl='/cards/2.png' floatImageUrl='/cards/float/2.png' url='/soon'>
+            <Card imageUrl='/cards/2.png' floatImageUrl='/cards/float/2.png' url='/tools'>
               <div className='text-gray-normal'>
                 <h2 className='font-poppins text-xl'>TOOLS</h2>
                 <p className='text-sm pt-1 font-semibold leading-none'>For a simple Metaverse journey</p>
