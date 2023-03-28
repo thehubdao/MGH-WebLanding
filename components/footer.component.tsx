@@ -63,7 +63,7 @@ export default function Footer() {
             <span>Terms of Use </span>
           </Link>
           |
-          <Link href='/soon'>
+          <Link href='/privacity'>
             <span> Privacy Policy</span>
           </Link>
         </p>
