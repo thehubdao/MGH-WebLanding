@@ -23,9 +23,9 @@ export default function Tools() {
             <p className="font-humane text-8xl md:text-[200px] lg:text-[310px] text-gray-light whitespace-nowrap leading-[0.8] opacity-50 -translate-x-2/5">INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE</p>
             <p className="font-humane text-8xl md:text-[200px] lg:text-[310px] text-gray-light whitespace-nowrap leading-[0.8] opacity-50 -translate-x-[15%]">INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE</p>
           </div>
-          <Image src={'/tools/avatar.png'} alt={'avatar'} width={1056} height={960} className='hidden lg:block absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-[52%]' />
-          <Image src={'/tools/avatar.png'} alt={'avatar'} width={678} height={616} className='hidden md:block lg:hidden absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-[52%]' />
-          <Image src={'/tools/avatar.png'} alt={'avatar'} width={340} height={309} className='md:hidden absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-[52%]' />
+          <Image src={'/tools/game-machine.png'} alt={'game machine'} width={1056} height={960} className='hidden lg:block absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-[52%]' />
+          <Image src={'/tools/game-machine.png'} alt={'game machine'} width={678} height={616} className='hidden md:block lg:hidden absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-[52%]' />
+          <Image src={'/tools/game-machine.png'} alt={'game machine'} width={340} height={309} className='md:hidden absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-[52%]' />
         </div>
         <div className="flex flex-wrap justify-center gap-x-20 gap-y-10 md:gap-y-20 py-28 md:px-20">
           <Button url="/" big>
