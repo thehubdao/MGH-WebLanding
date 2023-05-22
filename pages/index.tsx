@@ -88,7 +88,7 @@ export default function Home() {
                 <a href="https://linktr.ee/metagamehub.experiences" target='_blank' rel='noreferrer' className='block'>EXPERIENCE THE METAVERSE</a>
               </div>
             </div>
-            <h1 className='text-[8.5px] lg:text-[21px] font-medium tracking-[0.45em] leading-none'>INVEST AND BUILD IN THE METAVERSE</h1>
+            <h1 className='text-[8.5px] lg:text-[21px] font-medium tracking-[0.45em] leading-none'>THE ENGINE OF THE METAVERSE</h1>
             <a href="#hub" className='font-humane text-9xl lg:text-[320px] leading-none cursor-pointer'>ENTER THE HUB</a>
           </div>
           <div className='absolute w-4/6 lg:w-1/4 h-16 bottom-8 lg:bottom-24'>
@@ -101,20 +101,20 @@ export default function Home() {
           <div className='flex justify-center flex-wrap gap-y-10 gap-x-56 xl:gap-x-10 2xl:gap-x-16'>
             <Card imageUrl='/cards/1.png' floatImageUrl='/cards/float/1.png' url='https://app.metagamehub.io/' newTab={true}>
               <div className='text-gray-normal'>
-                <h2 className='font-poppins text-xl'>MGH APP</h2>
+                <h2 className='font-poppins text-xl'>METAVERSE EXPLORER</h2>
                 <p className='text-sm pt-1 font-semibold leading-none'>Save time in the Metaverse</p>
               </div>
             </Card>
             <Card imageUrl='/cards/2.png' floatImageUrl='/cards/float/2.png' url='/tools'>
               <div className='text-gray-normal'>
-                <h2 className='font-poppins text-xl'>TOOLS</h2>
+                <h2 className='font-poppins text-xl'>THE HUB PLATFORM</h2>
                 <p className='text-sm pt-1 font-semibold leading-none'>For a simple Metaverse journey</p>
               </div>
             </Card>
             <Card imageUrl='/cards/3.png' floatImageUrl='/cards/float/3.png' url='https://docs.metagamehub.io/' newTab={true}>
               <div className='text-gray-normal'>
-                <h2 className='font-poppins text-xl'>ABOUT MGH DAO</h2>
-                <p className='text-sm pt-1 font-semibold leading-none'>The one-stop-shop for the<br/>Metaverse</p>
+                <h2 className='font-poppins text-xl'>ABOUT THE HUB</h2>
+                <p className='text-sm pt-1 font-semibold leading-none'>Documentation</p>
               </div>
             </Card>
             <Card imageUrl='/cards/4.png' floatImageUrl='/cards/float/4.png' url='https://linktr.ee/metagamehub.dao' newTab={true}>
