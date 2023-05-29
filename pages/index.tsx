@@ -91,8 +91,8 @@ export default function Home() {
             <h1 className='text-[8.5px] lg:text-[21px] font-medium tracking-[0.45em] leading-none'>THE ENGINE OF THE METAVERSE</h1>
             <a href="#hub" className='font-humane text-9xl lg:text-[320px] leading-none cursor-pointer'>ENTER THE HUB</a>
           </div>
-          <div className='absolute w-4/6 lg:w-1/4 h-16 bottom-8 lg:bottom-24'>
-            <Image src={'/mgh.svg'} fill={true} alt={'MetaGameHub DAO logo'} />
+          <div className='absolute w-4/6 lg:w-1/4 h-10 lg:h-12 top-10 lg:top-14'>
+            <Image src={'/thehub.svg'} fill={true} alt={'MetaGameHub DAO logo'} />
           </div>
         </div>
         {/* card section */}
