@@ -19,7 +19,7 @@ export default function Footer() {
             <SocialIcon imageUrl='/icons/telegram.png' link='https://t.me/metagamehub_dao' alt='telegram link' />
             <SocialIcon imageUrl='/icons/discord.png' link='https://discord.gg/J35NGdPWgq' alt='discord link' />
             <SocialIcon imageUrl='/icons/ether.png' link='https://etherscan.io/token/0x8765b1a0eb57ca49be7eacd35b24a574d0203656' alt='etherscan link' />
-            <SocialIcon imageUrl='/icons/email.png' link='mailto:info@thedac.info' alt='MetaGameHub DAO email' />
+            <SocialIcon imageUrl='/icons/email.png' link='mailto:info@thedac.info' alt='The Hub DAO email' />
           </div>
         </div>
         {/* footer links */}
@@ -45,10 +45,10 @@ export default function Footer() {
             </Link>
           </div>
           <div className='text-right xl:text-left'>
-            <a href="https://app.metagamehub.io/" target='_blank' rel='noreferrer' className='text-xl block'>MGH dApp</a>
+            <a href="https://app.thehubdao.xyz/metaverseexplorer" target='_blank' rel='noreferrer' className='text-xl block'>MGH dApp</a>
             <a href="https://discord.gg/J35NGdPWgq" target='_blank' rel='noreferrer' className='text-xl block'>Community</a>
             <a href="https://snapshot.org/#/metagamehub.eth" target='_blank' rel='noreferrer' className='text-xl block'>Voting</a>
-            <a href="https://docs.metagamehub.io/" target='_blank' rel='noreferrer' className='text-xl block'>Learn more</a>
+            <a href="https://docs.thehubdao.xyz/" target='_blank' rel='noreferrer' className='text-xl block'>Learn more</a>
             <Link href='/soon'>
               <p className='text-xl block'>FAQ</p>
             </Link>

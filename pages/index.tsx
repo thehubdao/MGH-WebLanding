@@ -54,8 +54,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>MetaGameHub DAO</title>
-        <meta name="description" content="MetaGameHub DAO is your ultimate destination for all things metaverse. As a one stop shop for investing, building, and experiencing virtual worlds, we offer a wide range of tools and resources to help you get the most out of your metaverse journey. From price estimation tools and development editors to immersive experiences and community-driven decision-making, we have everything you need to take your virtual adventures to the next level. Join the MetaGameHub DAO community today and start exploring the infinite possibilities of the metaverse!" />
+        <title>The Hub DAO</title>
+        <meta name="description" content="The Hub DAO is your ultimate destination for all things metaverse. As a one stop shop for investing, building, and experiencing virtual worlds, we offer a wide range of tools and resources to help you get the most out of your metaverse journey. From price estimation tools and development editors to immersive experiences and community-driven decision-making, we have everything you need to take your virtual adventures to the next level. Join The Hub DAO community today and start exploring the infinite possibilities of the metaverse!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -73,7 +73,7 @@ export default function Home() {
             <div className='hidden absolute xl:flex flex-col items-end top-12 right-[102%] cursor-pointer group'>
               <div className='w-6 h-[2px] bg-white mb-2 group-hover:w-4/5 transition-all duration-500'></div>
               <div className='leading-none text-right text-lg font-light group-hover:font-semibold group-hover:bg-white group-hover:text-gray-normal group-hover:p-4 transition-all duration-300'>
-                <a href="https://app.metagamehub.io/valuation" target='_blank' rel='noreferrer' className='block'>FIND<br />UNDERVALUED<br />LANDS</a>
+                <a href="https://app.thehubdao.xyz/metaverseexplorer" target='_blank' rel='noreferrer' className='block'>FIND<br />UNDERVALUED<br />LANDS</a>
               </div>
             </div>
             <div className='hidden absolute xl:flex flex-col bottom-2/5 left-[102%] cursor-pointer w-48 group'>
@@ -92,14 +92,14 @@ export default function Home() {
             <a href="#hub" className='font-humane text-9xl lg:text-[320px] leading-none cursor-pointer'>ENTER THE HUB</a>
           </div>
           <div className='absolute w-4/6 lg:w-1/4 h-10 lg:h-12 top-10 lg:top-14'>
-            <Image src={'/thehub.svg'} fill={true} alt={'MetaGameHub DAO logo'} />
+            <Image src={'/thehub.svg'} fill={true} alt={'The Hub DAO logo'} />
           </div>
         </div>
         {/* card section */}
         <div id='hub'>
           <h2 className='text-center text-[35px] text-gray-dark font-light py-32 mt-32 tracking-[.25em]'>Your Metaverse Home</h2>
           <div className='flex justify-center flex-wrap gap-y-10 gap-x-56 xl:gap-x-10 2xl:gap-x-16'>
-            <Card imageUrl='/cards/1.png' floatImageUrl='/cards/float/1.png' url='https://app.metagamehub.io/' newTab={true}>
+            <Card imageUrl='/cards/1.png' floatImageUrl='/cards/float/1.png' url='https://app.thehubdao.xyz/metaverseexplorer' newTab={true}>
               <div className='text-gray-normal'>
                 <h2 className='font-poppins text-xl'>METAVERSE EXPLORER</h2>
                 <p className='text-sm pt-1 font-semibold leading-none'>Save time in the Metaverse</p>
@@ -111,13 +111,13 @@ export default function Home() {
                 <p className='text-sm pt-1 font-semibold leading-none'>For a simple Metaverse journey</p>
               </div>
             </Card>
-            <Card imageUrl='/cards/3.png' floatImageUrl='/cards/float/3.png' url='https://docs.metagamehub.io/' newTab={true}>
+            <Card imageUrl='/cards/3.png' floatImageUrl='/cards/float/3.png' url='https://docs.thehubdao.xyz/' newTab={true}>
               <div className='text-gray-normal'>
                 <h2 className='font-poppins text-xl'>ABOUT THE HUB</h2>
                 <p className='text-sm pt-1 font-semibold leading-none'>Documentation</p>
               </div>
             </Card>
-            <Card imageUrl='/cards/4.png' floatImageUrl='/cards/float/4.png' url='https://linktr.ee/metagamehub.dao' newTab={true}>
+            <Card imageUrl='/cards/4.png' floatImageUrl='/cards/float/4.png' url='https://linktr.ee/thehub.dao' newTab={true}>
               <div className='text-gray-normal'>
                 <h2 className='font-poppins text-xl font-bold'>JOIN US!</h2>
                 <p className='text-sm pt-1 font-semibold leading-none'>Help us shape the future<br/>of the Internet</p>
