@@ -13,13 +13,14 @@ export default function Soon() {
         <h1 className='font-humane text-9xl lg:text-[320px] leading-[0.7]'>COMING SOON</h1>
         <p className="font-medium text-base lg:text-xl text-center">we are still buidling this view<br />in the meantime, PLEASE STAY IN TOUCH  :)</p>
         <div className='flex gap-2 lg:gap-8 pt-12'>
-          <SocialIcon imageUrl='/icons/medium.png' link='https://metagamehub.medium.com/' alt='medium link' />
-          <SocialIcon imageUrl='/icons/instagram.png' link='https://www.instagram.com/metagamehub_dao/' alt='instagram link' />
-          <SocialIcon imageUrl='/icons/linkedin.png' link='https://www.linkedin.com/company/metagamehub-dao/' alt='linkedin link' />
-          <SocialIcon imageUrl='/icons/twitter.png' link='https://twitter.com/MGH_DAO' alt='twitter link' />
-          <SocialIcon imageUrl='/icons/telegram.png' link='https://t.me/metagamehub_dao' alt='telegram link' />
-          <SocialIcon imageUrl='/icons/discord.png' link='https://discord.com/invite/8WJVMDXZwH' alt='discord link' />
+          <SocialIcon imageUrl='/icons/medium.png' link='https://medium.com/@THEHUB_DAO' alt='medium link' />
+          <SocialIcon imageUrl='/icons/instagram.png' link='https://www.instagram.com/thehub_dao/' alt='instagram link' />
+          <SocialIcon imageUrl='/icons/linkedin.png' link='https://www.linkedin.com/company/the-hub-dao/' alt='linkedin link' />
+          <SocialIcon imageUrl='/icons/twitter.png' link='https://twitter.com/THE_HUB_DAO' alt='twitter link' />
+          <SocialIcon imageUrl='/icons/telegram.png' link='https://t.me/thehub_dao' alt='telegram link' />
+          <SocialIcon imageUrl='/icons/discord.png' link='https://discord.gg/J35NGdPWgq' alt='discord link' />
           <SocialIcon imageUrl='/icons/ether.png' link='https://etherscan.io/token/0x8765b1a0eb57ca49be7eacd35b24a574d0203656' alt='etherscan link' />
+          <SocialIcon imageUrl='/icons/email.png' link='mailto:info@thedac.info' alt='The Hub DAO email' />
         </div>
       </div>
       <div className="absolute w-12 h-12 bottom-8 left-2/4 lg:top-8 lg:left-8 -translate-x-2/4 lg:translate-x-0">
