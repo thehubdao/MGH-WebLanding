@@ -28,13 +28,13 @@ export default function Tools() {
           <Image src={'/tools/game-machine.png'} alt={'game machine'} width={340} height={309} className='md:hidden absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-[52%]' />
         </div>
         <div className="flex flex-wrap justify-center gap-x-20 gap-y-10 md:gap-y-20 py-28 md:px-20">
-          <Button url="https://app.metagamehub.io/" newTab big>
+          <Button url="https://app.thehubdao.xyz/" newTab big>
             <p className="font-humane text-[135px] text-gray-normal">INVEST</p>
           </Button>
           <Button url="https://dcl-edit.com/" newTab big>
             <p className="font-humane text-[135px] text-gray-normal">BUILD</p>
           </Button>
-          <Button url="https://linktr.ee/metagamehub.dao" newTab big>
+          <Button url="https://linktr.ee/thehub.dao" newTab big>
             <p className="font-humane text-[135px] text-gray-normal">EXPERIENCE</p>
           </Button>
         </div>
