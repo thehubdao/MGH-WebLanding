@@ -111,7 +111,7 @@ export default function Home() {
                 <p className='text-sm pt-1 font-semibold leading-none'>For a simple Metaverse journey</p>
               </div>
             </Card>
-            <Card imageUrl='/cards/3.png' floatImageUrl='/cards/float/3.png' url='https://docs.metagamehub.io/' newTab={true}>
+            <Card imageUrl='/cards/3.png' floatImageUrl='/cards/float/3.png' url='https://docs.thehubdao.xyz/' newTab={true}>
               <div className='text-gray-normal'>
                 <h2 className='font-poppins text-xl'>ABOUT THE HUB</h2>
                 <p className='text-sm pt-1 font-semibold leading-none'>Documentation</p>
