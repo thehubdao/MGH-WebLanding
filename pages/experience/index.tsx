@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import Footer from "../../components/footer.component";
 import Box from "../../components/box.component";
 
 export default function Experience() {
@@ -17,7 +16,7 @@ export default function Experience() {
           <div className=" w-full mt-14 xl:mt-28">
             <h1 className=" text-5xl md:text-7xl 2xl:text-9xl text-gray-normal text-center">EXPERIENCE</h1>
             <p className="font-work font-light  text-lg md:text-[22px] text-center px-4 sm:px-0">Currently, building in the metaverse is not efficient. <br className="hidden sm:inline-block"/>It takes 300+ hours to develop a single experience</p>
-            <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12 mx-8 2l:mx-20'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12 mx-8 2xl:mx-20'>
                 <Box>
                     <div className='flex justify-between items-center min-h-[115px]'>
                         <div className='pl-6 mr-5'>
@@ -25,7 +24,7 @@ export default function Experience() {
                             <p className='font-work text-xs font-light text-gray-normal leading-4'>Interoperable VRM <br className="hidden sm:inline-block"/> compatible avatars</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
-                            <div className="rounded-full shadow-boxes bg-gray-boxes flex items-center justify-center w-[80px] h-[80px]">
+                            <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px]">
                                 <Image src={'/icons/Vector.svg'} alt={'Vector'}  width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}}/>
                             </div>
                         </div>
@@ -38,7 +37,7 @@ export default function Experience() {
                             <p className='font-work text-xs font-light text-gray-normal leading-4'>Earn Metaverse Loyalty <br className="hidden sm:inline-block"/> points for being a THE <br className="hidden sm:inline-block"/> HUB power user</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
-                            <div className="rounded-full shadow-boxes bg-gray-boxes flex items-center justify-center w-[80px] h-[80px]">
+                            <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px]">
                                 <Image src={'/icons/Vector.svg'} alt={'Vector'} width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}}/>
                             </div>
                         </div>
@@ -51,7 +50,7 @@ export default function Experience() {
                             <p className='font-work text-xs font-light text-gray-normal leading-4'>Co-create with us on <br className="hidden sm:inline-block"/> all THE HUB LANDs</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
-                            <div className="rounded-full shadow-boxes bg-gray-boxes flex items-center justify-center w-[80px] h-[80px]">
+                            <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px]">
                                 <Image src={'/icons/Vector.svg'} alt={'Vector'} width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}}/>
                             </div>
                         </div>
@@ -66,7 +65,6 @@ export default function Experience() {
             </div>
           </div>
         </div>
-        <Footer />
       </main>
     </>
   )

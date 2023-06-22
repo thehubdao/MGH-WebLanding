@@ -6,7 +6,7 @@ interface BoxProps {
 
 export default function Box({ children}: BoxProps) {
     return (
-        <div className={`bg-bg border-light rounded-3xl shadow-boxes x-full ` }>
+        <div className={`bg-fill border-light rounded-3xl shadow-boxes x-full` }>
             {children}
         </div>
     )
