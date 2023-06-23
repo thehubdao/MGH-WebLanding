@@ -97,7 +97,7 @@ export default function Home() {
         </div>
         {/* card section */}
         <div id='hub'>
-          <h2 className='text-center text-[35px] text-gray-dark font-light py-32 mt-32 tracking-[.25em]'>Your Metaverse Home</h2>
+          <h2 className='text-center text-[35px] text-gray-dark font-light py-32 mt-32 tracking-[3.5px]'>THE HUB provides you with the picks and shovels <br className='hidden lg:inline-block' /> to have a seamless Metaverse journey</h2>
           <div className='flex justify-center flex-wrap gap-y-10 gap-x-56 xl:gap-x-10 2xl:gap-x-16'>
             <Card imageUrl='/cards/1.png' floatImageUrl='/cards/float/1.png' url='https://app.thehubdao.xyz/metaverseexplorer' newTab={true}>
               <div className='text-gray-normal'>
@@ -111,7 +111,7 @@ export default function Home() {
                 <p className='text-sm pt-1 font-semibold leading-none'>For a simple Metaverse journey</p>
               </div>
             </Card>
-            <Card imageUrl='/cards/3.png' floatImageUrl='/cards/float/3.png' url='https://docs.metagamehub.io/' newTab={true}>
+            <Card imageUrl='/cards/3.png' floatImageUrl='/cards/float/3.png' url='https://docs.thehubdao.xyz/' newTab={true}>
               <div className='text-gray-normal'>
                 <h2 className='font-poppins text-xl'>ABOUT THE HUB</h2>
                 <p className='text-sm pt-1 font-semibold leading-none'>Documentation</p>
