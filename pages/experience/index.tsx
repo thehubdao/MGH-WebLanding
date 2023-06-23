@@ -15,18 +15,20 @@ export default function Experience() {
         <div className="flex flex-col xl:flex-row mb-40 xl:mb-52 gap-8">
           <div className=" w-full mt-14 xl:mt-28">
             <h1 className=" text-5xl md:text-7xl 2xl:text-9xl text-gray-normal text-center">EXPERIENCE</h1>
-            <p className="font-work font-light  text-lg md:text-[22px] text-center px-4 sm:px-0">Currently, building in the metaverse is not efficient. <br className="hidden sm:inline-block"/>It takes 300+ hours to develop a single experience</p>
+            <p className="font-work font-light  text-lg md:text-[22px] text-center px-4 sm:px-0">Use THE HUB interoperable a avatars, be rewarded for your <br className="hidden sm:inline-block"/> metaverse activities with our metaverse loyalty system.</p>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12 mx-8 2xl:mx-20'>
                 <Box>
                     <div className='flex justify-between items-center min-h-[115px]'>
                         <div className='pl-6 mr-5'>
                             <h1 className='font-work text-sm font-bold text-gray-normal leading-5'>METAVERSE AVATARS</h1>
-                            <p className='font-work text-xs font-light text-gray-normal leading-4'>Interoperable VRM <br className="hidden sm:inline-block"/> compatible avatars</p>
+                            <p className='font-work text-xs font-light text-gray-normal leading-4'>Interoperable VRM compatible <br className="hidden sm:inline-block"/> avatars</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
-                            <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px]">
-                                <Image src={'/icons/Vector.svg'} alt={'Vector'}  width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}}/>
-                            </div>
+                            <Link href="/soon">
+                              <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px]">
+                                  <Image src={'/icons/Vector.svg'} alt={'Vector'}  width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}}/>
+                              </div>
+                            </Link>
                         </div>
                     </div>
                 </Box>
@@ -34,12 +36,14 @@ export default function Experience() {
                     <div className='flex justify-between items-center min-h-[115px]'>
                         <div className='pl-6 mr-5'>
                             <h1 className='font-work text-sm font-bold text-gray-normal leading-5'>METAVERSE LOYALTY SYSTEM</h1>
-                            <p className='font-work text-xs font-light text-gray-normal leading-4'>Earn Metaverse Loyalty <br className="hidden sm:inline-block"/> points for being a THE <br className="hidden sm:inline-block"/> HUB power user</p>
+                            <p className='font-work text-xs font-light text-gray-normal leading-4'>Earn Metaverse Loyalty points for <br className="hidden sm:inline-block"/> being a THE HUB power user</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
-                            <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px]">
-                                <Image src={'/icons/Vector.svg'} alt={'Vector'} width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}}/>
-                            </div>
+                            <Link href="/soon">
+                              <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px]">
+                                  <Image src={'/icons/Vector.svg'} alt={'Vector'}  width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}}/>
+                              </div>
+                            </Link>
                         </div>
                     </div>
                 </Box>
@@ -47,12 +51,14 @@ export default function Experience() {
                     <div className='flex justify-between items-center min-h-[115px]'>
                         <div className='pl-6 mr-5'>
                             <h1 className='font-work text-sm font-bold text-gray-normal leading-5'>THE HUB EXPERIENCES</h1>
-                            <p className='font-work text-xs font-light text-gray-normal leading-4'>Co-create with us on <br className="hidden sm:inline-block"/> all THE HUB LANDs</p>
+                            <p className='font-work text-xs font-light text-gray-normal leading-4'>Co-create with us on all THE HUB <br className="hidden sm:inline-block"/> LANDs</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
-                            <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px]">
-                                <Image src={'/icons/Vector.svg'} alt={'Vector'} width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}}/>
-                            </div>
+                            <Link href="/soon">
+                              <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px]">
+                                  <Image src={'/icons/Vector.svg'} alt={'Vector'}  width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}}/>
+                              </div>
+                            </Link>
                         </div>
                     </div>
                 </Box>

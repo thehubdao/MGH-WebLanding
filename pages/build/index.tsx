@@ -22,12 +22,14 @@ export default function Build() {
                     <div className='flex justify-between items-center min-h-[115px]'>
                         <div className='pl-6 mr-5'>
                             <h1 className='font-work text-sm font-bold text-gray-normal leading-5'>METAVERSE BUILDER</h1>
-                            <p className='font-work text-xs font-light text-gray-normal leading-4'>Create your own experience <br className="hidden sm:inline-block"/> on any Metaverse</p>
+                            <p className='font-work text-xs font-light text-gray-normal leading-4'>Create your own experience on <br className="hidden sm:inline-block"/> any Metaverse</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
-                            <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px]">
-                                <Image src={'/icons/Vector.svg'} alt={'Vector'}  width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}}/>
-                            </div>
+                            <Link href="https://dcl-edit.com/" target='_blank'>
+                              <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px]">
+                                  <Image src={'/icons/Vector.svg'} alt={'Vector'}  width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}}/>
+                              </div>
+                            </Link>
                         </div>
                     </div>
                 </Box>
@@ -35,12 +37,29 @@ export default function Build() {
                     <div className='flex justify-between items-center min-h-[115px]'>
                         <div className='pl-6 mr-5'>
                             <h1 className='font-work text-sm font-bold text-gray-normal leading-5'>PROJECTS</h1>
-                            <p className='font-work text-xs font-light text-gray-normal leading-4'>Co-create with us</p>
+                            <p className='font-work text-xs font-light text-gray-normal leading-4'>Co-create Metaverse Experiences <br className="hidden sm:inline-block"/> with us</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
-                            <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px]">
-                                <Image src={'/icons/Vector.svg'} alt={'Vector'} width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}}/>
-                            </div>
+                            <Link href="/soon">
+                              <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px]">
+                                  <Image src={'/icons/Vector.svg'} alt={'Vector'}  width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}}/>
+                              </div>
+                            </Link>
+                        </div>
+                    </div>
+                </Box>
+                <Box>
+                    <div className='flex justify-between items-center min-h-[115px]'>
+                        <div className='pl-6 mr-5'>
+                            <h1 className='font-work text-sm font-bold text-gray-normal leading-5'>BUILDER MARKETPLACE</h1>
+                            <p className='font-work text-xs font-light text-gray-normal leading-4'>Pl</p>
+                        </div>
+                        <div className='flex items-center justify-start mr-4' >
+                            <Link href="https://www.metahub.shop/" target='_blank'>
+                              <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px]">
+                                  <Image src={'/icons/Vector.svg'} alt={'Vector'}  width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}}/>
+                              </div>
+                            </Link>
                         </div>
                     </div>
                 </Box>
@@ -49,7 +68,7 @@ export default function Build() {
           <div className="w-full relative h-[500px] xl:h-auto mt-20 xl:mt-0">
             <Image src={'/images/bg-circle.png'} alt={'bg-home'} fill style={{maxWidth: '1046px', maxHeight:'566px'} } className='xl:rounded-l-3xl' />
             <div className="absolute w-full h-[140%]  top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4">
-                <Image src={'/images/home.png'} alt={'home'} fill  className='object-contain' />
+                <Image src={'/images/home-1.png'} alt={'home'} fill  className='object-contain' />
             </div>
           </div>
         </div>

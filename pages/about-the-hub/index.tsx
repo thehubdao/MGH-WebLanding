@@ -5,90 +5,295 @@ import IconBox from "../../components/iconBox.component";
 import PersonCarrousel from "../../components/personCarrousel.component";
 
 const team = [
-    {
+  {
+    name: '',
+    role: '',
+    description: "",
+    url: '/team/team-1.png',
+    alt: ''
+  },
+  {
       name: 'ANA RINCÓN',
       role: 'Product Manager',
       description: "THE HUB is the engine for the Metaverse consisting of THE HUB Protocol and THE HUB Platform. THE HUB Protocol",
-      url: '/team/anita.png',
+      url: '/team/team-2.png',
       alt: 'anita'
-    },
-    {
-        name: 'ANA RINCÓN 2',
-        role: 'Product Manager',
-        description: "THE HUB is the engine for the Metaverse consisting of THE HUB Protocol and THE HUB Platform. THE HUB Protocol",
-        url: '/team/anita.png',
-        alt: 'anita'
-    },
-    {
-        name: 'ANA RINCÓN 3',
-        role: 'Product Manager',
-        description: "THE HUB is the engine for the Metaverse consisting of THE HUB Protocol and THE HUB Platform. THE HUB Protocol",
-        url: '/team/anita.png',
-        alt: 'anita'
-    },
-    {
-        name: 'ANA RINCÓN 4',
-        role: 'Product Manager',
-        description: "THE HUB is the engine for the Metaverse consisting of THE HUB Protocol and THE HUB Platform. THE HUB Protocol",
-        url: '/team/anita.png',
-        alt: 'anita'
-    },
-    {
-        name: 'ANA RINCÓN 5',
-        role: 'Product Manager',
-        description: "THE HUB is the engine for the Metaverse consisting of THE HUB Protocol and THE HUB Platform. THE HUB Protocol",
-        url: '/team/anita.png',
-        alt: 'anita'
-    },
-    {
-        name: 'ANA RINCÓN 6',
-        role: 'Product Manager',
-        description: "THE HUB is the engine for the Metaverse consisting of THE HUB Protocol and THE HUB Platform. THE HUB Protocol",
-        url: '/team/anita.png',
-        alt: 'anita'
-    },
-    {
-        name: 'ANA RINCÓN 7',
-        role: 'Product Manager',
-        description: "THE HUB is the engine for the Metaverse consisting of THE HUB Protocol and THE HUB Platform. THE HUB Protocol",
-        url: '/team/anita.png',
-        alt: 'anita'
-    },
-    {
-        name: 'ANA RINCÓN 8',
-        role: 'Product Manager',
-        description: "THE HUB is the engine for the Metaverse consisting of THE HUB Protocol and THE HUB Platform. THE HUB Protocol",
-        url: '/team/anita.png',
-        alt: 'anita'
-    },
-    {
-        name: 'ANA RINCÓN 9',
-        role: 'Product Manager',
-        description: "THE HUB is the engine for the Metaverse consisting of THE HUB Protocol and THE HUB Platform. THE HUB Protocol",
-        url: '/team/anita.png',
-        alt: 'anita'
-    },
-    {
-        name: 'ANA RINCÓN 10',
-        role: 'Product Manager',
-        description: "THE HUB is the engine for the Metaverse consisting of THE HUB Protocol and THE HUB Platform. THE HUB Protocol",
-        url: '/team/anita.png',
-        alt: 'anita'
-    },
-    {
-        name: 'ANA RINCÓN 11',
-        role: 'Product Manager',
-        description: "THE HUB is the engine for the Metaverse consisting of THE HUB Protocol and THE HUB Platform. THE HUB Protocol",
-        url: '/team/anita.png',
-        alt: 'anita'
-    },
-    {
-        name: 'ANA RINCÓN 12',
-        role: 'Product Manager',
-        description: "THE HUB is the engine for the Metaverse consisting of THE HUB Protocol and THE HUB Platform. THE HUB Protocol",
-        url: '/team/anita.png',
-        alt: 'anita'
-    },
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-3.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-4.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-5.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-6.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-7.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-8.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-9.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-10.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-11.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-12.png',
+      alt: ''
+  },
+  {
+    name: '',
+    role: '',
+    description: "",
+    url: '/team/team-13.png',
+    alt: ''
+  },
+  {
+    name: '',
+    role: '',
+    description: "",
+    url: '/team/team-14.png',
+    alt: ''
+  },
+  {
+    name: '',
+    role: '',
+    description: "",
+    url: '/team/team-15.png',
+    alt: ''
+  },
+];
+
+const team2 = [
+  {
+    name: '',
+    role: '',
+    description: "",
+    url: '/team/team-16.png',
+    alt: ''
+  },
+  {
+    name: '',
+    role: '',
+    description: "",
+    url: '/team/team-17.png',
+    alt: ''
+},
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-18.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-19.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-20.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-21.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-22.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-23.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-24.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-25.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-26.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/team/team-27.png',
+      alt: ''
+  },
+  {
+    name: '',
+    role: '',
+    description: "",
+    url: '/team/team-28.png',
+    alt: ''
+  },
+  {
+    name: '',
+    role: '',
+    description: "",
+    url: '/team/team-29.png',
+    alt: ''
+  },
+];
+
+const advisors = [
+  {
+    name: '',
+    role: '',
+    description: "",
+    url: '/advisors/advisor-1.png',
+    alt: ''
+  },
+  {
+    name: '',
+    role: '',
+    description: "",
+    url: '/advisors/advisor-2.png',
+    alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/advisors/advisor-3.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/advisors/advisor-4.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/advisors/advisor-5.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/advisors/advisor-6.png',
+      alt: ''
+  },
+];
+
+const advisors2 = [
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/advisors/advisor-7.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/advisors/advisor-8.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/advisors/advisor-9.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/advisors/advisor-10.png',
+      alt: ''
+  },
+  {
+      name: '',
+      role: '',
+      description: "",
+      url: '/advisors/advisor-11.png',
+      alt: ''
+  },
 ];
 
 export default function AboutUs() {
@@ -108,7 +313,7 @@ export default function AboutUs() {
           </div>
           <div className=" w-full xl:w-1/4 pr-10 lg:pr-36 text-end">
             <h1 className="font-neue text-4xl text-gray-hubdao font-bold mt-11">THE HUB<br />DAO</h1>
-            <p className="font-neue text-4xl text-gray-normal font-bold">JOIN US!</p>
+            <p className="font-neue text-4xl text-gray-normal font-bold">ABOUT</p>
           </div>
         </div>
 
@@ -133,7 +338,7 @@ export default function AboutUs() {
         </div>
 
         <div className="flex justify-center xl:mt-48 ">
-          <Link href="#" rel="noopener noreferrer" target='_blank'>
+          <Link href="https://docs.thehubdao.xyz/" rel="noopener noreferrer" target='_blank'>
             <div className="w-auto md:w-[617px] min-h-[120px] md:min-h-[143px] shadow-button rounded-[40px] cursor-pointer flex justify-center items-center">
               <p className="font-work text-xl font-medium text-gray-normal px-10 text-center">LEARN MORE ABOUT THE HUB</p>
             </div>
@@ -153,7 +358,7 @@ export default function AboutUs() {
 
         <div className="w-full mt-20">
           <PersonCarrousel members={team}/>
-          <PersonCarrousel members={team}/>
+          <PersonCarrousel members={team2}/>
         </div>
 
         <div className="flex flex-col md:flex-row gap-8 mt-28 items-end">
@@ -168,8 +373,8 @@ export default function AboutUs() {
         </div>
 
         <div className="w-full mt-20">
-            <PersonCarrousel members={team}/>
-            <PersonCarrousel members={team}/>
+            <PersonCarrousel members={advisors}/>
+            <PersonCarrousel members={advisors2}/>
         </div>
         
         <div className="flex justify-center mt-32 lg:mt-52">
@@ -177,112 +382,112 @@ export default function AboutUs() {
         </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-6 gap-4 mt-32 mx-6 xl:mx-12 place-items-center'>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-183.png'} alt={'sandbox'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-184.png'} alt={'decentraland'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-185.png'} alt={'somnium space'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-186.png'} alt={'chainlink'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-187.png'} alt={'fitchin'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-188.png'} alt={'boson protocol'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-189.png'} alt={'polygon'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-190.png'} alt={'aws'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-191.png'} alt={'cryptoticker'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-192.png'} alt={'sophos'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-193.png'} alt={'pwc'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-194.png'} alt={'pangea'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-195.png'} alt={'ey'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-196.png'} alt={'ocean'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-197.png'} alt={'viio'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-198.png'} alt={'revolve'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-199.png'} alt={'etherum tower'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-200.png'} alt={'blockchain founders gropu'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-201.png'} alt={'pax.world'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-202.png'} alt={'venly'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-203.png'} alt={'xone'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-204.png'} alt={'zharta'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-205.png'} alt={'bonuz'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-206.png'} alt={'moon bash'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-207.png'} alt={'nrverse'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-208.png'} alt={'s5'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-209.png'} alt={'bga'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-210.png'} alt={'picipo'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-211.png'} alt={'adshares'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-212.png'} alt={'parcel'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-213.png'} alt={'fh aachen'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-214.png'} alt={'detecon'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-215.png'} alt={'frankfurt school'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-216.png'} alt={'unal'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-217.png'} alt={'pennsylvania state university'} width={144} height={33} className='' />
           </IconBox>
-          <IconBox>
+          <IconBox big={false}>
               <Image src={'/partners/Group-218.png'} alt={'wemeta'} width={144} height={33} className='' />
           </IconBox>
 
@@ -293,29 +498,29 @@ export default function AboutUs() {
         </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-32 mx-6 xl:mx-12 place-items-center'>
-          <IconBox>
-              <Image src={'/investors/investors-1.png'} alt={'polygon'} width={144} height={33} className='' />
+          <IconBox big={true}>
+              <Image src={'/investors/investors-1.png'} alt={'polygon'} width={210} height={92} className='' />
           </IconBox>
-          <IconBox>
-              <Image src={'/investors/investors-2.png'} alt={'ocean'} width={144} height={33} className='' />
+          <IconBox big={true}>
+              <Image src={'/investors/investors-2.png'} alt={'ocean'} width={210} height={92} className='' />
           </IconBox>
-          <IconBox>
-              <Image src={'/investors/investors-3.png'} alt={'brinc'} width={144} height={33} className='' />
+          <IconBox big={true}>
+              <Image src={'/investors/investors-3.png'} alt={'brinc'} width={210} height={92} className='' />
           </IconBox>
-          <IconBox>
-              <Image src={'/investors/investors-4.png'} alt={'sandbox'} width={144} height={33} className='' />
+          <IconBox big={true}>
+              <Image src={'/investors/investors-4.png'} alt={'sandbox'} width={210} height={92} className='' />
           </IconBox>
-          <IconBox>
-              <Image src={'/investors/investors-5.png'} alt={'xvetures'} width={144} height={33} className='' />
+          <IconBox big={true}>
+              <Image src={'/investors/investors-5.png'} alt={'xvetures'} width={210} height={92} className='' />
           </IconBox>
-          <IconBox>
-              <Image src={'/investors/investors-6.png'} alt={'blockchain founders group'} width={144} height={33} className='' />
+          <IconBox big={true}>
+              <Image src={'/investors/investors-6.png'} alt={'blockchain founders group'} width={210} height={92} className='' />
           </IconBox>
-          <IconBox>
-              <Image src={'/investors/investors-7.png'} alt={'polaris'} width={144} height={33} className='' />
+          <IconBox big={true}>
+              <Image src={'/investors/investors-7.png'} alt={'polaris'} width={210} height={92} className='' />
           </IconBox>
-          <IconBox>
-              <Image src={'/investors/investors-8.png'} alt={'hashmesh labs'} width={144} height={33} className='' />
+          <IconBox big={true}>
+              <Image src={'/investors/investors-8.png'} alt={'hashmesh labs'} width={210} height={92} className='' />
           </IconBox> 
         </div>
 

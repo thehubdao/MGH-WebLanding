@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '../components/footer.component';
 import Scene from '../components/scene.component';
+import IconBox from '../components/iconBox.component';
 
 interface CardProps {
   imageUrl: string,
@@ -54,7 +55,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>The Hub DAO</title>
+        <title>THE HUB DAO</title>
         <meta name="description" content="The Hub DAO is your ultimate destination for all things metaverse. As a one stop shop for investing, building, and experiencing virtual worlds, we offer a wide range of tools and resources to help you get the most out of your metaverse journey. From price estimation tools and development editors to immersive experiences and community-driven decision-making, we have everything you need to take your virtual adventures to the next level. Join The Hub DAO community today and start exploring the infinite possibilities of the metaverse!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -102,7 +103,7 @@ export default function Home() {
             <Card imageUrl='/cards/1.png' floatImageUrl='/cards/float/1.png' url='https://app.thehubdao.xyz/metaverseexplorer' newTab={true}>
               <div className='text-gray-normal'>
                 <h2 className='font-poppins text-xl'>METAVERSE EXPLORER</h2>
-                <p className='text-sm pt-1 font-semibold leading-none'>Save time in the Metaverse</p>
+                <p className='text-sm pt-1 font-semibold leading-none'>Browse Virtual Worlds with <br/> unparalleled insights and <br/> simplicity</p>
               </div>
             </Card>
             <Card imageUrl='/cards/2.png' floatImageUrl='/cards/float/2.png' url='/tools'>
@@ -111,13 +112,13 @@ export default function Home() {
                 <p className='text-sm pt-1 font-semibold leading-none'>For a simple Metaverse journey</p>
               </div>
             </Card>
-            <Card imageUrl='/cards/3.png' floatImageUrl='/cards/float/3.png' url='https://docs.thehubdao.xyz/' newTab={true}>
+            <Card imageUrl='/cards/3.png' floatImageUrl='/cards/float/3.png' url='/about-the-hub'>
               <div className='text-gray-normal'>
                 <h2 className='font-poppins text-xl'>ABOUT THE HUB</h2>
                 <p className='text-sm pt-1 font-semibold leading-none'>Documentation</p>
               </div>
             </Card>
-            <Card imageUrl='/cards/4.png' floatImageUrl='/cards/float/4.png' url='https://linktr.ee/thehub.dao' newTab={true}>
+            <Card imageUrl='/cards/4.png' floatImageUrl='/cards/float/4.png' url='/join-us'>
               <div className='text-gray-normal'>
                 <h2 className='font-poppins text-xl font-bold'>JOIN US!</h2>
                 <p className='text-sm pt-1 font-semibold leading-none'>Help us shape the future<br/>of the Internet</p>
@@ -129,13 +130,31 @@ export default function Home() {
         <div className='pb-32 mb-32'>
           <h2 className='text-center text-5xl text-gray-dark font-light pb-32 pt-64'>Backed by</h2>
           <div className='flex justify-center flex-wrap gap-6 xl:gap-20'>
-            <CardLogo imageUrl='/logos/polygon.png' url='https://polygon.technology/' newTab={true} />
+          <IconBox big={true}>
+              <Image src={'/investors/investors-1.png'} alt={'polygon'} width={210} height={92} className='' />
+          </IconBox>
+          <IconBox big={true}>
+            <Image src={'/investors/investors-4.png'} alt={'sandbox'} width={210} height={92} className='' />
+          </IconBox>
+          <IconBox big={true}>
+            <Image src={'/partners/Group-184.png'} alt={'decentraland'} width={210} height={92} className='' />
+          </IconBox>
+            {/* <CardLogo imageUrl='/logos/polygon.png' url='https://polygon.technology/' newTab={true} />
             <CardLogo imageUrl='/logos/sandbox.png' url='https://www.sandbox.game/en/' newTab={true} />
-            <CardLogo imageUrl='/logos/decentraland.png' url='https://decentraland.org/' newTab={true} />
+            <CardLogo imageUrl='/logos/decentraland.png' url='https://decentraland.org/' newTab={true} /> */}
           </div>
           <div className='flex justify-center flex-wrap gap-6 xl:gap-20 mt-6 xl:mt-16'>
-            <CardLogo imageUrl='/logos/brinc.png' url='https://www.brinc.io/' newTab={true} />
-            <CardLogo imageUrl='/logos/ocean.png' url='https://oceanprotocol.com/' newTab={true} />
+          <IconBox big={true}>
+            <Image src={'/investors/investors-3.png'} alt={'brinc'} width={210} height={92} className='' />
+          </IconBox>
+          <IconBox big={true}>
+            <Image src={'/investors/investors-2.png'} alt={'ocean'} width={210} height={92} className='' />
+          </IconBox>
+          <IconBox big={true}>
+            <Image src={'/partners/Group-185.png'} alt={'somnium space'} width={210} height={92} className='' />
+          </IconBox>
+            {/* <CardLogo imageUrl='/logos/brinc.png' url='https://www.brinc.io/' newTab={true} />
+            <CardLogo imageUrl='/logos/ocean.png' url='https://oceanprotocol.com/' newTab={true} /> */}
           </div>
         </div>
         <Footer />

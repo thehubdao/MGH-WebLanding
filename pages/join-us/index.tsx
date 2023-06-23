@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Button from "../../components/button.component";
+import Footer from "../../components/footer.component";
 
 export default function AboutUs() {
   return (
@@ -39,30 +40,24 @@ export default function AboutUs() {
           <Image src={'/images/bunny-2.png'} alt={'bunny'} width={678} height={616} className='hidden md:block lg:hidden absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-[52%]' />
           <Image src={'/images/bunny-2.png'} alt={'bunny'} width={340} height={309} className='md:hidden absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-[52%]' />
         </div>
-
-        <div className="flex flex-wrap justify-center gap-x-10 gap-y-10 md:gap-y-20 py-28 md:px-20">
-          <Button url="https://www.linkedin.com/company/the-hub-dao/" extra>
+        <div>
+          <h2 className='text-center text-2xl text-gray-normal font-medium py-32 tracking-[4.4px]'>JOIN US TO SHAPE THE FUTURE OF THE OPEN METAVERSE TOGETHER!</h2>
+        </div>
+        <div className="flex flex-wrap justify-center gap-x-10 gap-y-10 md:gap-y-20 py-28 md:px-20 mb-64">
+          <Button url="https://www.linkedin.com/company/the-hub-dao/" extra newTab={true}>
             <p className="font-humane text-6xl md:text-8xl text-gray-normal">JOIN THE CORE TEAM</p>
           </Button>
-          <Button url="https://discord.com/invite/J35NGdPWgq" extra>
+          <Button url="https://discord.com/invite/J35NGdPWgq" extra newTab={true}>
             <p className="font-humane text-6xl md:text-8xl text-gray-normal">JOIN THE COMMUNITY</p>
           </Button>
-          <Button url="https://snapshot.org/#/metagamehub.eth" extra>
+          <Button url="https://snapshot.org/#/metagamehub.eth" extra newTab={true}>
             <p className="font-humane text-6xl md:text-8xl text-gray-normal">APPLY FOR GRANTS</p>
           </Button>
-          <Button url="#" extra>
+          <Button url="https://www.spatial.io/s/The-Metaverse-Seminars-62fbbb0dabce1e00010f75c8?share=2349173727968720925" extra newTab={true}>
             <p className="font-humane text-6xl md:text-8xl text-gray-normal">JOIN OUR METAVERSE SEMINARS</p>
           </Button>
         </div>
-
-        <div className="flex justify-center  mt-20 md:mt-36 mx-10">
-          <Link href="https://discord.com/invite/J35NGdPWgq" rel="noopener noreferrer" target='_blank'>
-            <div className="w-auto md:w-[617px] min-h-[120px] md:min-h-[143px] shadow-button rounded-[40px] cursor-pointer flex justify-center items-center">
-              <p className="font-work text-xl font-medium text-gray-normal p-10 text-center">JOIN US TO SHAPE THE FUTURE OF THE OPEN METAVERSE TOGETHER!</p>
-            </div>
-          </Link>
-        </div>
-        
+        <Footer />
       </main>
     </>
   )
