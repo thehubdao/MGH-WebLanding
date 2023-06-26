@@ -16,7 +16,7 @@ export default function Soon() {
           <SocialIcon imageUrl='/icons/medium.png' link='https://medium.com/@THEHUB_DAO' alt='medium link' />
           <SocialIcon imageUrl='/icons/instagram.png' link='https://www.instagram.com/thehub_dao/' alt='instagram link' />
           <SocialIcon imageUrl='/icons/linkedin.png' link='https://www.linkedin.com/company/the-hub-dao/' alt='linkedin link' />
-          <SocialIcon imageUrl='/icons/twitter.png' link='https://twitter.com/THE_HUB_DAO' alt='twitter link' />
+          <SocialIcon imageUrl='/icons/twitter.png' link='https://twitter.com/thehub_dao' alt='twitter link' />
           <SocialIcon imageUrl='/icons/telegram.png' link='https://t.me/thehub_dao' alt='telegram link' />
           <SocialIcon imageUrl='/icons/discord.png' link='https://discord.gg/J35NGdPWgq' alt='discord link' />
           <SocialIcon imageUrl='/icons/ether.png' link='https://etherscan.io/token/0x8765b1a0eb57ca49be7eacd35b24a574d0203656' alt='etherscan link' />
