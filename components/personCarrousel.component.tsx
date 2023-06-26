@@ -16,17 +16,17 @@ interface TeamProps {
 
 interface MembersProps {
     members: TeamProps[]
+    loop: boolean
 }
 
-export default function PersonCarrousel({members}: MembersProps){
+export default function PersonCarrousel({members, loop}: MembersProps){
 
     return (
     <Swiper
       // install Swiper modules
         modules={[A11y]}
-        // spaceBetween={20}
         slidesPerView={1}
-        loop={true}
+        loop={loop? true: false}
         breakpoints={{
           640: {
             slidesPerView: 2,

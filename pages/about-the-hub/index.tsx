@@ -357,8 +357,8 @@ export default function AboutUs() {
         </div>
 
         <div className="w-full mt-20">
-          <PersonCarrousel members={team}/>
-          <PersonCarrousel members={team2}/>
+          <PersonCarrousel members={team} loop={true}/>
+          <PersonCarrousel members={team2} loop={true}/>
         </div>
 
         <div className="flex flex-col md:flex-row gap-8 mt-28 items-end">
@@ -373,8 +373,8 @@ export default function AboutUs() {
         </div>
 
         <div className="w-full mt-20">
-            <PersonCarrousel members={advisors}/>
-            <PersonCarrousel members={advisors2}/>
+            <PersonCarrousel members={advisors} loop={false}/>
+            <PersonCarrousel members={advisors2} loop={false}/>
         </div>
         
         <div className="flex justify-center mt-32 lg:mt-52">

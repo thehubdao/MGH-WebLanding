@@ -15,7 +15,7 @@ export default function Tools() {
 
         <div className="flex flex-col xl:flex-row gap-8">
           <div className=" w-full xl:w-3/4 pl-10 lg:pl-40">
-            <h1 className="font-neue text-7xl md:text-9xl xl:text-[150px] text-gray-normal font-bold">THE HUB<br />PLATFORM</h1>
+            <h1 className="font-neue text-5xl sm:text-7xl md:text-9xl xl:text-[150px] text-gray-normal font-bold">THE HUB<br />PLATFORM</h1>
           </div>
           <div className=" w-full xl:w-1/4 pr-10 lg:pr-36 text-end">
             <h1 className="font-neue text-4xl text-gray-hubdao font-bold mt-11">THE HUB<br />DAO</h1>
