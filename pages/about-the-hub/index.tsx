@@ -570,32 +570,46 @@ export default function AboutUs() {
         </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-32 mx-6 xl:mx-12 place-items-center'>
-          <IconBox big={true}>
-              <Image src={'/investors/investors-1.png'} alt={'polygon'} width={210} height={92} className='' />
-          </IconBox>
-          <IconBox big={true}>
-              <Image src={'/investors/investors-2.png'} alt={'ocean'} width={210} height={92} className='' />
-          </IconBox>
+          <Link href="https://polygonscan.com/" target="_blank">
+            <IconBox big={true}>
+                <Image src={'/investors/investors-1.png'} alt={'polygon'} width={210} height={92} className='' />
+            </IconBox>
+          </Link>
+          <Link href="#" target="_blank">
+            <IconBox big={true}>
+                <Image src={'/investors/investors-2.png'} alt={'ocean'} width={210} height={92} className='' />
+            </IconBox>
+          </Link>
           <Link href="https://www.brinc.io/" target="_blank">
             <IconBox big={true}>
                 <Image src={'/investors/investors-3.png'} alt={'brinc'} width={210} height={92} className='' />
             </IconBox>
           </Link>
-          <IconBox big={true}>
-              <Image src={'/investors/investors-4.png'} alt={'sandbox'} width={210} height={92} className='' />
-          </IconBox>
-          <IconBox big={true}>
-              <Image src={'/investors/investors-5.png'} alt={'xvetures'} width={210} height={92} className='' />
-          </IconBox>
-          <IconBox big={true}>
-              <Image src={'/investors/investors-6.png'} alt={'blockchain founders group'} width={210} height={92} className='' />
-          </IconBox>
-          <IconBox big={true}>
-              <Image src={'/investors/investors-7.png'} alt={'polaris'} width={210} height={92} className='' />
-          </IconBox>
-          <IconBox big={true}>
-              <Image src={'/investors/investors-8.png'} alt={'hashmesh labs'} width={210} height={92} className='' />
-          </IconBox> 
+          <Link href="https://www.sandbox.game/en/" target="_blank">
+            <IconBox big={true}>
+                <Image src={'/investors/investors-4.png'} alt={'sandbox'} width={210} height={92} className='' />
+            </IconBox>
+          </Link>
+          <Link href="#" target="_blank">
+            <IconBox big={true}>
+                <Image src={'/investors/investors-5.png'} alt={'xvetures'} width={210} height={92} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://blockchain-founders.io/" target="_blank">
+            <IconBox big={true}>
+                <Image src={'/investors/investors-6.png'} alt={'blockchain founders group'} width={210} height={92} className='' />
+              </IconBox>
+          </Link>
+          <Link href="#" target="_blank">
+            <IconBox big={true}>
+                <Image src={'/investors/investors-7.png'} alt={'polaris'} width={210} height={92} className='' />
+            </IconBox>
+          </Link>
+          <Link href="#" target="_blank">
+            <IconBox big={true}>
+                <Image src={'/investors/investors-8.png'} alt={'hashmesh labs'} width={210} height={92} className='' />
+            </IconBox> 
+          </Link>
         </div>
 
         <div className="flex flex-col md:flex-row gap-8 mt-72 items-end">
