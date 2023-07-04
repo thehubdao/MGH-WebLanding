@@ -115,7 +115,7 @@ export default function Home() {
             <Card imageUrl='/cards/3.png' floatImageUrl='/cards/float/3.png' url='/about-the-hub'>
               <div className='text-gray-normal'>
                 <h2 className='font-poppins text-xl'>ABOUT THE HUB</h2>
-                <p className='text-sm pt-1 font-semibold leading-none'>Documentation</p>
+                <p className='text-sm pt-1 font-semibold leading-none'>Learn about the core team and THE HUB ecosytem</p>
               </div>
             </Card>
             <Card imageUrl='/cards/4.png' floatImageUrl='/cards/float/4.png' url='/join-us'>
