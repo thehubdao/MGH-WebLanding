@@ -18,7 +18,6 @@ export default function Footer() {
             <SocialIcon imageUrl='/icons/twitter.png' link='https://twitter.com/thehub_dao' alt='twitter link' />
             <SocialIcon imageUrl='/icons/telegram.png' link='https://t.me/thehub_dao' alt='telegram link' />
             <SocialIcon imageUrl='/icons/discord.png' link='https://discord.gg/J35NGdPWgq' alt='discord link' />
-            <SocialIcon imageUrl='/icons/ether.png' link='https://etherscan.io/token/0x8765b1a0eb57ca49be7eacd35b24a574d0203656' alt='etherscan link' />
             <SocialIcon imageUrl='/icons/email.png' link='mailto:info@thedac.info' alt='The Hub DAO email' />
           </div>
         </div>
@@ -26,33 +25,25 @@ export default function Footer() {
         <div className='w-5/6 xl:w-2/4 flex justify-around xl:items-center pt-20 xl:px-40 xl:pt-0 text-gray-normal'>
           <div>
             <Link href='/'>
-              <p className='text-xl block'>Home</p>
+              <p className='text-xl my-3 block'>Home</p>
             </Link>
-            <Link href='/soon'>
-              <p className='text-xl'>Treasury</p>
+            <Link href='https://github.com/metagamehub' target='_blank'>
+              <p className='text-xl my-3'>GitHub</p>
             </Link>
-            <Link href='/soon'>
-              <p className='text-xl'>Tools</p>
-            </Link>
-            <Link href='/soon'>
-              <p className='text-xl'>Token</p>
-            </Link>
-            <Link href='/soon'>
-              <p className='text-xl'>Contributors</p>
-            </Link>
-            <Link href='/soon'>
-              <p className='text-xl'>Contribute</p>
+            <Link href='https://docs.thehubdao.xyz/' target='_blank'>
+              <p className='text-xl my-3'>Learn more</p>
             </Link>
           </div>
           <div className='text-right xl:text-left'>
-            <a href="https://app.thehubdao.xyz/metaverseexplorer" target='_blank' rel='noreferrer' className='text-xl block'>MGH dApp</a>
-            <a href="https://discord.gg/J35NGdPWgq" target='_blank' rel='noreferrer' className='text-xl block'>Community</a>
-            <a href="https://snapshot.org/#/metagamehub.eth" target='_blank' rel='noreferrer' className='text-xl block'>Voting</a>
-            <a href="https://docs.thehubdao.xyz/" target='_blank' rel='noreferrer' className='text-xl block'>Learn more</a>
-            <Link href='/soon'>
-              <p className='text-xl block'>FAQ</p>
+            <Link href='https://discord.gg/J35NGdPWgq' target='_blank'>
+              <p className='text-xl my-3'>Community</p>
             </Link>
-            <a href="https://github.com/metagamehub" target='_blank' rel='noreferrer' className='text-xl block'>GitHub</a>
+            <Link href='/soon'>
+              <p className='text-xl my-3'>The Hub App</p>
+            </Link>
+            <Link href='https://snapshot.org/#/metagamehub.eth' target='_blank'>
+              <p className='text-xl my-3'>Governance</p>
+            </Link>
           </div>
         </div>
       </div>

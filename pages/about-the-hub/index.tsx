@@ -382,114 +382,186 @@ export default function AboutUs() {
         </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-6 gap-4 mt-32 mx-6 xl:mx-12 place-items-center'>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-183.png'} alt={'sandbox'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-184.png'} alt={'decentraland'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-185.png'} alt={'somnium space'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-186.png'} alt={'chainlink'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-187.png'} alt={'fitchin'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-188.png'} alt={'boson protocol'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-189.png'} alt={'polygon'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-190.png'} alt={'aws'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-191.png'} alt={'cryptoticker'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-192.png'} alt={'sophos'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-193.png'} alt={'pwc'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-194.png'} alt={'pangea'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-195.png'} alt={'ey'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-196.png'} alt={'ocean'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-197.png'} alt={'viio'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-198.png'} alt={'revolve'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-199.png'} alt={'etherum tower'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-200.png'} alt={'blockchain founders gropu'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-201.png'} alt={'pax.world'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-202.png'} alt={'venly'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-203.png'} alt={'xone'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-204.png'} alt={'zharta'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-205.png'} alt={'bonuz'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-206.png'} alt={'moon bash'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-207.png'} alt={'nrverse'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-208.png'} alt={'s5'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-209.png'} alt={'bga'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-210.png'} alt={'picipo'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-211.png'} alt={'adshares'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-212.png'} alt={'parcel'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-213.png'} alt={'fh aachen'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-214.png'} alt={'detecon'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-215.png'} alt={'frankfurt school'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-216.png'} alt={'unal'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-217.png'} alt={'pennsylvania state university'} width={144} height={33} className='' />
-          </IconBox>
-          <IconBox big={false}>
-              <Image src={'/partners/Group-218.png'} alt={'wemeta'} width={144} height={33} className='' />
-          </IconBox>
+          <Link href="https://www.sandbox.game/en/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-183.png'} alt={'sandbox'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://decentraland.org/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-184.png'} alt={'decentraland'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://www.somniumspace.com/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-185.png'} alt={'somnium space'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://chain.link/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-186.png'} alt={'chainlink'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://fitchin.gg/en" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-187.png'} alt={'fitchin'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://www.bosonprotocol.io/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-188.png'} alt={'boson protocol'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://polygonscan.com/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-189.png'} alt={'polygon'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://aws.amazon.com/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-190.png'} alt={'aws'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://cryptoticker.io/en/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-191.png'} alt={'cryptoticker'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://www.sophos.com/en-us" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-192.png'} alt={'sophos'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://www.pwc.com/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-193.png'} alt={'pwc'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="#" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-194.png'} alt={'pangea'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://www.ey.com/en_us" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-195.png'} alt={'ey'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="#" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-196.png'} alt={'ocean'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://www.viio.me/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-197.png'} alt={'viio'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://revolvegames.io/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-198.png'} alt={'revolve'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://whitepaper.ethereumtowers.com/ethereum-towers" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-199.png'} alt={'etherum tower'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://blockchain-founders.io/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-200.png'} alt={'blockchain founders group'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://pax.world/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-201.png'} alt={'pax.world'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://www.venly.io/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-202.png'} alt={'venly'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://xone.gg/#/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-203.png'} alt={'xone'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://www.zharta.io/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-204.png'} alt={'zharta'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://bonuz.market/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-205.png'} alt={'bonuz'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://www.moonbash.io/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-206.png'} alt={'moon bash'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://www.nrverse.io/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-207.png'} alt={'nrverse'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://sportfive.com/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-208.png'} alt={'sportfive'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://www.blockchaingamealliance.org/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-209.png'} alt={'blockchain game alliance'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://app.picipo.io/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-210.png'} alt={'picipo'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://adshares.net/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-211.png'} alt={'adshares'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="#" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-212.png'} alt={'parcel'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://www.fh-aachen.de/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-213.png'} alt={'fh aachen'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://www.detecon.com/en/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-214.png'} alt={'detecon'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://www.frankfurt-school.de/home" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-215.png'} alt={'frankfurt school'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://unal.edu.co/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-216.png'} alt={'unal'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://www.psu.edu/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-217.png'} alt={'pennsylvania state university'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://wemeta.world/" target="_blank">
+            <IconBox big={false}>
+                <Image src={'/partners/Group-218.png'} alt={'wemeta'} width={144} height={33} className='' />
+            </IconBox>
+          </Link>
 
         </div>
 
@@ -498,30 +570,46 @@ export default function AboutUs() {
         </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-32 mx-6 xl:mx-12 place-items-center'>
-          <IconBox big={true}>
-              <Image src={'/investors/investors-1.png'} alt={'polygon'} width={210} height={92} className='' />
-          </IconBox>
-          <IconBox big={true}>
-              <Image src={'/investors/investors-2.png'} alt={'ocean'} width={210} height={92} className='' />
-          </IconBox>
-          <IconBox big={true}>
-              <Image src={'/investors/investors-3.png'} alt={'brinc'} width={210} height={92} className='' />
-          </IconBox>
-          <IconBox big={true}>
-              <Image src={'/investors/investors-4.png'} alt={'sandbox'} width={210} height={92} className='' />
-          </IconBox>
-          <IconBox big={true}>
-              <Image src={'/investors/investors-5.png'} alt={'xvetures'} width={210} height={92} className='' />
-          </IconBox>
-          <IconBox big={true}>
-              <Image src={'/investors/investors-6.png'} alt={'blockchain founders group'} width={210} height={92} className='' />
-          </IconBox>
-          <IconBox big={true}>
-              <Image src={'/investors/investors-7.png'} alt={'polaris'} width={210} height={92} className='' />
-          </IconBox>
-          <IconBox big={true}>
-              <Image src={'/investors/investors-8.png'} alt={'hashmesh labs'} width={210} height={92} className='' />
-          </IconBox> 
+          <Link href="https://polygonscan.com/" target="_blank">
+            <IconBox big={true}>
+                <Image src={'/investors/investors-1.png'} alt={'polygon'} width={210} height={92} className='' />
+            </IconBox>
+          </Link>
+          <Link href="#" target="_blank">
+            <IconBox big={true}>
+                <Image src={'/investors/investors-2.png'} alt={'ocean'} width={210} height={92} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://www.brinc.io/" target="_blank">
+            <IconBox big={true}>
+                <Image src={'/investors/investors-3.png'} alt={'brinc'} width={210} height={92} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://www.sandbox.game/en/" target="_blank">
+            <IconBox big={true}>
+                <Image src={'/investors/investors-4.png'} alt={'sandbox'} width={210} height={92} className='' />
+            </IconBox>
+          </Link>
+          <Link href="#" target="_blank">
+            <IconBox big={true}>
+                <Image src={'/investors/investors-5.png'} alt={'xvetures'} width={210} height={92} className='' />
+            </IconBox>
+          </Link>
+          <Link href="https://blockchain-founders.io/" target="_blank">
+            <IconBox big={true}>
+                <Image src={'/investors/investors-6.png'} alt={'blockchain founders group'} width={210} height={92} className='' />
+              </IconBox>
+          </Link>
+          <Link href="#" target="_blank">
+            <IconBox big={true}>
+                <Image src={'/investors/investors-7.png'} alt={'polaris'} width={210} height={92} className='' />
+            </IconBox>
+          </Link>
+          <Link href="#" target="_blank">
+            <IconBox big={true}>
+                <Image src={'/investors/investors-8.png'} alt={'hashmesh labs'} width={210} height={92} className='' />
+            </IconBox> 
+          </Link>
         </div>
 
         <div className="flex flex-col md:flex-row gap-8 mt-72 items-end">

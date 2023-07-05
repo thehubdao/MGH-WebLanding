@@ -9,13 +9,13 @@ export default function Invest() {
         <div className="flex flex-col-reverse xl:flex-row gap-16 min-h-screen justify-center items-center">
           <div className="w-full relative  h-[500px]">
             <Image src={'/images/bg-circle.png'} alt={'bg-spaceship'} fill style={{maxWidth: '1046px', maxHeight:'566px'} } className='xl:rounded-r-3xl' />
-            <div className="absolute w-full h-[150%] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4">
+            <div className="absolute w-full h-[200%] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4">
                 <Image src={'/images/spaceship.png'} alt={'spaceship'} fill className='object-contain' />
             </div>
           </div>
           <div className=" w-full mt-14 xl:mt-0">
             <h1 className=" text-7xl md:text-9xl lg:text-[200px] text-gray-normal text-center xl:text-start">INVEST</h1>
-            <p className="font-work font-light  text-lg md:text-[22px] text-center xl:text-start px-4 sm:px-0">Navigate through the metaverse and find the most <br className="hidden sm:inline-block"/> valuable LANDs across virtual worlds</p>
+            <p className="font-work font-light  text-lg md:text-[22px] text-center xl:text-start px-4 sm:px-0">Navigate through the Metaverse and find the most <br className="hidden sm:inline-block"/> valuable LANDs across virtual worlds</p>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-12 mt-12 mx-8 xl:mx-0 xl:mr-20'>
                 <Box>
                     <div className='flex justify-between items-center min-h-[115px]'>

@@ -60,7 +60,7 @@ export default function Experience() {
           </div>
           <div className="w-full relative h-[800px] mt-20 xl:mt-0">
             <Image src={'/images/bg-avatar.png'} alt={'bg-avatar'} fill style={{maxWidth: '1046px', maxHeight:'566px'} } className='xl:rounded-l-3xl' />
-            <div className="absolute w-full h-[140%] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4">
+            <div className="absolute w-full h-[130%] top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4">
                 <Image src={'/images/avatar.png'} alt={'avatar'} fill  className='object-cover' />
             </div>
           </div>
