@@ -19,7 +19,7 @@ export default function Tools() {
           </div>
           <div className=" w-full xl:w-1/4 pr-10 lg:pr-36 text-end">
             <h1 className="font-neue text-4xl text-gray-hubdao font-bold mt-11">THE HUB<br />DAO</h1>
-            <p className="font-neue text-4xl text-gray-normal font-bold">PLATAFORM</p>
+            <p className="font-neue text-4xl text-gray-normal font-bold">PLATFORM</p>
           </div>
         </div>
 
