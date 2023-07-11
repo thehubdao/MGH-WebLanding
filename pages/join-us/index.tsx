@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Button from "../../components/button.component";
 import Footer from "../../components/footer.component";
+import ScrollTitleUI from "../../components/scrollTitle.component";
 
 export default function AboutUs() {
   return (
@@ -31,14 +32,7 @@ export default function AboutUs() {
         </div>
 
         <div className="relative w-full py-24">
-          <div className="w-full overflow-hidden">
-            <p className="font-humane text-8xl md:text-[200px] lg:text-[310px] text-gray-light whitespace-nowrap leading-[0.8] opacity-50 -translate-x-1/4">INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE</p>
-            <p className="font-humane text-8xl md:text-[200px] lg:text-[310px] text-gray-light whitespace-nowrap leading-[0.8] opacity-50 -translate-x-2/5">INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE</p>
-            <p className="font-humane text-8xl md:text-[200px] lg:text-[310px] text-gray-light whitespace-nowrap leading-[0.8] opacity-50 -translate-x-[15%]">INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE</p>
-          </div>
-          <Image src={'/images/bunny-2.png'} alt={'bunny'} width={2340} height={1338} className='hidden lg:block absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-[52%]' />
-          <Image src={'/images/bunny-2.png'} alt={'bunny'} width={678} height={616} className='hidden md:block lg:hidden absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-[52%]' />
-          <Image src={'/images/bunny-2.png'} alt={'bunny'} width={340} height={309} className='md:hidden absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-[52%]' />
+          <ScrollTitleUI title={['INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE']} imageUrl='/images/bunny-2.png'/>
         </div>
         <div>
           <h2 className='text-center text-2xl text-gray-normal font-medium py-32 tracking-[4.4px]'>JOIN US TO SHAPE THE FUTURE OF THE OPEN METAVERSE TOGETHER!</h2>
