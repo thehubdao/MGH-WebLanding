@@ -46,7 +46,7 @@ export default function Build() {
                     <div className='flex justify-between items-center min-h-[115px]'>
                         <div className='pl-6 mr-5'>
                             <h1 className='font-work text-sm font-bold text-gray-normal leading-5'>BUILDER MARKETPLACE</h1>
-                            <p className='font-work text-xs font-light text-gray-normal leading-4'>The Marketplace for interoperable <br className="hidden 2xl:inline-block"/> Metaverse Scneses and Assets</p>
+                            <p className='font-work text-xs font-light text-gray-normal leading-4'>The Marketplace for interoperable <br className="hidden 2xl:inline-block"/> Metaverse Scenes and Assets</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
                             <Link href="https://www.metahub.shop/" target='_blank'>
