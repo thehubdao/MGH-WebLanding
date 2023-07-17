@@ -58,6 +58,7 @@ export default function Home() {
         <title>THE HUB DAO</title>
         <meta name="description" content="The Hub DAO is your ultimate destination for all things metaverse. As a one stop shop for investing, building, and experiencing virtual worlds, we offer a wide range of tools and resources to help you get the most out of your metaverse journey. From price estimation tools and development editors to immersive experiences and community-driven decision-making, we have everything you need to take your virtual adventures to the next level. Join The Hub DAO community today and start exploring the infinite possibilities of the metaverse!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image" content="/thehub.svg" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* landing */}
