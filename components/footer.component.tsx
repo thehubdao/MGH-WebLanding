@@ -39,7 +39,7 @@ export default function Footer() {
               <p className='text-xl my-3'>Community</p>
             </Link>
             <Link href='/soon'>
-              <p className='text-xl my-3'>The Hub App</p>
+              <p className='text-xl my-3'>THE HUBB App</p>
             </Link>
             <Link href='https://snapshot.org/#/metagamehub.eth' target='_blank'>
               <p className='text-xl my-3'>Governance</p>
