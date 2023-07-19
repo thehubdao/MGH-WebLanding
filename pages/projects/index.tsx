@@ -3,14 +3,14 @@ import Image from "next/image";
 import Footer from "../../components/footer.component";
 import Card from "../../components/card.component";
 import { ProjectsData } from "../../data/projects.data";
-import { CardForm } from "../../enums/common.enum";
+import { CardForm, PageLocation } from "../../enums/common.enum";
 
 export default function Projects() {
   
   return (
     <>
       <div className="absolute w-12 h-12 top-8 left-8">
-        <Link href="/">
+        <Link href={PageLocation.Home}>
           <Image src='/icons/mgh.svg' fill={true} alt="MetaGameHub logo" />
         </Link>
       </div>
@@ -53,7 +53,7 @@ export default function Projects() {
         </div>
 
         <div className="flex justify-center my-28 md:my-52 xl:my-72 ">
-          <Link href="/" rel="noopener noreferrer">
+          <Link href={PageLocation.Home} rel="noopener noreferrer">
             <div className="w-52 sm:w-[333px] min-h-[85px] shadow-relief-32 hover:shadow-relief-12 rounded-3xl cursor-pointer flex justify-center items-center">
               <p className="font-work text-sm font-medium text-lm_icons text-center">BACK TO THE HUB</p>
             </div>

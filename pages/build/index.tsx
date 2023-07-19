@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Footer from "../../components/footer.component";
 import Box from "../../components/box.component";
+import { PageLocation } from "../../enums/common.enum";
 
 export default function Build() {
   return (
@@ -34,7 +35,7 @@ export default function Build() {
                             <p className='font-work text-xs font-light text-lm_icons leading-4'>Co-create Metaverse Experiences <br className="hidden 2xl:inline-block"/> with us</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
-                            <Link href="/projects">
+                            <Link href={PageLocation.Projects}>
                               <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px] group">
                                   <Image src={'/icons/Vector.svg'} alt={'Vector'}  width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}} className="scale-50 rotate-45 group-hover:scale-100 group-hover:rotate-0 transition-all duration-300 "/>
                               </div>

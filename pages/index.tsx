@@ -81,7 +81,7 @@ export default function Home() {
                 <div key={index}>
                   <Card imageUrl={card.imageUrl} floatImageUrl={card.floatImageUrl} altImages={card.title} url={card.url} newTab={card.newTab} form={CardForm.Horizontal}>
                     <div className='text-lm_icons'>
-                      <h2 className='font-poppins text-xl'>{card.title}</h2>
+                      <h2 className='font-poppins text-xl uppercase'>{card.title}</h2>
                       <p className='text-sm pt-1 font-semibold leading-none' dangerouslySetInnerHTML={{ __html: card.description }}></p>
                     </div>
                   </Card>
