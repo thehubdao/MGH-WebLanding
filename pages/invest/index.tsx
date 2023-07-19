@@ -14,14 +14,14 @@ export default function Invest() {
             </div>
           </div>
           <div className=" w-full mt-14 xl:mt-0">
-            <h1 className=" text-7xl md:text-9xl lg:text-[200px] text-gray-normal text-center xl:text-start">INVEST</h1>
+            <h1 className=" text-7xl md:text-9xl lg:text-[200px] text-lm_icons text-center xl:text-start">INVEST</h1>
             <p className="font-work font-light  text-lg md:text-[22px] text-center xl:text-start px-4 sm:px-0">Navigate through the Metaverse and find the most <br className="hidden sm:inline-block"/> valuable LANDs across virtual worlds</p>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-12 mt-12 mx-8 xl:mx-0 xl:mr-20'>
                 <Box>
                     <div className='flex justify-between items-center min-h-[115px]'>
                         <div className='pl-6 mr-5'>
-                            <h1 className='font-work text-sm font-bold text-gray-normal leading-5'>METAVERSE EXPLORER</h1>
-                            <p className='font-work text-xs font-light text-gray-normal leading-4'>Save time by finding the LANDs <br className="hidden 2xl:inline-block"/> and assets you need in one app</p>
+                            <h1 className='font-work text-sm font-bold text-lm_icons leading-5'>METAVERSE EXPLORER</h1>
+                            <p className='font-work text-xs font-light text-lm_icons leading-4'>Save time by finding the LANDs <br className="hidden 2xl:inline-block"/> and assets you need in one app</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
                           <Link href="https://app.thehubdao.xyz/metaverseexplorer" target='_blank'>
@@ -35,8 +35,8 @@ export default function Invest() {
                 <Box>
                     <div className='flex justify-between items-center min-h-[115px]'>
                         <div className='pl-6 mr-5'>
-                            <h1 className='font-work text-sm font-bold text-gray-normal leading-5'>METAVERSE API</h1>
-                            <p className='font-work text-xs font-light text-gray-normal leading-4'>Integrate our price estimation <br className="hidden 2xl:inline-block"/> data into your platform</p>
+                            <h1 className='font-work text-sm font-bold text-lm_icons leading-5'>METAVERSE API</h1>
+                            <p className='font-work text-xs font-light text-lm_icons leading-4'>Integrate our price estimation <br className="hidden 2xl:inline-block"/> data into your platform</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
                             <Link href="/soon">
@@ -50,8 +50,8 @@ export default function Invest() {
                 <Box>
                     <div className='flex justify-between items-center min-h-[115px]'>
                         <div className='pl-6 mr-5'>
-                            <h1 className='font-work text-sm font-bold text-gray-normal leading-5'>METAVERSE DATASETS</h1>
-                            <p className='font-work text-xs font-light text-gray-normal leading-4 '>Access curated metaverse datasets <br className="hidden 2xl:inline-block"/> to fuel your research in the <br className="hidden 2xl:inline-block"/> dynamic world of the Metaverse.</p>
+                            <h1 className='font-work text-sm font-bold text-lm_icons leading-5'>METAVERSE DATASETS</h1>
+                            <p className='font-work text-xs font-light text-lm_icons leading-4 '>Access curated metaverse datasets <br className="hidden 2xl:inline-block"/> to fuel your research in the <br className="hidden 2xl:inline-block"/> dynamic world of the Metaverse.</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
                             <Link href="https://market.oceanprotocol.com/asset/did:op:053982d25efa70507165b513a00bdbe6b3a5aeb47d212dcb9cf942cac377db1e" target='_blank'>
@@ -65,8 +65,8 @@ export default function Invest() {
                 <Box>
                     <div className='flex justify-between items-center min-h-[115px]'>
                         <div className='pl-6 mr-5'>
-                            <h1 className='font-work text-sm font-bold text-gray-normal leading-5'>METAVERSE ORACLE</h1>
-                            <p className='font-work text-xs font-light text-gray-normal leading-4'>Integrate our price estimation <br className="hidden 2xl:inline-block"/> data into your platform</p>
+                            <h1 className='font-work text-sm font-bold text-lm_icons leading-5'>METAVERSE ORACLE</h1>
+                            <p className='font-work text-xs font-light text-lm_icons leading-4'>Integrate our price estimation <br className="hidden 2xl:inline-block"/> data into your platform</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
                             <Link href="https://market.link/nodes/Metaverse%20Valuation%20Node/integrations" target='_blank'>

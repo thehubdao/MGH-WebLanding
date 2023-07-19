@@ -247,18 +247,18 @@ export default function AboutUs() {
 
         <div className="flex flex-col xl:flex-row mb-0 xl:mb-48 gap-8">
           <div className=" w-full xl:w-3/4 pl-10 lg:pl-40">
-            <h1 className="font-neue text-7xl md:text-9xl xl:text-[243px] text-gray-normal font-bold">THE HUB<br />DAO</h1>
+            <h1 className="font-neue text-7xl md:text-9xl xl:text-[243px] text-lm_icons font-bold">THE HUB<br />DAO</h1>
           </div>
           <div className=" w-full xl:w-1/4 pr-10 lg:pr-36 text-end">
-            <h1 className="font-neue text-4xl text-gray-hubdao font-bold mt-11">THE HUB<br />DAO</h1>
-            <p className="font-neue text-4xl text-gray-normal font-bold">ABOUT</p>
+            <h1 className="font-neue text-4xl text-lm_text_gray font-bold mt-11">THE HUB<br />DAO</h1>
+            <p className="font-neue text-4xl text-lm_icons font-bold">ABOUT</p>
           </div>
         </div>
 
         <div className="px-10 lg:px-36 w-full text-end flex justify-end relative">
           <div className="row xl:absolute xl:-top-[320px]">
             <div className="w-full h-[2px] mb-7">
-              <div className="w-44 h-[2px] bg-gray-normal float-right"></div>
+              <div className="w-44 h-[2px] bg-lm_icons float-right"></div>
             </div>
             <p className="sm:w-[530px] font-light font-work text-xl">Welcome to THE HUB DAO, the ultimate platform <br className="hidden sm:inline-block" /> for anyone looking to invest, build, and experience <br className="hidden sm:inline-block" /> the metaverse. <br className="hidden sm:inline-block" /> Our platform and resources have helped <br className="hidden sm:inline-block" /> thousands of investors, builders, brands, and <br className="hidden sm:inline-block" /> creators save money and time while navigate the <br className="hidden sm:inline-block" /> ever-evolving metaverse. <br className="hidden sm:inline-block" /> Whether you&apos;re a seasoned virtual worlds veteran <br className="hidden sm:inline-block" /> or just getting started, THE HUB is the one-stop-<br className="hidden sm:inline-block" /> shop for everything you need to have a seamless <br className="hidden sm:inline-block" /> metaverse journey. Join us and let&apos;s shape the <br className="hidden sm:inline-block" /> future of the internet together!</p>
           </div>
@@ -271,19 +271,19 @@ export default function AboutUs() {
         <div className="flex justify-center xl:mt-48 ">
           <Link href="https://docs.thehubdao.xyz/" rel="noopener noreferrer" target='_blank'>
             <div className="w-auto md:w-[617px] min-h-[120px] md:min-h-[143px] shadow-button rounded-[40px] cursor-pointer flex justify-center items-center">
-              <p className="font-work text-xl font-medium text-gray-normal px-10 text-center">LEARN MORE ABOUT THE HUB</p>
+              <p className="font-work text-xl font-medium text-lm_icons px-10 text-center">LEARN MORE ABOUT THE HUB</p>
             </div>
           </Link>
         </div>
 
         <div className="flex flex-col md:flex-row gap-8 mt-36 items-end">
           <div className=" w-full md:w-2/4 pl-10 lg:pl-32">
-            <h1 className="font-neue text-4xl text-gray-hubdao font-bold">THE HUB<br />DAO</h1>
-            <p className="font-neue text-4xl text-gray-normal font-bold">CORE TEAM</p>
+            <h1 className="font-neue text-4xl text-lm_text_gray font-bold">THE HUB<br />DAO</h1>
+            <p className="font-neue text-4xl text-lm_icons font-bold">CORE TEAM</p>
           </div>
           <div className=" w-full md:w-2/4 pr-10 lg:pr-32 text-end">
-            <h1 className="font-neue text-4xl text-gray-hubdao font-bold">NEXT UP</h1>
-            <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-gray-normal font-bold">MEET <br /> THE TEAM</h1>
+            <h1 className="font-neue text-4xl text-lm_text_gray font-bold">NEXT UP</h1>
+            <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">MEET <br /> THE TEAM</h1>
           </div>
         </div>
 
@@ -294,12 +294,12 @@ export default function AboutUs() {
 
         <div className="flex flex-col md:flex-row gap-8 mt-28 items-end">
           <div className=" w-full md:w-2/4 pl-10 lg:pl-24">
-            <h1 className="font-neue text-4xl text-gray-hubdao font-bold">NEXT UP</h1>
-            <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-gray-normal font-bold">OUR <br /> ADVISORS</h1>
+            <h1 className="font-neue text-4xl text-lm_text_gray font-bold">NEXT UP</h1>
+            <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">OUR <br /> ADVISORS</h1>
           </div>
           <div className=" w-full md:w-2/4 pr-10 lg:pr-20 text-end mb-16">
-            <h1 className="font-neue text-4xl text-gray-hubdao font-bold">THE HUB<br />DAO</h1>
-            <p className="font-neue text-4xl text-gray-normal font-bold">CORE ADVISORS</p>
+            <h1 className="font-neue text-4xl text-lm_text_gray font-bold">THE HUB<br />DAO</h1>
+            <p className="font-neue text-4xl text-lm_icons font-bold">CORE ADVISORS</p>
           </div>
         </div>
 
@@ -309,7 +309,7 @@ export default function AboutUs() {
         </div>
 
         <div className="flex justify-center mt-32 lg:mt-52">
-          <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-gray-normal font-bold">PARTNERS</h1>
+          <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">PARTNERS</h1>
         </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-6 gap-4 mt-32 mx-6 xl:mx-12 place-items-center'>
@@ -497,7 +497,7 @@ export default function AboutUs() {
         </div>
 
         <div className="flex justify-center mt-32 lg:mt-52">
-          <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-gray-normal font-bold">INVESTORS</h1>
+          <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">INVESTORS</h1>
         </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-32 mx-6 xl:mx-12 place-items-center'>
@@ -545,7 +545,7 @@ export default function AboutUs() {
 
         <div className="flex flex-col md:flex-row gap-8 mt-72 items-end">
           <div className=" w-full pr-10 lg:pr-32 text-end">
-            <h1 className="font-neue text-4xl md:text-6xl xl:text-8xl text-gray-normal font-bold">WHAT <br /> LIES AHEAD?</h1>
+            <h1 className="font-neue text-4xl md:text-6xl xl:text-8xl text-lm_icons font-bold">WHAT <br /> LIES AHEAD?</h1>
           </div>
         </div>
 
