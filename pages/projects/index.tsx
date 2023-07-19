@@ -3,6 +3,7 @@ import Image from "next/image";
 import Footer from "../../components/footer.component";
 import Card from "../../components/card.component";
 import { ProjectsData } from "../../data/projects.data";
+import { CardForm } from "../../enums/common.enum";
 
 export default function Projects() {
   
@@ -35,14 +36,14 @@ export default function Projects() {
           {
             ProjectsData.map((project, index) => (
               <div key={index}>
-                <Card imageUrl={project.imageUrl} floatImageUrl='' url={project.url} isProject={true}>
+                <Card imageUrl={project.imageUrl} altImages={project.tag} url={project.url} form={CardForm.Vertical}>
                   <div className="flex px-5 h-full justify-between items-center">
                     <div>
-                      <Image src={project.metaverseLogo} width={100} height={100} alt={project.alt} className="rounded-full p-3 bg-lm_text_gray" />
+                      <Image src={project.metaverseLogo} width={100} height={100} alt={project.tag} className="rounded-full p-3 bg-lm_text_gray" />
                     </div>
                     <div className="text-end">
-                      <h1 className="font-neue text-sm text-lm_text_gray font-bold uppercase">{project.title}</h1>
-                      <p className="font-neue text-2xl sm:text-4xl text-lm_icons font-bold uppercase" dangerouslySetInnerHTML={{__html: project.subtitle}}></p>
+                      <h1 className="font-neue text-sm text-lm_text_gray font-bold uppercase">{project.tag}</h1>
+                      <p className="font-neue text-2xl sm:text-4xl text-lm_icons font-bold uppercase" dangerouslySetInnerHTML={{__html: project.title}}></p>
                     </div>
                   </div>
                 </Card>

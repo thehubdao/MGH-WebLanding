@@ -1,74 +1,77 @@
-export const ProjectsData: Project[] = [
+import { PageLocation } from "../enums/common.enum";
+import { ProjectInterface } from "../interfaces/data.interface";
+
+export const ProjectsData: ProjectInterface[] = [
   {
     imageUrl: "/projects/project-1.png",
-    url: "/soon",
+    url: PageLocation.Soon,
     metaverseLogo: "/projects/logos/decentraland.svg",
-    alt: "decentraland",
-    title: "headquarter",
-    subtitle: "FITCHIN <br />HOUSE"
+    metaverse: "decentraland",
+    tag: "headquarter",
+    title: "FITCHIN <br />HOUSE"
   },
   {
     imageUrl: "/projects/project-2.png",
-    url: "/soon",
+    url: PageLocation.Soon,
     metaverseLogo: "/projects/logos/sandbox.svg",
-    alt: "sandbox",
-    title: "headquarter",
-    subtitle: "cryptoticker"
+    metaverse: "sandbox",
+    tag: "headquarter",
+    title: "cryptoticker"
   },
   {
     imageUrl: "/projects/project-3.png",
-    url: "/soon",
+    url: PageLocation.Soon,
     metaverseLogo: "/projects/logos/decentraland.svg",
-    alt: "decentraland",
-    title: "gallery",
-    subtitle: "espacio <br />creador"
+    metaverse: "decentraland",
+    tag: "gallery",
+    title: "espacio <br />creador"
   },
   {
     imageUrl: "/projects/project-4.png",
-    url: "/soon",
+    url: PageLocation.Soon,
     metaverseLogo: "/projects/logos/spatial.svg",
-    alt: "spatial",
-    title: "educational hub",
-    subtitle: "ekolance"
+    metaverse: "spatial",
+    tag: "educational hub",
+    title: "ekolance"
   },
   {
     imageUrl: "/projects/project-5.png",
-    url: "/soon",
+    url: PageLocation.Soon,
     metaverseLogo: "/projects/logos/somnium.svg",
-    alt: "somnium space",
-    title: "Experience",
-    subtitle: "Competitive <br />Game Hub"
+    metaverse: "somnium space",
+    tag: "Experience",
+    title: "Competitive <br />Game Hub"
   },
   {
     imageUrl: "/projects/project-6.png",
-    url: "/soon",
+    url: PageLocation.Soon,
     metaverseLogo: "/projects/logos/decentraland.svg",
-    alt: "decentraland",
-    title: "Metaverse Event",
-    subtitle: "Menthol Protocol"
+    metaverse: "decentraland",
+    tag: "Metaverse Event",
+    title: "Menthol Protocol"
   },
   {
     imageUrl: "/projects/project-7.png",
-    url: "/soon",
+    url: PageLocation.Soon,
     metaverseLogo: "/projects/logos/sandbox.svg",
-    alt: "sandbox",
-    title: "Music Experience",
-    subtitle: "Ayo <br />& Teo"
+    metaverse: "sandbox",
+    tag: "Music Experience",
+    title: "Ayo <br />& Teo"
   },
   {
     imageUrl: "/projects/project-8.png",
-    url: "/soon",
+    url: PageLocation.Soon,
     metaverseLogo: "/projects/logos/xone.svg",
-    alt: "xone",
-    title: "Mobile First Experience",
-    subtitle: "METAGAMEHUB"
+    metaverse: "xone",
+    tag: "Mobimetaverse First Experience",
+    title: "METAGAMEHUB"
   },
   {
     imageUrl: "/projects/project-9.png",
-    url: "/soon",
+    url: PageLocation.Soon,
     metaverseLogo: "/projects/logos/spatial.svg",
-    alt: "spatial",
-    title: "HQ",
-    subtitle: "THE HUB"
+    metaverse: "spatial",
+    tag: "HQ",
+    title: "THE HUB"
   },
 ]

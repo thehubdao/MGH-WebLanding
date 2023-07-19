@@ -5,6 +5,8 @@ import Footer from '../components/footer.component';
 import Scene from '../components/scene.component';
 import IconBox from '../components/iconBox.component';
 import Card from '../components/card.component';
+import { CardForm } from '../enums/common.enum';
+import { NavigationCards } from '../data/navigationCards.data';
 
 interface CardLogoProps {
   imageUrl: string,
@@ -14,7 +16,7 @@ interface CardLogoProps {
 
 function CardLogo({ imageUrl, url, newTab = false }: CardLogoProps) {
   return (
-    <Link href={url} rel="noopener noreferrer" target={newTab?'_blank':'_self'}>
+    <Link href={url} rel="noopener noreferrer" target={newTab ? '_blank' : '_self'}>
       <div className='w-[294px] h-[128px] shadow rounded-[40px] border border-white cursor-pointer flex justify-center items-center group'>
         <div className='w-[220px] h-[85px] saturate-0 group-hover:saturate-100 transition-all duration-200'>
           <Image src={imageUrl} width={220} height={85} alt={'card'} priority={true} />
@@ -74,59 +76,47 @@ export default function Home() {
         <div id='hub'>
           <h2 className='text-center text-[35px] text-gray-dark font-light py-32 mt-32 tracking-[3.5px]'>THE HUB provides you with the picks and shovels <br className='hidden lg:inline-block' /> to have a seamless Metaverse journey</h2>
           <div className='flex justify-center flex-wrap gap-y-10 gap-x-56 xl:gap-x-10 2xl:gap-x-16'>
-            <Card imageUrl='/cards/1.png' floatImageUrl='/cards/float/1.png' url='https://app.thehubdao.xyz/metaverseexplorer' newTab={true}>
-              <div className='text-lm_icons'>
-                <h2 className='font-poppins text-xl'>METAVERSE EXPLORER</h2>
-                <p className='text-sm pt-1 font-semibold leading-none'>Browse Virtual Worlds with <br/> unparalleled insights and <br/> simplicity</p>
-              </div>
-            </Card>
-            <Card imageUrl='/cards/2.png' floatImageUrl='/cards/float/2.png' url='/tools'>
-              <div className='text-lm_icons'>
-                <h2 className='font-poppins text-xl'>THE HUB PLATFORM</h2>
-                <p className='text-sm pt-1 font-semibold leading-none'>For a simple Metaverse journey</p>
-              </div>
-            </Card>
-            <Card imageUrl='/cards/3.png' floatImageUrl='/cards/float/3.png' url='/about-the-hub'>
-              <div className='text-lm_icons'>
-                <h2 className='font-poppins text-xl'>ABOUT THE HUB</h2>
-                <p className='text-sm pt-1 font-semibold leading-none'>Learn about the core team and THE HUB ecosytem</p>
-              </div>
-            </Card>
-            <Card imageUrl='/cards/4.png' floatImageUrl='/cards/float/4.png' url='/join-us'>
-              <div className='text-lm_icons'>
-                <h2 className='font-poppins text-xl font-bold'>JOIN US!</h2>
-                <p className='text-sm pt-1 font-semibold leading-none'>Help us shape the future<br/>of the Internet</p>
-              </div>
-            </Card>
+            {
+              NavigationCards.map((card, index) => (
+                <div key={index}>
+                  <Card imageUrl={card.imageUrl} floatImageUrl={card.floatImageUrl} altImages={card.title} url={card.url} newTab={card.newTab} form={CardForm.Horizontal}>
+                    <div className='text-lm_icons'>
+                      <h2 className='font-poppins text-xl'>{card.title}</h2>
+                      <p className='text-sm pt-1 font-semibold leading-none' dangerouslySetInnerHTML={{ __html: card.description }}></p>
+                    </div>
+                  </Card>
+                </div>
+              ))
+            }
           </div>
         </div>
         {/* backed section */}
         <div className='pb-32 mb-32'>
           <h2 className='text-center text-5xl text-gray-dark font-light pb-32 pt-64'>Backed by</h2>
           <div className='flex justify-center flex-wrap gap-6 xl:gap-20'>
-          <IconBox big={true}>
+            <IconBox big={true}>
               <Image src={'/investors/investors-1.png'} alt={'polygon'} width={210} height={92} className='' />
-          </IconBox>
-          <IconBox big={true}>
-            <Image src={'/investors/investors-4.png'} alt={'sandbox'} width={210} height={92} className='' />
-          </IconBox>
-          <IconBox big={true}>
-            <Image src={'/partners/Group-184.png'} alt={'decentraland'} width={210} height={92} className='' />
-          </IconBox>
+            </IconBox>
+            <IconBox big={true}>
+              <Image src={'/investors/investors-4.png'} alt={'sandbox'} width={210} height={92} className='' />
+            </IconBox>
+            <IconBox big={true}>
+              <Image src={'/partners/Group-184.png'} alt={'decentraland'} width={210} height={92} className='' />
+            </IconBox>
             {/* <CardLogo imageUrl='/logos/polygon.png' url='https://polygon.technology/' newTab={true} />
             <CardLogo imageUrl='/logos/sandbox.png' url='https://www.sandbox.game/en/' newTab={true} />
             <CardLogo imageUrl='/logos/decentraland.png' url='https://decentraland.org/' newTab={true} /> */}
           </div>
           <div className='flex justify-center flex-wrap gap-6 xl:gap-20 mt-6 xl:mt-16'>
-          <IconBox big={true}>
-            <Image src={'/investors/investors-3.png'} alt={'brinc'} width={210} height={92} className='' />
-          </IconBox>
-          <IconBox big={true}>
-            <Image src={'/investors/investors-2.png'} alt={'ocean'} width={210} height={92} className='' />
-          </IconBox>
-          <IconBox big={true}>
-            <Image src={'/partners/Group-185.png'} alt={'somnium space'} width={210} height={92} className='' />
-          </IconBox>
+            <IconBox big={true}>
+              <Image src={'/investors/investors-3.png'} alt={'brinc'} width={210} height={92} className='' />
+            </IconBox>
+            <IconBox big={true}>
+              <Image src={'/investors/investors-2.png'} alt={'ocean'} width={210} height={92} className='' />
+            </IconBox>
+            <IconBox big={true}>
+              <Image src={'/partners/Group-185.png'} alt={'somnium space'} width={210} height={92} className='' />
+            </IconBox>
             {/* <CardLogo imageUrl='/logos/brinc.png' url='https://www.brinc.io/' newTab={true} />
             <CardLogo imageUrl='/logos/ocean.png' url='https://oceanprotocol.com/' newTab={true} /> */}
           </div>
