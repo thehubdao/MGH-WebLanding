@@ -4,39 +4,12 @@ import Link from 'next/link'
 import Footer from '../components/footer.component';
 import Scene from '../components/scene.component';
 import IconBox from '../components/iconBox.component';
-
-interface CardProps {
-  imageUrl: string,
-  floatImageUrl: string,
-  children: string | JSX.Element,
-  url: string,
-  newTab?: boolean
-}
+import Card from '../components/card.component';
 
 interface CardLogoProps {
   imageUrl: string,
   url: string,
   newTab?: boolean
-}
-
-function Card({ imageUrl, floatImageUrl, children, url, newTab = false }: CardProps) {
-  return (
-    <Link href={url} rel="noopener noreferrer" target={newTab?'_blank':'_self'}>
-      <div className='w-[280px] shadow rounded-[40px] border border-white cursor-pointer group'>
-        <div className='relative w-full h-[434px]'>
-          <Image src={imageUrl} fill={true} alt={'card'} priority={true} />
-          <div className='absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-[45%] w-[320px] h-[320px]  group-hover:scale-105 transition-transform duration-200'>
-            <Image src={floatImageUrl} fill={true} alt={'card'} priority={true} />
-          </div>
-        </div>
-        <div className='h-[115px] flex justify-center items-center'>
-          <div className='text-center leading-none group-hover:scale-105 transition-transform duration-200'>
-            {children}
-          </div>
-        </div>
-      </div>
-    </Link>
-  )
 }
 
 function CardLogo({ imageUrl, url, newTab = false }: CardLogoProps) {
@@ -74,19 +47,19 @@ export default function Home() {
           <div className='flex flex-col justify-center items-center relative h-fit'>
             <div className='hidden absolute xl:flex flex-col items-end top-12 right-[102%] cursor-pointer group'>
               <div className='w-6 h-[2px] bg-white mb-2 group-hover:w-4/5 transition-all duration-500'></div>
-              <div className='leading-none text-right text-lg font-light group-hover:font-semibold group-hover:bg-white group-hover:text-gray-normal group-hover:p-4 transition-all duration-300'>
+              <div className='leading-none text-right text-lg font-light group-hover:font-semibold group-hover:bg-white group-hover:text-lm_icons group-hover:p-4 transition-all duration-300'>
                 <a href="https://app.thehubdao.xyz/metaverseexplorer" target='_blank' rel='noreferrer' className='block'>FIND<br />UNDERVALUED<br />LANDS</a>
               </div>
             </div>
             <div className='hidden absolute xl:flex flex-col bottom-2/5 left-[102%] cursor-pointer w-48 group'>
               <div className='w-6 h-[2px] bg-white mb-2 group-hover:w-4/5 transition-all duration-500'></div>
-              <div className='leading-none text-lg font-light group-hover:font-semibold group-hover:bg-white group-hover:text-gray-normal group-hover:p-4 transition-all duration-300'>
+              <div className='leading-none text-lg font-light group-hover:font-semibold group-hover:bg-white group-hover:text-lm_icons group-hover:p-4 transition-all duration-300'>
                 <a href="https://dcl-edit.com/" target='_blank' rel='noreferrer' className='block'>BUILD ON ANY VIRTUAL WORLD</a>
               </div>
             </div>
             <div className='hidden absolute xl:flex items-center top-full -translate-y-[46px] left-0 cursor-pointer group'>
               <div className='w-[3px] h-6 bg-white mr-2 group-hover:h-10 transition-all duration-300'></div>
-              <div className='leading-none text-lg font-light group-hover:font-semibold group-hover:bg-white group-hover:text-gray-normal group-hover:p-4 transition-all duration-300'>
+              <div className='leading-none text-lg font-light group-hover:font-semibold group-hover:bg-white group-hover:text-lm_icons group-hover:p-4 transition-all duration-300'>
                 <a href="https://linktr.ee/metagamehub.experiences" target='_blank' rel='noreferrer' className='block'>EXPERIENCE THE METAVERSE</a>
               </div>
             </div>
@@ -102,25 +75,25 @@ export default function Home() {
           <h2 className='text-center text-[35px] text-gray-dark font-light py-32 mt-32 tracking-[3.5px]'>THE HUB provides you with the picks and shovels <br className='hidden lg:inline-block' /> to have a seamless Metaverse journey</h2>
           <div className='flex justify-center flex-wrap gap-y-10 gap-x-56 xl:gap-x-10 2xl:gap-x-16'>
             <Card imageUrl='/cards/1.png' floatImageUrl='/cards/float/1.png' url='https://app.thehubdao.xyz/metaverseexplorer' newTab={true}>
-              <div className='text-gray-normal'>
+              <div className='text-lm_icons'>
                 <h2 className='font-poppins text-xl'>METAVERSE EXPLORER</h2>
                 <p className='text-sm pt-1 font-semibold leading-none'>Browse Virtual Worlds with <br/> unparalleled insights and <br/> simplicity</p>
               </div>
             </Card>
             <Card imageUrl='/cards/2.png' floatImageUrl='/cards/float/2.png' url='/tools'>
-              <div className='text-gray-normal'>
+              <div className='text-lm_icons'>
                 <h2 className='font-poppins text-xl'>THE HUB PLATFORM</h2>
                 <p className='text-sm pt-1 font-semibold leading-none'>For a simple Metaverse journey</p>
               </div>
             </Card>
             <Card imageUrl='/cards/3.png' floatImageUrl='/cards/float/3.png' url='/about-the-hub'>
-              <div className='text-gray-normal'>
+              <div className='text-lm_icons'>
                 <h2 className='font-poppins text-xl'>ABOUT THE HUB</h2>
                 <p className='text-sm pt-1 font-semibold leading-none'>Learn about the core team and THE HUB ecosytem</p>
               </div>
             </Card>
             <Card imageUrl='/cards/4.png' floatImageUrl='/cards/float/4.png' url='/join-us'>
-              <div className='text-gray-normal'>
+              <div className='text-lm_icons'>
                 <h2 className='font-poppins text-xl font-bold'>JOIN US!</h2>
                 <p className='text-sm pt-1 font-semibold leading-none'>Help us shape the future<br/>of the Internet</p>
               </div>

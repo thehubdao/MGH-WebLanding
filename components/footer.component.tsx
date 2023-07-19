@@ -8,7 +8,7 @@ export default function Footer() {
       <div className='flex flex-col xl:flex-row justify-between items-center'>
         {/* footer contact */}
         <div className='xl:w-2/4 flex flex-col items-center'>
-          <p className='text-gray-normal text-lg text-center font-semibold mb-6 mx-8'>
+          <p className='text-lm_icons text-lg text-center font-semibold mb-6 mx-8'>
           Business & Partnership Proposals
           </p>
           <div className='flex justify-around xl:w-[57%] pt-4'>
@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
         </div>
         {/* footer links */}
-        <div className='w-5/6 xl:w-2/4 flex justify-around xl:items-center pt-20 xl:px-40 xl:pt-0 text-gray-normal'>
+        <div className='w-5/6 xl:w-2/4 flex justify-around xl:items-center pt-20 xl:px-40 xl:pt-0 text-lm_icons'>
           <div>
             <Link href='/'>
               <p className='text-xl my-3 block'>Home</p>
@@ -49,7 +49,7 @@ export default function Footer() {
       </div>
       {/* terms */}
       <div className='pt-24'>
-        <p className='text-center text-[15px] text-gray-normal'>
+        <p className='text-center text-[15px] text-lm_icons'>
           <Link href='/soon'>
             <span>Terms of Use </span>
           </Link>

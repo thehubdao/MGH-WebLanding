@@ -9,14 +9,14 @@ export default function Build() {
       <main className="font-poppins pt-20 xl:pt-0">
         <div className="flex flex-col xl:flex-row gap-8 min-h-screen justify-center items-center">
           <div className=" w-full mt-14 xl:mt-0">
-            <h1 className=" text-7xl md:text-9xl lg:text-[225px] text-gray-normal text-center">BUILD</h1>
+            <h1 className=" text-7xl md:text-9xl lg:text-[225px] text-lm_icons text-center">BUILD</h1>
             <p className="font-work font-light  text-lg md:text-[22px] text-center px-4 sm:px-0">Providing interoperable building solutions for the  <br className="hidden sm:inline-block"/>future iteration of the internet</p>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12 mx-6 2xl:mx-20'>
                 <Box>
                     <div className='flex justify-between items-center min-h-[115px]'>
                         <div className='pl-6 mr-5'>
-                            <h1 className='font-work text-sm font-bold text-gray-normal leading-5'>METAVERSE BUILDER</h1>
-                            <p className='font-work text-xs font-light text-gray-normal leading-4'>Create your own experience on <br className="hidden 2xl:inline-block"/> any Metaverse</p>
+                            <h1 className='font-work text-sm font-bold text-lm_icons leading-5'>METAVERSE BUILDER</h1>
+                            <p className='font-work text-xs font-light text-lm_icons leading-4'>Create your own experience on <br className="hidden 2xl:inline-block"/> any Metaverse</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
                             <Link href="https://dcl-edit.com/" target='_blank'>
@@ -30,11 +30,11 @@ export default function Build() {
                 <Box>
                     <div className='flex justify-between items-center min-h-[115px]'>
                         <div className='pl-6 mr-5'>
-                            <h1 className='font-work text-sm font-bold text-gray-normal leading-5'>PROJECTS</h1>
-                            <p className='font-work text-xs font-light text-gray-normal leading-4'>Co-create Metaverse Experiences <br className="hidden 2xl:inline-block"/> with us</p>
+                            <h1 className='font-work text-sm font-bold text-lm_icons leading-5'>PROJECTS</h1>
+                            <p className='font-work text-xs font-light text-lm_icons leading-4'>Co-create Metaverse Experiences <br className="hidden 2xl:inline-block"/> with us</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
-                            <Link href="/soon">
+                            <Link href="/projects">
                               <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px] group">
                                   <Image src={'/icons/Vector.svg'} alt={'Vector'}  width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}} className="scale-50 rotate-45 group-hover:scale-100 group-hover:rotate-0 transition-all duration-300 "/>
                               </div>
@@ -45,8 +45,8 @@ export default function Build() {
                 <Box>
                     <div className='flex justify-between items-center min-h-[115px]'>
                         <div className='pl-6 mr-5'>
-                            <h1 className='font-work text-sm font-bold text-gray-normal leading-5'>BUILDER MARKETPLACE</h1>
-                            <p className='font-work text-xs font-light text-gray-normal leading-4'>The Marketplace for interoperable <br className="hidden 2xl:inline-block"/> Metaverse Scenes and Assets</p>
+                            <h1 className='font-work text-sm font-bold text-lm_icons leading-5'>BUILDER MARKETPLACE</h1>
+                            <p className='font-work text-xs font-light text-lm_icons leading-4'>The Marketplace for interoperable <br className="hidden 2xl:inline-block"/> Metaverse Scenes and Assets</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
                             <Link href="https://www.metahub.shop/" target='_blank'>
