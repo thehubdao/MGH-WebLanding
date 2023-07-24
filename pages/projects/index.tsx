@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Footer from "../../components/footer.component";
 import Card from "../../components/card.component";
-import { ProjectsData } from "../../data/projects.data";
+import { ProjectsData } from "../../data/cardProject.data";
 import { CardForm, PageLocation } from "../../enums/common.enum";
 
 export default function Projects() {
@@ -22,7 +22,7 @@ export default function Projects() {
             <p className="font-neue text-2xl sm:text-4xl text-lm_icons font-bold">BUILD</p>
           </div>
           <div className=" w-full xl:w-3/4 pr-10 lg:pr-20 text-end">
-            <h1 className="font-neue text-7xl md:text-9xl lg:text-[170px] 2xl:text-[225px] text-lm_icons font-bold">PROJECTS</h1>
+            <h1 className="font-neue text-6xl md:text-9xl lg:text-[170px] 2xl:text-[225px] text-lm_icons font-bold">PROJECTS</h1>
           </div>
         </div>
 
