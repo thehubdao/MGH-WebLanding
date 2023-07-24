@@ -5,17 +5,10 @@ import Person from './person.component';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/scrollbar';
-
-interface TeamProps {
-    name: string,
-    role: string,
-    description: string,
-    url: string,
-    alt: string
-}
+import { PersonCarrouselInterface } from '../interfaces/data.interface';
 
 interface MembersProps {
-    members: TeamProps[]
+    members: PersonCarrouselInterface[]
     loop: boolean
 }
 

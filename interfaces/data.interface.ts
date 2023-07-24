@@ -1,5 +1,18 @@
 import { ExternalLink, PageLocation } from "../enums/common.enum";
 
+export interface PersonCarrouselInterface{
+  name: string,
+  role: string,
+  description: string,
+  url: string,
+  alt: string
+}
+
+export interface PartnersAndInvestorsInterface{
+  url: string,
+  
+}
+
 export interface CardProjectInterface {
   imageUrl: string;
   url: PageLocation | ExternalLink;
