@@ -5,26 +5,8 @@ import Footer from '../components/footer.component';
 import Scene from '../components/scene.component';
 import IconBox from '../components/iconBox.component';
 import Card from '../components/card.component';
-import { CardForm } from '../enums/common.enum';
+import { PartnersAndInvestorsLink, CardForm, ExternalLink, PageLocation } from '../enums/common.enum';
 import { NavigationCards } from '../data/navigationCards.data';
-
-interface CardLogoProps {
-  imageUrl: string,
-  url: string,
-  newTab?: boolean
-}
-
-function CardLogo({ imageUrl, url, newTab = false }: CardLogoProps) {
-  return (
-    <Link href={url} rel="noopener noreferrer" target={newTab ? '_blank' : '_self'}>
-      <div className='w-[294px] h-[128px] shadow rounded-[40px] border border-white cursor-pointer flex justify-center items-center group'>
-        <div className='w-[220px] h-[85px] saturate-0 group-hover:saturate-100 transition-all duration-200'>
-          <Image src={imageUrl} width={220} height={85} alt={'card'} priority={true} />
-        </div>
-      </div>
-    </Link>
-  )
-}
 
 export default function Home() {
   return (
@@ -50,23 +32,30 @@ export default function Home() {
             <div className='hidden absolute xl:flex flex-col items-end top-12 right-[102%] cursor-pointer group'>
               <div className='w-6 h-[2px] bg-white mb-2 group-hover:w-4/5 transition-all duration-500'></div>
               <div className='leading-none text-right text-lg font-light group-hover:font-semibold group-hover:bg-white group-hover:text-lm_icons group-hover:p-4 transition-all duration-300'>
-                <a href="https://app.thehubdao.xyz/metaverseexplorer" target='_blank' rel='noreferrer' className='block'>FIND<br />UNDERVALUED<br />LANDS</a>
+                <Link href={ExternalLink.MetaVerseExplorer} target='_blank' rel='noreferrer' className='block'>
+                  FIND<br />UNDERVALUED<br />LANDS
+                </Link>
               </div>
             </div>
             <div className='hidden absolute xl:flex flex-col bottom-2/5 left-[102%] cursor-pointer w-48 group'>
               <div className='w-6 h-[2px] bg-white mb-2 group-hover:w-4/5 transition-all duration-500'></div>
               <div className='leading-none text-lg font-light group-hover:font-semibold group-hover:bg-white group-hover:text-lm_icons group-hover:p-4 transition-all duration-300'>
-                <a href="https://dcl-edit.com/" target='_blank' rel='noreferrer' className='block'>BUILD ON ANY VIRTUAL WORLD</a>
+                <Link href={ExternalLink.DclEdit} target='_blank' rel='noreferrer' className='block'>
+                  BUILD ON ANY VIRTUAL WORLD
+                </Link>
               </div>
             </div>
             <div className='hidden absolute xl:flex items-center top-full -translate-y-[46px] left-0 cursor-pointer group'>
               <div className='w-[3px] h-6 bg-white mr-2 group-hover:h-10 transition-all duration-300'></div>
               <div className='leading-none text-lg font-light group-hover:font-semibold group-hover:bg-white group-hover:text-lm_icons group-hover:p-4 transition-all duration-300'>
-                <a href="https://linktr.ee/metagamehub.experiences" target='_blank' rel='noreferrer' className='block'>EXPERIENCE THE METAVERSE</a>
+                <Link href={ExternalLink.MetagameHubExperience} target='_blank' rel='noreferrer' className='block'>
+                  EXPERIENCE THE METAVERSE
+                </Link>
               </div>
             </div>
             <h1 className='text-[8.5px] lg:text-[21px] font-medium tracking-[0.45em] leading-none'>THE ENGINE OF THE METAVERSE</h1>
-            <a href="#hub" className='font-humane text-9xl lg:text-[320px] leading-none cursor-pointer'>ENTER THE HUB</a>
+            {/* <Link href={PageLocation.TheHub} className='font-humane text-9xl lg:text-[320px] leading-none cursor-pointer'>ENTER THE HUB</Link> */}
+            <a href={PageLocation.TheHub} className='font-humane text-9xl lg:text-[320px] leading-none cursor-pointer'>ENTER THE HUB</a>
           </div>
           <div className='absolute w-4/6 lg:w-1/4 h-10 lg:h-12 top-10 lg:top-14'>
             <Image src={'/thehub.svg'} fill={true} alt={'The Hub DAO logo'} />
@@ -94,31 +83,38 @@ export default function Home() {
         <div className='pb-32 mb-32'>
           <h2 className='text-center text-5xl text-gray-dark font-light pb-32 pt-64'>Backed by</h2>
           <div className='flex justify-center flex-wrap gap-6 xl:gap-20'>
-            <IconBox big={true}>
-              <Image src={'/investors/investors-1.png'} alt={'polygon'} width={210} height={92} className='' />
-            </IconBox>
-            <IconBox big={true}>
-              <Image src={'/investors/investors-4.png'} alt={'sandbox'} width={210} height={92} className='' />
-            </IconBox>
-            <IconBox big={true}>
-              <Image src={'/partners/Group-184.png'} alt={'decentraland'} width={210} height={92} className='' />
-            </IconBox>
-            {/* <CardLogo imageUrl='/logos/polygon.png' url='https://polygon.technology/' newTab={true} />
-            <CardLogo imageUrl='/logos/sandbox.png' url='https://www.sandbox.game/en/' newTab={true} />
-            <CardLogo imageUrl='/logos/decentraland.png' url='https://decentraland.org/' newTab={true} /> */}
+            <Link href={PartnersAndInvestorsLink.Polygon} target="_blank">
+              <IconBox big={true}>
+                <Image src={'/investors/investors-1.png'} alt={'polygon'} width={210} height={92} className='' />
+              </IconBox>
+            </Link>
+            <Link href={PartnersAndInvestorsLink.SandBox} target="_blank">
+              <IconBox big={true}>
+                <Image src={'/investors/investors-4.png'} alt={'sandbox'} width={210} height={92} className='' />
+              </IconBox>
+            </Link>
+            <Link href={PartnersAndInvestorsLink.Decentraland} target="_blank">
+              <IconBox big={true}>
+                <Image src={'/partners/Group-184.png'} alt={'decentraland'} width={210} height={92} className='' />
+              </IconBox>
+            </Link>
           </div>
           <div className='flex justify-center flex-wrap gap-6 xl:gap-20 mt-6 xl:mt-16'>
-            <IconBox big={true}>
-              <Image src={'/investors/investors-3.png'} alt={'brinc'} width={210} height={92} className='' />
-            </IconBox>
-            <IconBox big={true}>
-              <Image src={'/investors/investors-2.png'} alt={'ocean'} width={210} height={92} className='' />
-            </IconBox>
-            <IconBox big={true}>
-              <Image src={'/partners/Group-185.png'} alt={'somnium space'} width={210} height={92} className='' />
-            </IconBox>
-            {/* <CardLogo imageUrl='/logos/brinc.png' url='https://www.brinc.io/' newTab={true} />
-            <CardLogo imageUrl='/logos/ocean.png' url='https://oceanprotocol.com/' newTab={true} /> */}
+            <Link href={PartnersAndInvestorsLink.Brinc} target="_blank">
+              <IconBox big={true}>
+                <Image src={'/investors/investors-3.png'} alt={'brinc'} width={210} height={92} className='' />
+              </IconBox>
+            </Link>
+            <Link href={PartnersAndInvestorsLink.Ocean} target="_blank">
+              <IconBox big={true}>
+                <Image src={'/investors/investors-2.png'} alt={'ocean'} width={210} height={92} className='' />
+              </IconBox>
+            </Link>
+            <Link href={PartnersAndInvestorsLink.SomniumSpace} target="_blank">
+              <IconBox big={true}>
+                <Image src={'/partners/Group-185.png'} alt={'somnium space'} width={210} height={92} className='' />
+              </IconBox>
+            </Link>
           </div>
         </div>
         <Footer />

@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "../../components/footer.component";
+import { PageLocation } from "../../enums/common.enum";
 
 export default function Privacity() {
   return (
     <>
       <div className="absolute w-12 h-12 top-8 left-8">
-        <Link href="/">
+        <Link href={PageLocation.Home}>
           <Image src='/icons/mgh.svg' fill={true} alt="MetaGameHub logo" />
         </Link>
       </div>

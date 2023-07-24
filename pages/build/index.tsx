@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Footer from "../../components/footer.component";
 import Box from "../../components/box.component";
-import { PageLocation } from "../../enums/common.enum";
+import { ExternalLink, PageLocation } from "../../enums/common.enum";
 
 export default function Build() {
   return (
@@ -20,7 +20,7 @@ export default function Build() {
                             <p className='font-work text-xs font-light text-lm_icons leading-4'>Create your own experience on <br className="hidden 2xl:inline-block"/> any Metaverse</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
-                            <Link href="https://dcl-edit.com/" target='_blank'>
+                            <Link href={ExternalLink.DclEdit} target='_blank'>
                               <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px] group">
                                   <Image src={'/icons/Vector.svg'} alt={'Vector'}  width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}} className="scale-50 rotate-45 group-hover:scale-100 group-hover:rotate-0 transition-all duration-300 "/>
                               </div>
@@ -50,7 +50,7 @@ export default function Build() {
                             <p className='font-work text-xs font-light text-lm_icons leading-4'>The Marketplace for interoperable <br className="hidden 2xl:inline-block"/> Metaverse Scenes and Assets</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
-                            <Link href="https://www.metahub.shop/" target='_blank'>
+                            <Link href={ExternalLink.MetahubShop} target='_blank'>
                               <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px] group">
                                   <Image src={'/icons/Vector.svg'} alt={'Vector'}  width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}} className="scale-50 rotate-45 group-hover:scale-100 group-hover:rotate-0 transition-all duration-300 "/>
                               </div>
@@ -69,7 +69,7 @@ export default function Build() {
         </div>
       </main>
       <div className="absolute w-12 h-12 top-8 left-8">
-        <Link href="/">
+        <Link href={PageLocation.Home}>
           <Image src='/icons/mgh.svg' fill={true} alt="MetaGameHub logo" />
         </Link>
       </div>

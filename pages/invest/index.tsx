@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Box from "../../components/box.component";
+import { ExternalLink, PageLocation } from "../../enums/common.enum";
 
 export default function Invest() {
   return (
@@ -24,7 +25,7 @@ export default function Invest() {
                             <p className='font-work text-xs font-light text-lm_icons leading-4'>Save time by finding the LANDs <br className="hidden 2xl:inline-block"/> and assets you need in one app</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
-                          <Link href="https://app.thehubdao.xyz/metaverseexplorer" target='_blank'>
+                          <Link href={ExternalLink.MetaVerseExplorer} target='_blank'>
                             <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px] group">
                                 <Image src={'/icons/Vector.svg'} alt={'Vector'}  width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}} className="scale-50 rotate-45 group-hover:scale-100 group-hover:rotate-0 transition-all duration-300 "/>
                             </div>
@@ -39,7 +40,7 @@ export default function Invest() {
                             <p className='font-work text-xs font-light text-lm_icons leading-4'>Integrate our price estimation <br className="hidden 2xl:inline-block"/> data into your platform</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
-                            <Link href="/soon">
+                            <Link href={PageLocation.Soon}>
                               <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px] group">
                                   <Image src={'/icons/Vector.svg'} alt={'Vector'}  width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}} className="scale-50 rotate-45 group-hover:scale-100 group-hover:rotate-0 transition-all duration-300 "/>
                               </div>
@@ -54,7 +55,7 @@ export default function Invest() {
                             <p className='font-work text-xs font-light text-lm_icons leading-4 '>Access curated metaverse datasets <br className="hidden 2xl:inline-block"/> to fuel your research in the <br className="hidden 2xl:inline-block"/> dynamic world of the Metaverse.</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
-                            <Link href="https://market.oceanprotocol.com/asset/did:op:053982d25efa70507165b513a00bdbe6b3a5aeb47d212dcb9cf942cac377db1e" target='_blank'>
+                            <Link href={ExternalLink.MetaverseDataset} target='_blank'>
                               <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px] group">
                                   <Image src={'/icons/Vector.svg'} alt={'Vector'}  width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}} className="scale-50 rotate-45 group-hover:scale-100 group-hover:rotate-0 transition-all duration-300 "/>
                               </div>
@@ -69,7 +70,7 @@ export default function Invest() {
                             <p className='font-work text-xs font-light text-lm_icons leading-4'>Integrate our price estimation <br className="hidden 2xl:inline-block"/> data into your platform</p>
                         </div>
                         <div className='flex items-center justify-start mr-4' >
-                            <Link href="https://market.link/nodes/Metaverse%20Valuation%20Node/integrations" target='_blank'>
+                            <Link href={ExternalLink.MetaverseOracle} target='_blank'>
                               <div className="rounded-full shadow-boxes bg-bg_vector flex items-center justify-center w-[80px] h-[80px] group">
                                   <Image src={'/icons/Vector.svg'} alt={'Vector'}  width={50} height={50} style={{maxWidth: '50px', maxHeight: '50px'}} className="scale-50 rotate-45 group-hover:scale-100 group-hover:rotate-0 transition-all duration-300 "/>
                               </div>
@@ -82,7 +83,7 @@ export default function Invest() {
         </div>
       </main>
       <div className="absolute w-12 h-12 top-8 left-8">
-        <Link href="/">
+        <Link href={PageLocation.Home}>
           <Image src='/icons/mgh.svg' fill={true} alt="MetaGameHub logo" />
         </Link>
       </div>

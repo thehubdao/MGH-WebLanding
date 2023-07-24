@@ -3,12 +3,13 @@ import Image from "next/image";
 import Footer from "../../components/footer.component";
 import Button from "../../components/button.component";
 import ScrollTitleUI from "../../components/scrollTitle.component";
+import { PageLocation } from "../../enums/common.enum";
 
 export default function Tools() {
   return (
     <>
       <div className="absolute w-12 h-12 top-8 left-8">
-        <Link href="/">
+        <Link href={PageLocation.Home}>
           <Image src='/icons/mgh.svg' fill={true} alt="MetaGameHub logo" />
         </Link>
       </div>
@@ -35,24 +36,16 @@ export default function Tools() {
           <ScrollTitleUI title={['INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE']} imageUrl='/tools/game-machine.png'/>
         </div>
         <div className="flex flex-wrap justify-center gap-x-20 gap-y-10 md:gap-y-20 py-28 md:px-20 mb-72">
-          <Button url="/invest" big>
+          <Button url={PageLocation.Invest} big>
             <p className="font-humane text-[135px] text-lm_icons">INVEST</p>
           </Button>
-          <Button url="/build" big>
+          <Button url={PageLocation.Build} big>
             <p className="font-humane text-[135px] text-lm_icons">BUILD</p>
           </Button>
-          <Button url="/experience" big>
+          <Button url={PageLocation.Experience} big>
             <p className="font-humane text-[135px] text-lm_icons">EXPERIENCE</p>
           </Button>
         </div>
-        {/* <div className="py-28">
-          <p className="font-work font-light text-[32px] text-center px-10">&quot;Your home in the Metaverse&quot;</p>
-          <div className="flex justify-center py-28 px-10">
-            <Button url="https://app.metagamehub.io/" newTab>
-              <p className="font-work text-lm_icons py-6 px-10 text-center uppercase">Navigate the metaverse with us</p>
-            </Button>
-          </div>
-        </div> */}
         <Footer />
       </main>
     </>

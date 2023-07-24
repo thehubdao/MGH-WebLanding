@@ -1,6 +1,7 @@
 import SocialIcon from "../components/socialIcon.component";
 import Image from 'next/image'
 import Link from 'next/link'
+import { PageLocation } from "../enums/common.enum";
 
 export default function Soon() {
   return (
@@ -24,7 +25,7 @@ export default function Soon() {
         </div>
       </div>
       <div className="absolute w-12 h-12 bottom-8 left-2/4 lg:top-8 lg:left-8 -translate-x-2/4 lg:translate-x-0">
-        <Link href="/">
+        <Link href={PageLocation.Home}>
           <Image src='/icons/mgh.svg' fill={true} alt="MetaGameHub logo" />
         </Link>
       </div>
