@@ -1,8 +1,8 @@
-import { PageLocation } from "../enums/common.enum";
+import { ExternalLink, PageLocation } from "../enums/common.enum";
 
 export interface CardProjectInterface {
   imageUrl: string;
-  url: PageLocation;
+  url: PageLocation | ExternalLink;
   metaverseLogo: string;
   metaverse: string;
   tag: string;
@@ -11,7 +11,7 @@ export interface CardProjectInterface {
 
 export interface NavigationInterface {
   imageUrl: string;
-  url: PageLocation;
+  url: PageLocation | ExternalLink;
   floatImageUrl: string;
   title: string
   description: string;

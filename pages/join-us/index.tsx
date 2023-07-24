@@ -3,12 +3,13 @@ import Image from "next/image";
 import Button from "../../components/button.component";
 import Footer from "../../components/footer.component";
 import ScrollTitleUI from "../../components/scrollTitle.component";
+import { ExternalLink, PageLocation } from "../../enums/common.enum";
 
 export default function AboutUs() {
   return (
     <>
       <div className="absolute w-12 h-12 top-8 left-8">
-        <Link href="/">
+        <Link href={PageLocation.Home}>
           <Image src='/icons/mgh.svg' fill={true} alt="MetaGameHub logo" />
         </Link>
       </div>
@@ -38,16 +39,16 @@ export default function AboutUs() {
           <h2 className='text-center text-2xl text-lm_icons font-medium py-32 tracking-[4.4px]'>JOIN US TO SHAPE THE FUTURE OF THE OPEN METAVERSE TOGETHER!</h2>
         </div>
         <div className="flex flex-wrap justify-center gap-x-10 gap-y-10 md:gap-y-20 py-28 md:px-20 mb-64">
-          <Button url="https://www.linkedin.com/company/the-hub-dao/" extra newTab={true}>
+          <Button url={ExternalLink.Linkedin} extra newTab={true}>
             <p className="font-humane text-6xl md:text-8xl text-lm_icons">JOIN THE CORE TEAM</p>
           </Button>
-          <Button url="https://discord.com/invite/J35NGdPWgq" extra newTab={true}>
+          <Button url={ExternalLink.Discord} extra newTab={true}>
             <p className="font-humane text-6xl md:text-8xl text-lm_icons">JOIN THE COMMUNITY</p>
           </Button>
-          <Button url="https://snapshot.org/#/metagamehub.eth" extra newTab={true}>
+          <Button url={ExternalLink.Snapshot} extra newTab={true}>
             <p className="font-humane text-6xl md:text-8xl text-lm_icons">APPLY FOR GRANTS</p>
           </Button>
-          <Button url="https://www.spatial.io/s/The-Metaverse-Seminars-62fbbb0dabce1e00010f75c8?share=2349173727968720925" extra newTab={true}>
+          <Button url={ExternalLink.Spatial} extra newTab={true}>
             <p className="font-humane text-6xl md:text-8xl text-lm_icons">JOIN OUR METAVERSE SEMINARS</p>
           </Button>
         </div>

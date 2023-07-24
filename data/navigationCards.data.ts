@@ -1,10 +1,10 @@
-import { PageLocation } from "../enums/common.enum";
+import { ExternalLink, PageLocation } from "../enums/common.enum";
 import { NavigationInterface } from "../interfaces/data.interface";
 
 export const NavigationCards: NavigationInterface[] = [
     {
         imageUrl: '/cards/1.png',
-        url: PageLocation.MetaVerseExplorer,
+        url: ExternalLink.MetaVerseExplorer,
         floatImageUrl: '/cards/float/1.png',
         title: 'METAVERSE EXPLORER',
         description:'Browse Virtual Worlds with <br/> unparalleled insights and <br/> simplicity',
