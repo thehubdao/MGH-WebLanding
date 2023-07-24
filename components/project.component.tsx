@@ -58,7 +58,7 @@ export default function ProjectsComponent({ project }: ProjectProps) {
             </div>
             <div className="mt-5 w-full xl:pl-48">
               <p className="font-light font-work text-sm text-lm_icons">
-                {parse(project.summaryContent)}
+                {project.summaryContent}
               </p>
             </div>
             <div className="mt-10 md:mt-20 w-full">
@@ -68,7 +68,7 @@ export default function ProjectsComponent({ project }: ProjectProps) {
             </div>
             <div className="mt-5 w-full xl:pl-48">
               <p className="font-light font-work text-sm text-lm_icons">
-                {parse(project.approachContent)}
+                {project.approachContent}
               </p>
             </div>
             <div className="w-[333px] mt-20">
@@ -176,7 +176,7 @@ export default function ProjectsComponent({ project }: ProjectProps) {
                 RESULTS
               </p>
               <p className="font-light font-work text-sm text-lm_icons mt-5">
-                {parse(project.result)}
+                {project.result}
               </p>
             </div>
           </div>
