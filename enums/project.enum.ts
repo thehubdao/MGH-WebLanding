@@ -1,11 +1,11 @@
-export enum Project{
-    FitchinHouse= 'project-fitchin-house',
-    Cryptoticker = 'project-cryptoticker',
-    EspacioCreador = 'project-espacio-creador',
-    Ekolance = ' project-ekolance',
-    CompetitiveGameHub = 'project-competitive-game-hub',
-    MentholProtocol = 'project-menthol-protocol',
-    Ayo = 'project-ayo-and-teo',
-    MetagameHub = 'project-metagamehub',
-    TheHub = 'project-the-hub'
+export enum ProjectLocation{
+    FitchinHouse= '/projects/project-fitchin-house',
+    Cryptoticker = '/projects/project-cryptoticker',
+    EspacioCreador = '/projects/project-espacio-creador',
+    Ekolance = '/projects/project-ekolance',
+    CompetitiveGameHub = '/projects/project-competitive-game-hub',
+    MentholProtocol = '/projects/project-menthol-protocol',
+    Ayo = '/projects/project-ayo-and-teo',
+    MetagameHub = '/projects/project-metagamehub',
+    TheHub = '/projects/project-the-hub'
 }

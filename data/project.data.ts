@@ -1,9 +1,9 @@
 import { PageLocation } from "../enums/common.enum";
-import { Project } from "../enums/project.enum";
+import { ProjectLocation } from "../enums/project.enum";
 import { ProjectInterface } from "../interfaces/data.interface";
 
-export const ProjectData: Record<Project, ProjectInterface> = {
-  [Project.FitchinHouse]: {
+export const ProjectData: Record<ProjectLocation, ProjectInterface> = {
+  [ProjectLocation.FitchinHouse]: {
     tag: "HEADQUARTER",
     title: "FITCHIN <br />HOUSE",
     fontTitle: 95,
@@ -30,7 +30,7 @@ export const ProjectData: Record<Project, ProjectInterface> = {
     ],
     result: 'Our primary objective was to create a space where teams and fans could connect on a deeper level, and we achieved just that. The event not only fostered community growth but also set the stage for a new era of engagement in the esports landscape. During the launch event there were 350 concurrent users with an average session time of two hours. The scene has been visited since its creation over 50000 times.'
   },
-  [Project.Cryptoticker]:{
+  [ProjectLocation.Cryptoticker]:{
     tag: "HEADQUARTER",
     title: "CRYPTOTICKER <br />EDUCATION <br />HUB",
     fontTitle: 70,
@@ -56,7 +56,7 @@ export const ProjectData: Record<Project, ProjectInterface> = {
     ],
     result: 'The Cryptoticker Educational Hub is  successful in engaging and educating the users of the Cryptotitcker news platform. The interactive nature of the experience encourages users to explore and complete quests, promoting active participation. The Christmas giveaway also adds an element of excitement and reward for users. This approach has proven effective in promoting Cryptoticker and its offerings, driving growth and enhancing its marketing efforts.'
   },
-  [Project.EspacioCreador]:{
+  [ProjectLocation.EspacioCreador]:{
     tag: "GALLERY",
     title: "ESPACIO <br />CREADOR",
     fontTitle: 95,
@@ -82,7 +82,7 @@ export const ProjectData: Record<Project, ProjectInterface> = {
     ],
     result: 'The Espacio Creador Gallery has significantly contributed to the adoption of the Metaverse in Latin America. The virtual gallery has attracted art enthusiasts globally, highlighting the rich diversity of Latin American art. The live-streamed events have received positive feedback from multiple Web3 communities, with attendees praising the immersive and interactive experiences. The wearable dispensers have added a unique touch to the user journey, enhancing engagement of the people coming to the gallery. Overall, our project with Espacio Creador has set a strong precedent for future Metaverse developments in the region.'
   },
-  [Project.Ekolance]:{
+  [ProjectLocation.Ekolance]:{
     tag: "EDUCATIONAL HUB",
     title: "EKOLANCE <br />METAVERSE <br />SEMINARS",
     fontTitle: 85,
@@ -108,7 +108,7 @@ export const ProjectData: Record<Project, ProjectInterface> = {
     ],
     result: 'Our development for EkoLance has received backing from industry players and educational partners like, Sports 5, PWC Sports, EY, Decentraland, Polygon, Sandbox, and Frankfurt School Blockchain Center. Attendees have found immense value in the immersive seminars, gaining the knowledge and insights they need to understand and leverage the Metaverse. '
   },
-  [Project.CompetitiveGameHub]:{
+  [ProjectLocation.CompetitiveGameHub]:{
     tag: "VR EXPERIENCE",
     title: "COMPETITIVE <br />GAME <br />HUB",
     fontTitle: 85,
@@ -134,7 +134,7 @@ export const ProjectData: Record<Project, ProjectInterface> = {
     ],
     result: 'The transformative impact of the Competitive Game Hub V2 project on the Somnium Space gaming experience is evident in our key performance indicators. Our immersive gaming environment has captivated players, leading to a remarkable 35% surge in average session duration. This appeal is further reflected in a 20% increase in daily active users. The project\'s influence extends beyond the existing community, attracting a 25% rise in new user registrations to Somnium Space through our experience. '
   },
-  [Project.MentholProtocol]:{
+  [ProjectLocation.MentholProtocol]:{
     tag: "METAVERSE EVENT",
     title: "MENTHOL <br />PROTOCOL <br />LAUNCH",
     fontTitle: 85,
@@ -160,7 +160,7 @@ export const ProjectData: Record<Project, ProjectInterface> = {
     ],
     result: 'The event was a resounding success, bringing together various Web3 communities and raising awareness about climate action. Through our innovative approach of gamification, attendees were not only entertained but also educated on the importance of sustainability. The event demonstrated the potential of the metaverse as a platform for advocacy and engagement, highlighting the role that virtual worlds can play in addressing real-world challenges. '
   },
-  [Project.Ayo]:{
+  [ProjectLocation.Ayo]:{
     tag: "COMMUNITY HUB",
     title: "AYO & TEO <br />UNIVERSE",
     fontTitle: 95,
@@ -186,7 +186,7 @@ export const ProjectData: Record<Project, ProjectInterface> = {
     ],
     result: 'The Ayo & Teo Universe project has been a resounding success, generating significant traction within The Sandbox community by being one of the most visited experiences on the platform. Specific KPIs include a substantial increase in virtual event attendance, a surge in digital merchandise sales, and a marked growth in Ayo & Teo\'s fanbase within the metaverse. '
   },
-  [Project.MetagameHub]:{
+  [ProjectLocation.MetagameHub]:{
     tag: "AR EXPERIENCE",
     title: "THE HUB <br />COMMUNITY <br />XONE",
     fontTitle: 85,
@@ -212,7 +212,7 @@ export const ProjectData: Record<Project, ProjectInterface> = {
     ],
     result: 'The success of the project is underscored by the strategic partnerships that XONE has established after co-creating the experience. A key partnership is with Abbey Road Red, a pioneering music technology incubation program. This collaboration is a testament to XONE\'s commitment to integrating immersive audio experiences within the metaverse,enhancing the overall user experience. In addition to that, the strategic partnerships with Warner Records, Sony Music, and Universal Music Group closed after the release of the community hub further underscore the project\'s success and the potential for future growth of AR based Metaverse Experiences.'
   },
-  [Project.TheHub]:{
+  [ProjectLocation.TheHub]:{
     tag: "HEADQUARTER",
     title: "THE HUB <br />HQ",
     fontTitle: 85,

@@ -4,236 +4,9 @@ import Footer from "../../components/footer.component";
 import IconBox from "../../components/iconBox.component";
 import PersonCarrousel from "../../components/personCarrousel.component";
 import ScrollTitleUI from "../../components/scrollTitle.component";
-import { ExternalLink, PageLocation, PartnersAndInvestorsLink } from "../../enums/common.enum";
-
-const team = [
-  {
-    name: 'NICOLAS WEBER',
-    role: 'Founder',
-    description: "Early stage crypto investor, writer, philanthropist, podcast host and entrepreneur. He is part of the founding team at Amazing Blocks, Founder and CEO of DAC and Founding Initiator of THE HUB DAO. Additionally, he is the Co-Founder of the Tokenization Working Group at the European Blockchain Association. He previously worked for established companies such as Daimler, Dieffenbacher and Allianz Global Investors.",
-    url: '/team/t-1.png',
-    alt: 'NICOLAS WEBER'
-  },
-  {
-    name: 'CAMILO ECHEVERRI',
-    role: 'Co-founder, Operations',
-    description: "+4 years of experience in tradfi industry. MetaFi, DAOs and Web3 degen. Using self-enforcing open source protocols to create infrastructure for new ways of human coordination.",
-    url: '/team/t-2.png',
-    alt: 'CAMILO ECHEVERRI'
-  },
-  {
-    name: 'YOUSSEF GABSI',
-    role: 'Co-founder Business Development',
-    description: "Asset management and real estate consultant converted into Web3 front office specialist.",
-    url: '/team/t-3.png',
-    alt: 'YOUSSEF GABSI'
-  },
-  {
-    name: 'SANTIAGO HERNANDEZ',
-    role: 'Tech Lead',
-    description: "Fullstack developer with focus on devops and web3 integration passionate about Fintech and high frequency trading. Background in algorithmic trading, cyber security and business development",
-    url: '/team/t-4.png',
-    alt: 'SANTIAGO HERNANDEZ'
-  },
-  {
-    name: 'BONNIE SANDOVAL',
-    role: 'Head Designer',
-    description: "Media Artist and Virtual Reality enthusiast, I direct media development projects including Web Design, UI/UX, Virtual Reality, and Augmented Reality. Currently, I'm working on projects oriented towards the Development and acceleration of Web3 adoption and Decentralized Economies.",
-    url: '/team/t-5.png',
-    alt: 'BONNIE SANDOVAL'
-  },
-  {
-    name: 'NAN MOLINA',
-    role: 'Frotend Development Lead',
-    description: "Graphic and interactive developer, enthusiastic in the field of immersive and interactive experiences unique in the real as virtual world. Combining design, programming and a deep affection for technology, Camilo has participated in numerous projects as a creative director, 3D modeler, animator, UX/UI designer, front-end developer, scripting and deadline motivator.",
-    url: '/team/t-6.png',
-    alt: 'NAN MOLINA'
-  },
-  {
-    name: 'CAMILO ALAGUNA',
-    role: 'AI & Data Science',
-    description: "Computer Scientist with strong experience in AI and entrepreneur. Passionate of solving problems using computational tools.",
-    url: '/team/t-7.png',
-    alt: 'CAMILO ALAGUNA'
-  },
-  {
-    name: 'OSWALDO MANTILLA',
-    role: 'Backend Development Lead',
-    description: "Full-Stack Developer, loves new technologies, new experiences and enjoying life. Pref language C#, all my info on my linkedin.",
-    url: '/team/t-8.png',
-    alt: 'OSWALDO MANTILLA'
-  },
-  {
-    name: 'CHRISTIAN WERNER',
-    role: 'Metaverse Development Lead',
-    description: "Game Designer, Consultant and Lecturer in Game Design at the FH Aachen and HS Fresenius, Cologne.",
-    url: '/team/t-9.png',
-    alt: 'CHRISTIAN WERNER'
-  },
-  {
-    name: 'JOHN SANDOVAL',
-    role: '3D Modelling Lead',
-    description: "Industrial and 3D designer integral professional in my area of knowledge. I have great skills in the conceptualization and coordination of projects as well as in diferent two-dimensional and three-dimensional representative communication tools, skills that I complement with the management and knowledge of multimedia tools and techniques (2D, 3D animation, mapping).",
-    url: '/team/t-10.png',
-    alt: 'JOHN SANDOVAL'
-  },
-  {
-    name: 'DR. LOHA HASHIMY',
-    role: 'Lead Product Manager',
-    description: "Throughout my career, I've held numerous senior positions in innovation management, product management, business development, and strategy.I enjoy delving into market issues and using new technology to address them. I build, scale, and optimize meaningful business portfolios. To do so, I concentrate on achieving key objectives, forming fantastic teams, and fast responding to new information.",
-    url: '/team/t-11.png',
-    alt: 'DR. LOHA HASHIMY'
-  },
-];
-
-const team2 = [
-  {
-    name: 'SUSANNE BATALOFF',
-    role: 'Metaverse Development ',
-    description: "Game Design & Management Student at HS Fresenius Cologne, Graphic designer & Social Media Lead at Fresenius Green Office, part of Metaverse DevGroup.",
-    url: '/team/t-12.png',
-    alt: 'SUSANNE BATALOFF'
-  },
-  {
-    name: 'DOMINIK MRYKA',
-    role: 'Game & Level Designer',
-    description: 'Main Dev Lead in "Somnium Space VR" and continuously working on projects in "The Sandbox". Background as computer scientist and videogame enthusiast that is fascinated by architecture and design.',
-    url: '/team/t-13.png',
-    alt: 'DOMINIK MRYKA'
-  },
-  {
-    name: 'JONATHAN LUBECK',
-    role: 'Lead Dev Metaverse Development',
-    description: "As the lead developer of DCL-Edit and expert for Decentraland development, Jonathan works as part of the Metaverse Development Team. He has more than 10 years of programming experience, and has studied Computer Science at the University of applied Science in Aachen",
-    url: '/team/t-14.png',
-    alt: 'JONATHAN LUBECK'
-  },
-  {
-    name: 'CRISTINA VARGAS',
-    role: 'Lead Graphic Designer + UX/UI',
-    description: "Graphic Designer focused on Branding and Service Design with three-year experience in various industries growing Creative Strategic processes, Communication protocols, developing and creating human-centered methodologies and creative visuals.",
-    url: '/team/t-15.png',
-    alt: 'CRISTINA VARGAS'
-  },
-  {
-    name: 'MAURCIO BELTRÁN',
-    role: 'Media artist + 3D-2D Animator',
-    description: "I have a deep interest in the image in your different aspects, such as video, photography, drawing and design in general. For this reason, in my profession I dedicate myself to work in its various modalities, in search of a symbiosis. The areas that I have developed professionally are video editing, animation, design, production and audiovisual direction.",
-    url: '/team/t-16.png',
-    alt: 'MAURCIO BELTRÁN'
-  },
-  {
-    name: 'DIEGO SANTA',
-    role: 'Media Artist',
-    description: "Artist highly passionate about design, technology and the creative processes involved in digital experiences as metaverse, virtual reality, augmented reality, video games and digital art.",
-    url: '/team/t-17.png',
-    alt: 'DIEGO SANTA'
-  },
-  {
-    name: 'PHIL THOMSEN',
-    role: 'Blockchain Developer',
-    description: "Blockchain Architect and Smart Contract Engineer with focus on EVM based systems.",
-    url: '/team/t-18.png',
-    alt: 'PHIL THOMSEN'
-  },
-  {
-    name: 'GABRIEL CHAVES',
-    role: 'Blockchain Developer',
-    description: "Systems Engineer with a learning and project developing high capacity focused in encompass most of the things related to the projects ",
-    url: '/team/t-19.png',
-    alt: 'GABRIEL CHAVES'
-  },
-  {
-    name: 'CAMILO GONZALEZ',
-    role: 'Fronted Developer',
-    description: "Web designer with focus on the UX/UI",
-    url: '/team/t-20.png',
-    alt: 'CAMILO GONZALEZ'
-  },
-  {
-    name: 'JAIRO CRIOLLO',
-    role: 'Backend Developer',
-    description: "System engineer student focused on Web3 backend and Unity, developing task as objectives on MGH projects",
-    url: '/team/t-21.png',
-    alt: 'JAIRO CRIOLLO'
-  },
-];
-
-const advisors = [
-  {
-    name: 'Jonathan Ayerbe',
-    role: 'Partnerships, LATAM Working Group Lead, Strategy Advisor',
-    description: "Founder, Investor & Advisor. CEO of a LATAM startup accelerator & collisioner. Working on decentralizing and disrupting health; travel and work and real estate. Metaverse builder.",
-    url: '/advisors/advisor-1.png',
-    alt: 'Jonathan Ayerbe'
-  },
-  {
-    name: 'Hamzah Khan',
-    role: '',
-    description: "Head of DeFi at Polygon. Passionate about bringing open financial technology to the world.",
-    url: '/advisors/advisor-2.png',
-    alt: 'Hamzah Khan'
-  },
-  {
-    name: 'Dr. Holger Sprengel',
-    role: '',
-    description: "Entrepreneur, business angel, innovator & advisor - building ventures since 1999. ",
-    url: '/advisors/advisor-3.png',
-    alt: 'Dr. Holger Sprengel'
-  },
-  {
-    name: 'Sagar Barvaliya',
-    role: '',
-    description: "Sagar is an Investment Manager at Blockrocket, A leading investor for early-stage blockchain-based startups. He is in charge of Blockrocket’s startup sourcing as well as portfolio management. An ex-Engineer with several years of work experience in the automotive sector of leading OEMs in Germany decided to dedicate his attention to the blockchain space a few years ago.",
-    url: '/advisors/advisor-4.png',
-    alt: 'Sagar Barvaliya'
-  },
-  {
-    name: 'Dr. Biyan Mienert',
-    role: '',
-    description: "Lawyer specialized in Blockchain and FinTech.",
-    url: '/advisors/advisor-5.png',
-    alt: 'Dr. Biyan Mienert'
-  },
-];
-
-const advisors2 = [
-  {
-    name: 'Nova Lorraine',
-    role: 'Creative & Branding Advisor',
-    description: "Founder, Author, and Award Winning Fashion Designer creating luxe experiences for the Metaverse. DAO Branding Group Lead. Passionate about education and access to the crypto economy.",
-    url: '/advisors/advisor-6.png',
-    alt: 'Nova Lorraine'
-  },
-  {
-    name: 'Peter Rafelson',
-    role: 'Marketing Advisor',
-    description: "Produced and written over thirty #1 hit records selling over 180,000,000 units. Working with all major studios and has developed a small entertainment empire in North Hollywood.",
-    url: '/advisors/advisor-7.png',
-    alt: 'Peter Rafelson'
-  },
-  {
-    name: 'Sebastien Borget',
-    role: '',
-    description: "Co-Founder & COO of The Sandbox. President of the Blockchain Game Alliance, advocating for NFTs & blockchain in games.",
-    url: '/advisors/advisor-8.png',
-    alt: 'Sebastien Borget'
-  },
-  {
-    name: 'Dr. Justin Goldston',
-    role: '',
-    description: "Professor, Founder, Author, and Five-Time TEDx speaker on blockchain looking to democratize education with the metaverse.",
-    url: '/advisors/advisor-9.png',
-    alt: 'Dr. Justin Goldston'
-  },
-  {
-    name: 'Manan Patel',
-    role: '',
-    description: "Founder with 10+ years of experience in development and consulting services to Fortune 100 enterprises. Founding team member of Ocean Protocol. Blockchain Expert and Crypto thought leader.",
-    url: '/advisors/advisor-10.png',
-    alt: 'Manan Patel'
-  },
-];
+import { ExternalLink, PageLocation } from "../../enums/common.enum";
+import { Advisors, Advisors2, Team, Team2 } from "../../data/people.data";
+import { Investors, Partners } from "../../data/partnersAndInvestors.data";
 
 export default function AboutUs() {
 
@@ -289,8 +62,8 @@ export default function AboutUs() {
         </div>
 
         <div className="w-full mt-20">
-          <PersonCarrousel members={team} loop={true} />
-          <PersonCarrousel members={team2} loop={true} />
+          <PersonCarrousel members={Team} loop={true} />
+          <PersonCarrousel members={Team2} loop={true} />
         </div>
 
         <div className="flex flex-col md:flex-row gap-8 mt-28 items-end">
@@ -305,243 +78,44 @@ export default function AboutUs() {
         </div>
 
         <div className="w-full mt-20">
-          <PersonCarrousel members={advisors} loop={false} />
-          <PersonCarrousel members={advisors2} loop={false} />
+          <PersonCarrousel members={Advisors} loop={false} />
+          <PersonCarrousel members={Advisors2} loop={false} />
         </div>
 
         <div className="flex justify-center mt-32 lg:mt-52">
           <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">PARTNERS</h1>
         </div>
 
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-6 gap-4 mt-32 mx-6 xl:mx-12 place-items-center'>
-          <Link href={PartnersAndInvestorsLink.SandBox} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-183.png'} alt={'sandbox'} width={144} height={33} className='' />
-            </IconBox>  
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Decentraland} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-184.png'} alt={'decentraland'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.SomniumSpace} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-185.png'} alt={'somnium space'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.ChainLink} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-186.png'} alt={'chainlink'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Fitchin} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-187.png'} alt={'fitchin'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.BosonProtocol} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-188.png'} alt={'boson protocol'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Polygon} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-189.png'} alt={'polygon'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Aws} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-190.png'} alt={'aws'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Cryptoticker} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-191.png'} alt={'cryptoticker'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Sophos} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-192.png'} alt={'sophos'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Pwc} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-193.png'} alt={'pwc'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Pangea} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-194.png'} alt={'pangea'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Ey} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-195.png'} alt={'ey'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Ocean} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-196.png'} alt={'ocean'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Viio} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-197.png'} alt={'viio'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Revolve} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-198.png'} alt={'revolve'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.EtherumTower} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-199.png'} alt={'etherum tower'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.BlockchainFoudersGroup} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-200.png'} alt={'blockchain founders group'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.PaxWorld} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-201.png'} alt={'pax.world'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Venly} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-202.png'} alt={'venly'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Xone} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-203.png'} alt={'xone'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Zharta} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-204.png'} alt={'zharta'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Bonuz} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-205.png'} alt={'bonuz'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.MoonBash} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-206.png'} alt={'moon bash'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Nrverse} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-207.png'} alt={'nrverse'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.SportfFive} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-208.png'} alt={'sportfive'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.BlockchainGameAlliance} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-209.png'} alt={'blockchain game alliance'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Picipo} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-210.png'} alt={'picipo'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Adshares} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-211.png'} alt={'adshares'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Parcel} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-212.png'} alt={'parcel'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.FhAachen} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-213.png'} alt={'fh aachen'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Detecon} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-214.png'} alt={'detecon'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.FrankfurtSchool} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-215.png'} alt={'frankfurt school'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Unal} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-216.png'} alt={'unal'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Psu} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-217.png'} alt={'pennsylvania state university'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Weneta} target="_blank">
-            <IconBox big={false}>
-              <Image src={'/partners/Group-218.png'} alt={'wemeta'} width={144} height={33} className='' />
-            </IconBox>
-          </Link>
-
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-6 gap-x-4 gap-y-8 mt-32 mx-6 xl:mx-12 place-items-center'>
+          {
+            Partners.map((partner, index) => (
+              <div key={index}>
+                <Link href={partner.url} target="_blank">
+                  <IconBox big={false}>
+                    <Image src={partner.urlImage} alt={partner.alt} width={144} height={33}/>
+                  </IconBox>
+                </Link>
+              </div>
+            ))
+          }
         </div>
 
         <div className="flex justify-center mt-32 lg:mt-52">
           <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">INVESTORS</h1>
         </div>
 
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-32 mx-6 xl:mx-12 place-items-center'>
-          <Link href={PartnersAndInvestorsLink.Polygon} target="_blank">
-            <IconBox big={true}>
-              <Image src={'/investors/investors-1.png'} alt={'polygon'} width={210} height={92} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Ocean} target="_blank">
-            <IconBox big={true}>
-              <Image src={'/investors/investors-2.png'} alt={'ocean'} width={210} height={92} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Brinc} target="_blank">
-            <IconBox big={true}>
-              <Image src={'/investors/investors-3.png'} alt={'brinc'} width={210} height={92} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.SandBox} target="_blank">
-            <IconBox big={true}>
-              <Image src={'/investors/investors-4.png'} alt={'sandbox'} width={210} height={92} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Xventures} target="_blank">
-            <IconBox big={true}>
-              <Image src={'/investors/investors-5.png'} alt={'xventures'} width={210} height={92} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.BlockchainFoudersGroup} target="_blank">
-            <IconBox big={true}>
-              <Image src={'/investors/investors-6.png'} alt={'blockchain founders group'} width={210} height={92} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.Polaris} target="_blank">
-            <IconBox big={true}>
-              <Image src={'/investors/investors-7.png'} alt={'polaris'} width={210} height={92} className='' />
-            </IconBox>
-          </Link>
-          <Link href={PartnersAndInvestorsLink.HasmeshLabs}target="_blank">
-            <IconBox big={true}>
-              <Image src={'/investors/investors-8.png'} alt={'hashmesh labs'} width={210} height={92} className='' />
-            </IconBox>
-          </Link>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-6 mt-32 mx-6 xl:mx-12 place-items-center'>
+          {
+            Investors.map((investor, index) => (
+              <div key={index}>
+                <Link href={investor.url} target="_blank">
+                  <IconBox big={true}>
+                    <Image src={investor.urlImage} alt={investor.alt} width={210} height={92}/>
+                  </IconBox>
+                </Link>
+              </div>
+            ))
+          }
         </div>
 
         <div className="flex flex-col md:flex-row gap-8 mt-72 items-end">
@@ -551,7 +125,7 @@ export default function AboutUs() {
         </div>
 
         <div className="w-full mt-28 flex justify-center items-center mb-40 lg:mb-72">
-          <Image src={'/images/img-video.png'} alt={'anita'} width={1471} height={885} className='' />
+          <Image src={'/images/img-video.png'} alt={'anita'} width={1471} height={885}/>
         </div>
         <Footer />
       </main>

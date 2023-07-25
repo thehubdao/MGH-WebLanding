@@ -5,8 +5,9 @@ import Footer from '../components/footer.component';
 import Scene from '../components/scene.component';
 import IconBox from '../components/iconBox.component';
 import Card from '../components/card.component';
-import { PartnersAndInvestorsLink, CardForm, ExternalLink, PageLocation } from '../enums/common.enum';
+import { CardForm, ExternalLink, PageLocation } from '../enums/common.enum';
 import { NavigationCards } from '../data/navigationCards.data';
+import { BackedBy } from '../data/partnersAndInvestors.data';
 
 export default function Home() {
   return (
@@ -82,39 +83,18 @@ export default function Home() {
         {/* backed section */}
         <div className='pb-32 mb-32'>
           <h2 className='text-center text-5xl text-gray-dark font-light pb-32 pt-64'>Backed by</h2>
-          <div className='flex justify-center flex-wrap gap-6 xl:gap-20'>
-            <Link href={PartnersAndInvestorsLink.Polygon} target="_blank">
-              <IconBox big={true}>
-                <Image src={'/investors/investors-1.png'} alt={'polygon'} width={210} height={92} className='' />
-              </IconBox>
-            </Link>
-            <Link href={PartnersAndInvestorsLink.SandBox} target="_blank">
-              <IconBox big={true}>
-                <Image src={'/investors/investors-4.png'} alt={'sandbox'} width={210} height={92} className='' />
-              </IconBox>
-            </Link>
-            <Link href={PartnersAndInvestorsLink.Decentraland} target="_blank">
-              <IconBox big={true}>
-                <Image src={'/partners/Group-184.png'} alt={'decentraland'} width={210} height={92} className='' />
-              </IconBox>
-            </Link>
-          </div>
-          <div className='flex justify-center flex-wrap gap-6 xl:gap-20 mt-6 xl:mt-16'>
-            <Link href={PartnersAndInvestorsLink.Brinc} target="_blank">
-              <IconBox big={true}>
-                <Image src={'/investors/investors-3.png'} alt={'brinc'} width={210} height={92} className='' />
-              </IconBox>
-            </Link>
-            <Link href={PartnersAndInvestorsLink.Ocean} target="_blank">
-              <IconBox big={true}>
-                <Image src={'/investors/investors-2.png'} alt={'ocean'} width={210} height={92} className='' />
-              </IconBox>
-            </Link>
-            <Link href={PartnersAndInvestorsLink.SomniumSpace} target="_blank">
-              <IconBox big={true}>
-                <Image src={'/partners/Group-185.png'} alt={'somnium space'} width={210} height={92} className='' />
-              </IconBox>
-            </Link>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-0 gap-y-6 mt-20 sm:mt-32 mx-6 md:mx-12 xl:mx-32 2xl:mx-80 place-items-center'>
+            {
+              BackedBy.map((investor, index) => (
+                <div key={index}>
+                  <Link href={investor.url} target="_blank">
+                    <IconBox big={true}>
+                      <Image src={investor.urlImage} alt={investor.alt} width={210} height={92}/>
+                    </IconBox>
+                  </Link>
+                </div>
+              ))
+            }
           </div>
         </div>
         <Footer />
