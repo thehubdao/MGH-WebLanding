@@ -10,12 +10,13 @@ export interface PersonCarrouselInterface{
 
 export interface PartnersAndInvestorsInterface{
   url: string,
-  
+  urlImage: string,
+  alt: string
 }
 
 export interface CardProjectInterface {
   imageUrl: string;
-  url: PageLocation | ExternalLink;
+  url: string;
   metaverseLogo: string;
   metaverse: string;
   tag: string;
@@ -24,7 +25,7 @@ export interface CardProjectInterface {
 
 export interface NavigationInterface {
   imageUrl: string;
-  url: PageLocation | ExternalLink;
+  url: string;
   floatImageUrl: string;
   title: string
   description: string;
