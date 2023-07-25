@@ -1,5 +1,3 @@
-import { Project } from "./project.enum";
-
 export const enum CardForm {
   Horizontal = 'horizontal',
   Vertical = 'vertical'
@@ -19,6 +17,7 @@ export const enum ExternalLink{
   Spatial = 'https://www.spatial.io/s/The-Metaverse-Seminars-62fbbb0dabce1e00010f75c8?share=2349173727968720925'
 }
 
+
 export const enum PageLocation{
   Home ='/',
   TheHub = '#hub',
@@ -30,15 +29,6 @@ export const enum PageLocation{
   JoinUs = '/join-us',
   Projects = '/projects',
   Soon = '/soon',
-  Project1 = '/projects/' + Project.FitchinHouse,
-  Project2 = '/projects/' + Project.Cryptoticker,
-  Project3 = '/projects/' + Project.EspacioCreador,
-  Project4 = '/projects/' + Project.Ekolance,
-  Project5 = '/projects/' + Project.CompetitiveGameHub,
-  Project6 = '/projects/' + Project.MentholProtocol,
-  Project7 = '/projects/' + Project.Ayo,
-  Project8 = '/projects/' + Project.MetagameHub, 
-  Project9 = '/projects/' + Project.TheHub
 }
 
 export const enum PartnersAndInvestorsLink{

@@ -1,5 +1,3 @@
-import { ExternalLink, PageLocation } from "../enums/common.enum";
-
 export interface PersonCarrouselInterface{
   name: string,
   role: string,
