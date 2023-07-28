@@ -86,7 +86,7 @@ export default function AboutUs() {
           <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">PARTNERS</h1>
         </div>
 
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-6 gap-x-4 gap-y-8 mt-32 mx-6 xl:mx-12 place-items-center'>
+        <div className='flex flex-wrap justify-center gap-x-5 gap-y-9 mt-32 mx-6 xl:mx-12 2xl:mx-20'>
           {
             Partners.map((partner, index) => (
               <div key={index}>
@@ -104,7 +104,7 @@ export default function AboutUs() {
           <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">INVESTORS</h1>
         </div>
 
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-6 mt-32 mx-6 xl:mx-12 place-items-center'>
+        <div className='flex flex-wrap justify-center gap-x-4 gap-y-6 mt-32 mx-6 md:mx-20 lg:mx-40 2xl:mx-72'>
           {
             Investors.map((investor, index) => (
               <div key={index}>
