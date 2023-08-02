@@ -71,5 +71,7 @@ export const enum PartnersAndInvestorsLink{
   Brinc = "https://www.brinc.io/",
   Xventures = "#",
   Polaris = "#",
-  HasmeshLabs = "#" 
+  HasmeshLabs = "#",
+  Lukso = 'https://lukso.network/',
+  Google = 'https://www.google.com/'
 }

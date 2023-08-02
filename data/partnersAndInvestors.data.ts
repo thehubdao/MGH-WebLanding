@@ -18,9 +18,14 @@ export const Partners: PartnersAndInvestorsInterface[] = [
         alt: 'somnium space'
     },
     {
-        url: PartnersAndInvestorsLink.ChainLink,
-        urlImage: '/partners/Group-186.png',
-        alt: 'chainlink'
+        url: PartnersAndInvestorsLink.Google,
+        urlImage: '/partners/google.png',
+        alt: 'google'
+    },
+    {
+        url: PartnersAndInvestorsLink.Lukso,
+        urlImage: '/partners/lukso.png',
+        alt: 'lukso'
     },
     {
         url: PartnersAndInvestorsLink.Fitchin,
@@ -43,9 +48,9 @@ export const Partners: PartnersAndInvestorsInterface[] = [
         alt: 'aws'
     },
     {
-        url: PartnersAndInvestorsLink.Cryptoticker,
-        urlImage: '/partners/Group-191.png',
-        alt: 'cryptoticker'
+        url: PartnersAndInvestorsLink.ChainLink,
+        urlImage: '/partners/Group-186.png',
+        alt: 'chainlink'
     },
     {
         url: PartnersAndInvestorsLink.Sophos,
@@ -118,16 +123,6 @@ export const Partners: PartnersAndInvestorsInterface[] = [
         alt: 'bonuz'
     },
     {
-        url: PartnersAndInvestorsLink.MoonBash,
-        urlImage: '/partners/Group-206.png',
-        alt: 'moon bash'
-    },
-    {
-        url: PartnersAndInvestorsLink.Nrverse,
-        urlImage: '/partners/Group-207.png',
-        alt: 'nrverse'
-    },
-    {
         url: PartnersAndInvestorsLink.SportfFive,
         urlImage: '/partners/Group-208.png',
         alt: 'sportfive'
@@ -138,20 +133,15 @@ export const Partners: PartnersAndInvestorsInterface[] = [
         alt: 'blockchain game alliance'
     },
     {
-        url: PartnersAndInvestorsLink.Picipo,
-        urlImage: '/partners/Group-210.png',
-        alt: 'picipo'
-    },
-    {
         url: PartnersAndInvestorsLink.Adshares,
         urlImage: '/partners/Group-211.png',
         alt: 'adshares'
     },
-    {
-        url: PartnersAndInvestorsLink.Parcel,
-        urlImage: '/partners/Group-212.png',
-        alt: 'parcel'
-    },
+    // {
+    //     url: PartnersAndInvestorsLink.Parcel,
+    //     urlImage: '/partners/Group-212.png',
+    //     alt: 'parcel'
+    // },
     {
         url: PartnersAndInvestorsLink.FhAachen,
         urlImage: '/partners/Group-213.png',
@@ -226,12 +216,22 @@ export const Investors: PartnersAndInvestorsInterface[] = [
         urlImage: '/investors/investors-8.png',
         alt: 'hashmesh labs'
     },
+    {
+        url: PartnersAndInvestorsLink.Decentraland,
+        urlImage: '/partners/Group-184.png',
+        alt: 'decentraland'
+    },
+    {
+        url: PartnersAndInvestorsLink.Lukso,
+        urlImage: '/partners/lukso.png',
+        alt: 'Lukso'
+    },
 ]
 
 export const BackedBy: PartnersAndInvestorsInterface[] = [
     {
         url: PartnersAndInvestorsLink.Polygon,
-        urlImage: '/investors/investors-8.png',
+        urlImage: '/investors/investors-1.png',
         alt: 'polygon'
     },
     {
@@ -255,8 +255,8 @@ export const BackedBy: PartnersAndInvestorsInterface[] = [
         alt: 'ocean'
     },
     {
-        url: PartnersAndInvestorsLink.SomniumSpace,
-        urlImage: '/partners/Group-185.png',
-        alt: 'somnium space'
+        url: PartnersAndInvestorsLink.Lukso,
+        urlImage: '/partners/lukso.png',
+        alt: 'Lukso'
     },
 ]
