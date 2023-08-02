@@ -3,7 +3,7 @@ import Image from "next/image";
 import IconBox from "../../components/iconBox.component";
 import PersonCarrousel from "../../components/personCarrousel.component";
 import ScrollTitleUI from "../../components/scrollTitle.component";
-import { ExternalLink, PageLocation } from "../../enums/common.enum";
+import { ExternalLink } from "../../enums/common.enum";
 import { Advisors, Advisors2, Team, Team2 } from "../../data/people.data";
 import { Investors, Partners } from "../../data/partnersAndInvestors.data";
 
@@ -11,13 +11,13 @@ export default function AboutUs() {
 
   return (
     <>
-      <main className=" pt-4 pb-20">
+      <main className=" pt-4">
         <div className="flex flex-col xl:flex-row mb-0 xl:mb-48 gap-8">
           <div className=" w-full xl:w-3/4 pl-10 lg:pl-40">
-            <h1 className="font-neue text-7xl md:text-9xl xl:text-[210px] text-lm_icons font-bold">THE HUB<br />DAO</h1>
+            <h1 className="font-neue text-7xl md:text-9xl xl:text-[150px] 2xl:text-[210px] text-lm_icons font-bold">THE HUB<br />DAO</h1>
           </div>
           <div className=" w-full xl:w-1/4 pr-10 lg:pr-36 text-end">
-            <h1 className="font-neue text-4xl text-lm_text_gray font-bold mt-11">THE HUB<br />DAO</h1>
+            <h1 className="font-neue text-4xl text-lm_gray font-bold mt-11">THE HUB<br />DAO</h1>
             <p className="font-neue text-4xl text-lm_icons font-bold">ABOUT</p>
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function AboutUs() {
             <div className="w-full h-[2px] mb-7">
               <div className="w-44 h-[2px] bg-lm_icons float-right"></div>
             </div>
-            <p className="md:w-[800px] font-light font-work text-xl">Welcome to THE HUB DAO, the ultimate platform for anyone looking to invest, build, and experience the metaverse. Our platform and resources have helped thousands of investors, builders, brands, and creators save money and time while navigate the ever-evolving metaverse. Whether you&apos;re a seasoned virtual worlds veteran or just getting started, THE HUB is the one-stop shop for everything you need to have a seamless metaverse journey. Join us and let&apos;s shape the future of the internet together!</p>
+            <p className="w-auto xl:w-[500px] 2xl:w-[700px] font-light font-work text-xl">Welcome to THE HUB DAO, the ultimate platform for anyone looking to invest, build, and experience the metaverse. Our platform and resources have helped thousands of investors, builders, brands, and creators save money and time while navigate the ever-evolving metaverse. Whether you&apos;re a seasoned virtual worlds veteran or just getting started, THE HUB is the one-stop shop for everything you need to have a seamless metaverse journey. Join us and let&apos;s shape the future of the internet together!</p>
           </div>
         </div>
 
@@ -45,11 +45,11 @@ export default function AboutUs() {
 
         <div className="flex flex-col md:flex-row gap-8 mt-36 items-end">
           <div className=" w-full md:w-2/4 pl-10 lg:pl-32">
-            <h1 className="font-neue text-4xl text-lm_text_gray font-bold">THE HUB<br />DAO</h1>
+            <h1 className="font-neue text-4xl text-lm_gray font-bold">THE HUB<br />DAO</h1>
             <p className="font-neue text-4xl text-lm_icons font-bold">CORE TEAM</p>
           </div>
           <div className=" w-full md:w-2/4 pr-10 lg:pr-32 text-end">
-            <h1 className="font-neue text-4xl text-lm_text_gray font-bold">NEXT UP</h1>
+            <h1 className="font-neue text-4xl text-lm_gray font-bold">NEXT UP</h1>
             <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">MEET <br /> THE TEAM</h1>
           </div>
         </div>
@@ -61,11 +61,11 @@ export default function AboutUs() {
 
         <div className="flex flex-col md:flex-row gap-8 mt-28 items-end">
           <div className=" w-full md:w-2/4 pl-10 lg:pl-24">
-            <h1 className="font-neue text-4xl text-lm_text_gray font-bold">NEXT UP</h1>
+            <h1 className="font-neue text-4xl text-lm_gray font-bold">NEXT UP</h1>
             <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">OUR <br /> ADVISORS</h1>
           </div>
           <div className=" w-full md:w-2/4 pr-10 lg:pr-20 text-end mb-16">
-            <h1 className="font-neue text-4xl text-lm_text_gray font-bold">THE HUB<br />DAO</h1>
+            <h1 className="font-neue text-4xl text-lm_gray font-bold">THE HUB<br />DAO</h1>
             <p className="font-neue text-4xl text-lm_icons font-bold">CORE ADVISORS</p>
           </div>
         </div>

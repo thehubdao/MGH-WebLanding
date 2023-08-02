@@ -38,7 +38,7 @@ export default function ProjectsComponent({ project }: ProjectProps) {
               </Link>
             </div>
             <div className="w-3/4 xl:w-full">
-              <h1 className="font-neue text-2xl sm:text-[40px] text-lm_text_gray font-bold mt-11">{project.tag}</h1>
+              <h1 className="font-neue text-2xl sm:text-[40px] text-lm_gray font-bold mt-11">{project.tag}</h1>
               <p className={`font-neue text-3xl sm:text-[50px] ${titleSize(project.fontTitle)} text-lm_icons font-bold`}>{parse(project.title)}</p>
             </div>
             <div className="mt-10 md:mt-20 w-full">

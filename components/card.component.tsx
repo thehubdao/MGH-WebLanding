@@ -1,15 +1,15 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import { CardForm } from '../enums/common.enum'
+import Link from 'next/link';
+import Image from 'next/image';
+import { CardForm } from '../enums/common.enum';
 
 interface CardProps {
-  imageUrl: string,
-  altImages: string,
-  floatImageUrl?: string,
-  children: string | JSX.Element,
-  url: string,
-  newTab?: boolean,
-  form: CardForm,
+  imageUrl: string;
+  altImages: string;
+  floatImageUrl?: string;
+  children: string | JSX.Element;
+  url: string;
+  newTab?: boolean;
+  form: CardForm;
 }
 
 export default function Card({ imageUrl, altImages, floatImageUrl, children, url, newTab, form }: CardProps) {

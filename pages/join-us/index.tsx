@@ -5,11 +5,11 @@ import { ExternalLink } from "../../enums/common.enum";
 export default function AboutUs() {
   return (
     <>
-      <main className=" pt-4 pb-20">
+      <main className="pt-4">
 
         <div className="flex flex-col xl:flex-row mb-0 xl:mb-16 gap-8">
           <div className=" w-full xl:w-1/4 pl-10 lg:pl-20 2xl:pl-36 ">
-            <h1 className="font-neue text-4xl text-lm_text_gray font-bold mt-11">THE HUB<br />DAO</h1>
+            <h1 className="font-neue text-4xl text-lm_gray font-bold mt-11">THE HUB<br />DAO</h1>
             <p className="font-neue text-4xl text-lm_icons font-bold">JOIN US!</p>
           </div>
           <div className=" w-full xl:w-3/4 pr-10 lg:pr-20 2xl:pr-40 text-end">

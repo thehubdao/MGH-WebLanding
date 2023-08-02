@@ -13,6 +13,7 @@ module.exports = {
         'poppins': ['var(--poppins-font)', 'sans-serif'],
         'neue': ['var(--neue-font)', 'sans-serif'],
         'toggleIcons': ['var(--toggle-icons-font)', 'sans-serif'],
+        'icons': ['var(--icons-font)', 'sans-serif'],
       },
       colors: {
         gray: {
@@ -27,7 +28,7 @@ module.exports = {
         lm_g_shadow: '#D3D9E6',
         lm_accent: '#1AB3F3',
         lm_icons: '#54575C',
-        lm_text_gray: '#D9D9D9'
+        lm_gray: '#D9D9D9'
       },
       boxShadow:{
         'boxes': '-19.197px -13.8645px 25.5959px #FFFFFF, 11.7315px 11.7315px 35.1944px #D3D9E6;',

@@ -1,30 +1,30 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from 'react';
-import { ReactElement } from "react"
+import { ReactElement } from "react";
 import Footer from "../components/footer.component";
 import Menu from "../components/menu";
 
 
 interface IDefaultLayout {
-  children: ReactElement
+  children: ReactElement;
 }
 
 export default function DefaultLayout({ children }: IDefaultLayout) {
 
   const router = useRouter();
-  const [url, setUrl] = useState<string>(router.pathname)
+  const [url, setUrl] = useState<string>(router.pathname);
   const excludedHeaderUrls = ['/'];
   const excludedFooterUrls = ['/build', '/experience', '/invest', '/soon'];
 
   useEffect(() => {
     const routeChanged = (url: string) => {
-      setUrl(url)
+      setUrl(url);
     }
     router.events.on('routeChangeStart', routeChanged);
     return () => {
       router.events.off('routeChangeStart', routeChanged);
     }
-  }, [])
+  }, []);
 
   return (
     <>

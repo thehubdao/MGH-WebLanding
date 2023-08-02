@@ -1,16 +1,17 @@
-import Image from 'next/image'
+import { IconForm } from "../enums/common.enum"
 
 interface SocialProps {
-  imageUrl: string,
-  link: string,
-  alt: string
+  iconRef: string;
+  link?: string;
+  alt?: string;
+  iconForm: IconForm;
 }
 
-export default function SocialIcon({ imageUrl, link, alt }: SocialProps) {
+export default function SocialIcon({ iconRef, link, alt, iconForm }: SocialProps) {
   return (
     <a href={link} target='_blank' rel='noreferrer'>
-      <div className='flex justify-center items-center w-[38px] h-[38px] relative'>
-        <Image src={imageUrl} fill={true} alt={alt} sizes="38px" />
+      <div className={` ${iconForm == IconForm.Big ? 'text-[38px]' : 'text-[28px] text-lm_gray'} font-icons flex justify-center items-center relative hover:text-lm_icons`}>
+        {iconRef}
       </div>
     </a>
   )

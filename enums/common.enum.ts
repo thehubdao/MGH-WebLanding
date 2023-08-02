@@ -3,6 +3,11 @@ export const enum CardForm {
   Vertical = 'vertical'
 }
 
+export const enum IconForm {
+  Big = 'big',
+  Regular = 'regular'
+}
+
 export const enum ExternalLink{
   MetaVerseExplorer = 'https://app.thehubdao.xyz/metaverseexplorer',
   TheHubDao = 'https://docs.thehubdao.xyz/',
@@ -14,7 +19,8 @@ export const enum ExternalLink{
   Linkedin = 'https://www.linkedin.com/company/the-hub-dao/',
   Discord = 'https://discord.com/invite/J35NGdPWgq',
   Snapshot = 'https://snapshot.org/#/metagamehub.eth',
-  Spatial = 'https://www.spatial.io/s/The-Metaverse-Seminars-62fbbb0dabce1e00010f75c8?share=2349173727968720925'
+  Spatial = 'https://www.spatial.io/s/The-Metaverse-Seminars-62fbbb0dabce1e00010f75c8?share=2349173727968720925',
+  GitHub = 'https://github.com/metagamehub',
 }
 
 
@@ -25,10 +31,11 @@ export const enum PageLocation{
   Invest = '/invest',
   Build = '/build',
   Experience = '/experience',
-  AboutTheHub = '/about-the-hub',
+  AboutTheHub = '/about',
   JoinUs = '/join-us',
   Projects = '/projects',
   Soon = '/soon',
+  Privacity = '/privacity'
 }
 
 export const enum PartnersAndInvestorsLink{

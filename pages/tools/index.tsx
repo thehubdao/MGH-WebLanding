@@ -11,7 +11,7 @@ export default function Tools() {
             <h1 className="font-neue text-5xl sm:text-7xl md:text-9xl xl:text-[150px] text-lm_icons font-bold">THE HUB<br />PLATFORM</h1>
           </div>
           <div className=" w-full xl:w-1/4 pr-10 lg:pr-36 text-end">
-            <h1 className="font-neue text-4xl text-lm_text_gray font-bold mt-11">THE HUB<br />DAO</h1>
+            <h1 className="font-neue text-4xl text-lm_gray font-bold mt-11">THE HUB<br />DAO</h1>
             <p className="font-neue text-4xl text-lm_icons font-bold">PLATFORM</p>
           </div>
         </div>
