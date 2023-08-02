@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import Footer from "../../components/footer.component";
 import IconBox from "../../components/iconBox.component";
 import PersonCarrousel from "../../components/personCarrousel.component";
 import ScrollTitleUI from "../../components/scrollTitle.component";
@@ -12,16 +11,10 @@ export default function AboutUs() {
 
   return (
     <>
-      <div className="absolute w-12 h-12 top-8 left-8">
-        <Link href={PageLocation.Home}>
-          <Image src='/icons/mgh.svg' fill={true} alt="MetaGameHub logo" />
-        </Link>
-      </div>
-      <main className=" pt-28 pb-20">
-
+      <main className=" pt-4 pb-20">
         <div className="flex flex-col xl:flex-row mb-0 xl:mb-48 gap-8">
           <div className=" w-full xl:w-3/4 pl-10 lg:pl-40">
-            <h1 className="font-neue text-7xl md:text-9xl xl:text-[243px] text-lm_icons font-bold">THE HUB<br />DAO</h1>
+            <h1 className="font-neue text-7xl md:text-9xl xl:text-[210px] text-lm_icons font-bold">THE HUB<br />DAO</h1>
           </div>
           <div className=" w-full xl:w-1/4 pr-10 lg:pr-36 text-end">
             <h1 className="font-neue text-4xl text-lm_text_gray font-bold mt-11">THE HUB<br />DAO</h1>
@@ -34,18 +27,18 @@ export default function AboutUs() {
             <div className="w-full h-[2px] mb-7">
               <div className="w-44 h-[2px] bg-lm_icons float-right"></div>
             </div>
-            <p className="sm:w-[530px] font-light font-work text-xl">Welcome to THE HUB DAO, the ultimate platform <br className="hidden sm:inline-block" /> for anyone looking to invest, build, and experience <br className="hidden sm:inline-block" /> the metaverse. <br className="hidden sm:inline-block" /> Our platform and resources have helped <br className="hidden sm:inline-block" /> thousands of investors, builders, brands, and <br className="hidden sm:inline-block" /> creators save money and time while navigate the <br className="hidden sm:inline-block" /> ever-evolving metaverse. <br className="hidden sm:inline-block" /> Whether you&apos;re a seasoned virtual worlds veteran <br className="hidden sm:inline-block" /> or just getting started, THE HUB is the one-stop-<br className="hidden sm:inline-block" /> shop for everything you need to have a seamless <br className="hidden sm:inline-block" /> metaverse journey. Join us and let&apos;s shape the <br className="hidden sm:inline-block" /> future of the internet together!</p>
+            <p className="md:w-[800px] font-light font-work text-xl">Welcome to THE HUB DAO, the ultimate platform for anyone looking to invest, build, and experience the metaverse. Our platform and resources have helped thousands of investors, builders, brands, and creators save money and time while navigate the ever-evolving metaverse. Whether you&apos;re a seasoned virtual worlds veteran or just getting started, THE HUB is the one-stop shop for everything you need to have a seamless metaverse journey. Join us and let&apos;s shape the future of the internet together!</p>
           </div>
         </div>
 
-        <div className="relative w-full py-28">
+        <div className="relative w-full py-28 2xl:py-20">
           <ScrollTitleUI title={['INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE']} imageUrl='/images/bunny.png' />
         </div>
 
-        <div className="flex justify-center xl:mt-48 ">
+        <div className="flex justify-center xl:mt-32 ">
           <Link href={ExternalLink.TheHubDao} rel="noopener noreferrer" target='_blank'>
-            <div className="w-auto md:w-[617px] min-h-[120px] md:min-h-[143px] shadow-button rounded-[40px] cursor-pointer flex justify-center items-center">
-              <p className="font-work text-xl font-medium text-lm_icons px-10 text-center">LEARN MORE ABOUT THE HUB</p>
+            <div className="w-auto md:w-[450px] min-h-[100px] shadow-button rounded-3xl cursor-pointer flex justify-center items-center">
+              <p className="font-work text-xl font-medium text-lm_icons px-10 text-center tracking-[1.6px]">LEARN MORE ABOUT THE HUB</p>
             </div>
           </Link>
         </div>
@@ -127,7 +120,6 @@ export default function AboutUs() {
         <div className="w-full mt-28 flex justify-center items-center mb-40 lg:mb-72">
           <Image src={'/images/img-video.png'} alt={'anita'} width={1471} height={885}/>
         </div>
-        <Footer />
       </main>
     </>
   )

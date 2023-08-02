@@ -1,7 +1,4 @@
 import SocialIcon from "../components/socialIcon.component";
-import Image from 'next/image'
-import Link from 'next/link'
-import { PageLocation } from "../enums/common.enum";
 
 export default function Soon() {
   return (
@@ -23,11 +20,6 @@ export default function Soon() {
           <SocialIcon imageUrl='/icons/ether.png' link='https://etherscan.io/token/0x8765b1a0eb57ca49be7eacd35b24a574d0203656' alt='etherscan link' />
           <SocialIcon imageUrl='/icons/email.png' link='mailto:info@thedac.info' alt='The Hub DAO email' />
         </div>
-      </div>
-      <div className="absolute w-12 h-12 bottom-8 left-2/4 lg:top-8 lg:left-8 -translate-x-2/4 lg:translate-x-0">
-        <Link href={PageLocation.Home}>
-          <Image src='/icons/mgh.svg' fill={true} alt="MetaGameHub logo" />
-        </Link>
       </div>
     </div>
   )

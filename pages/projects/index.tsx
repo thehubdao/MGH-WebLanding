@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import Footer from "../../components/footer.component";
 import Card from "../../components/card.component";
 import { ProjectsData } from "../../data/cardProject.data";
 import { CardForm, PageLocation } from "../../enums/common.enum";
@@ -9,13 +8,7 @@ export default function Projects() {
   
   return (
     <>
-      <div className="absolute w-12 h-12 top-8 left-8">
-        <Link href={PageLocation.Home}>
-          <Image src='/icons/mgh.svg' fill={true} alt="MetaGameHub logo" />
-        </Link>
-      </div>
       <main className=" pt-28 pb-20">
-
         <div className="flex flex-col xl:flex-row mb-0 gap-8">
           <div className=" w-full xl:w-1/4 pl-10 lg:pl-20">
             <h1 className="font-neue text-2xl sm:text-4xl text-lm_text_gray font-bold mt-11">THE HUB<br />DAO</h1>
@@ -59,8 +52,6 @@ export default function Projects() {
             </div>
           </Link>
         </div>
-
-        <Footer />
       </main>
     </>
   )

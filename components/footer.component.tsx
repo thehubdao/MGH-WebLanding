@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
       {/* footer */}
-      <div className='flex flex-col xl:flex-row justify-between items-center'>
+      <div className='flex flex-col xl:flex-row justify-between items-center '>
         {/* footer contact */}
         <div className='xl:w-2/4 flex flex-col items-center'>
           <p className='text-lm_icons text-lg text-center font-semibold mb-6 mx-8'>

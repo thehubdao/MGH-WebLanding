@@ -1,16 +1,6 @@
-import Link from "next/link";
-import Image from "next/image";
-import Footer from "../../components/footer.component";
-import { PageLocation } from "../../enums/common.enum";
-
 export default function Privacity() {
   return (
     <>
-      <div className="absolute w-12 h-12 top-8 left-8">
-        <Link href={PageLocation.Home}>
-          <Image src='/icons/mgh.svg' fill={true} alt="MetaGameHub logo" />
-        </Link>
-      </div>
       <main className="px-10 lg:px-60 pt-28 lg:pt-60 pb-20 font-work">
         <h1 className="font-poppins font-bold text-7xl text-center text-gray-dark">Privacy Policy</h1>
         <p className="font-light text-base lg:text-2xl text-center leading-relaxed pt-16">
@@ -80,7 +70,6 @@ export default function Privacity() {
           Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
           Meta Game Hub does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
         </p>
-        <Footer />
       </main>
     </>
   )

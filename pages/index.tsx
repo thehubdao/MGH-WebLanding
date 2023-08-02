@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Footer from '../components/footer.component';
 import Scene from '../components/scene.component';
 import IconBox from '../components/iconBox.component';
 import Card from '../components/card.component';
@@ -97,7 +96,6 @@ export default function Home() {
             }
           </div>
         </div>
-        <Footer />
       </main>
     </>
   )
