@@ -25,7 +25,7 @@ export default function Home() {
           <div className='absolute inset-0 w-full h-full bg-black'>
             <Scene />
           </div>
-          <div className='absolute w-12 h-12 top-8 left-8 lg:top-24 lg:left-24 border-t border-l border-white'></div>
+          {/* <div className='absolute w-12 h-12 top-8 left-8 lg:top-24 lg:left-24 border-t border-l border-white'></div>
           <div className='absolute w-12 h-12 top-8 right-8 lg:top-24 lg:right-24 border-t border-r border-white'></div>
           <div className='absolute w-12 h-12 bottom-8 right-8 lg:bottom-24 lg:right-24 border-b border-r border-white'></div>
           <div className='absolute w-12 h-12 bottom-8 left-8 lg:bottom-24 lg:left-24 border-b border-l border-white'></div>
@@ -55,12 +55,12 @@ export default function Home() {
               </div>
             </div>
             <h1 className='text-[8.5px] lg:text-[21px] font-medium tracking-[0.45em] leading-none'>THE ENGINE OF THE METAVERSE</h1>
-            {/* <Link href={PageLocation.TheHub} className='font-humane text-9xl lg:text-[320px] leading-none cursor-pointer'>ENTER THE HUB</Link> */}
+            <Link href={PageLocation.TheHub} className='font-humane text-9xl lg:text-[320px] leading-none cursor-pointer'>ENTER THE HUB</Link>
             <a href={PageLocation.TheHub} className='font-humane text-9xl lg:text-[320px] leading-none cursor-pointer'>ENTER THE HUB</a>
           </div>
           <div className='absolute w-4/6 lg:w-1/4 h-10 lg:h-12 top-10 lg:top-14'>
             <Image src={'/thehub.svg'} fill={true} alt={'The Hub DAO logo'} />
-          </div>
+          </div> */}
         </div>
         {/* card section */}
         <div id='hub'>
@@ -89,7 +89,7 @@ export default function Home() {
                 <div key={index}>
                   <Link href={investor.url} target="_blank">
                     <IconBox big={true}>
-                      <Image src={investor.urlImage} alt={investor.alt} width={210} height={92}/>
+                      <Image src={investor.urlImage} alt={investor.alt} width={210} height={92} />
                     </IconBox>
                   </Link>
                 </div>
