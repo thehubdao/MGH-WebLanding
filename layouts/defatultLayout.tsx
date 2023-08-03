@@ -24,7 +24,7 @@ export default function DefaultLayout({ children }: IDefaultLayout) {
     return () => {
       router.events.off('routeChangeStart', routeChanged);
     }
-  }, []);
+  }, [])
 
   return (
     <>

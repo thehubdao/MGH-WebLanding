@@ -4,50 +4,7 @@ import Image from 'next/image';
 import { ExternalLink, IconForm, PageLocation } from '../enums/common.enum';
 import ScrollTitleUI from './scrollTitle.component';
 import SocialIcon from './socialIcon.component';
-
-interface linkedButtonsProps {
-  handleToggleClick: () => void;
-}
-function linkedButtons({ handleToggleClick }: linkedButtonsProps) {
-  const headerList = [
-    {
-      name: "METAVERSE EXPLORER",
-      route: "",
-    },
-    {
-      name: "THE HUB PLATFORM",
-      route: "tools",
-    },
-    {
-      name: "ABOUT THE HUB",
-      route: "about",
-    },
-    {
-      name: "JOIN US",
-      route: "join-us",
-    },
-    {
-      name: "BLOG",
-      route: "soon",
-    },
-  ];
-  let counter = 1;
-  return (
-    headerList.map(item => {
-      return (
-        <Link key={item.name} href={`/${item.route}`}>
-          {/*Button */}
-          <div className='px-8 lg:px-0 lg:pl-20 lg:pr-8 flex items-center justify-start cursor-pointer' onClick={handleToggleClick}>
-            <div className="font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl  md:hover:text-[46px] lg:hover:text-[48px] xl:hover:text-[58px] 2xl:hover:text-[82px] text-lm_gray flex hover:text-lm_icons transition-all duration-150  justify-between md:justify-start w-full">
-              <div>{item.name}</div>
-              <div className='text-xl md:text-2xl xl:text-4xl lg:mt-[6px]'>0{counter++}</div>
-            </div>
-          </div>
-        </Link>
-      )
-    })
-  )
-}
+import LinkedButtonsUI from '../ui/menu/linkedButtons.ui';
 
 
 export default function Menu() {
@@ -55,6 +12,29 @@ export default function Menu() {
   const handleToggleClick = () => {
     setIsNavOpen((prev) => !prev);
   };
+
+  const headerList = [
+    {
+      name: "METAVERSE EXPLORER",
+      route: PageLocation.Home,
+    },
+    {
+      name: "THE HUB PLATFORM",
+      route: PageLocation.Tools,
+    },
+    {
+      name: "ABOUT THE HUB",
+      route: PageLocation.AboutTheHub,
+    },
+    {
+      name: "JOIN US",
+      route: PageLocation.JoinUs,
+    },
+    {
+      name: "BLOG",
+      route: PageLocation.Soon,
+    },
+  ];
 
   return (
     <nav className="mt-7">
@@ -74,18 +54,15 @@ export default function Menu() {
       </div>
       {isNavOpen && (
         <>
-          <div className="fixed flex  items-center bg-lm_fill w-full h-full inset-0 z-10">
-            <div className="relative bg-black/[.75] w-[35%] h-full hidden md:flex flex-wrap items-center justify-center z-10">
+          <div className="fixed flex flex-wrap  items-center bg-lm_fill w-full h-screen inset-0 z-10">
+            <div className="relative bg-black/[.75] w-[35%] h-full hidden md:flex flex-wrap items-center justify-center overflow-hidden">
               <div className='w-[60%]'>
                 <p className='text-xl my-4 text-black'>The all-in-one suite of tools for investing, building, and experiencing the Metaverse</p>
               </div>
               <ScrollTitleUI title={['INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE']} imageUrl='' />
             </div>
-            <div className='w-full md:w-[65%] z-20 '>
-              {linkedButtons({ handleToggleClick })}
-              <div className="absolute top-0 right-0 pr-[50px] pt-9 font-toggleIcons text-xl" onClick={handleToggleClick}>
-                x
-              </div>
+            <div className='w-full md:w-[65%] md:mt-20'>
+              <LinkedButtonsUI headerList={headerList} handleToggleClick={()=>handleToggleClick()}/>
               <div className='flex justify-center'>
                 <div className="w-full h-[2px] bg-lm_gray my-14 mx-8 lg:mx-20"></div>
               </div>
@@ -125,10 +102,13 @@ export default function Menu() {
                     </Link>
                   </div>
                 </div>
-                <div className="w-full xl:w-1/2 pr-8 lg:pr-20 text-end">
+                <div className="w-full xl:w-1/2 pr-8 lg:pr-20 text-end hidden md:block">
                   <h1 className="font-neue text-4xl text-lm_gray font-bold">THE HUB <br /> DAO</h1>
                   <p className="font-neue text-4xl text-lm_icons font-bold">ENTER THE <br /> HUB</p>
                 </div>
+              </div>
+              <div className="absolute top-0 right-0 pr-[50px] pt-9 font-toggleIcons text-xl" onClick={handleToggleClick}>
+                x
               </div>
             </div>
           </div>
