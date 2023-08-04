@@ -1,11 +1,12 @@
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useLoader } from '@react-three/fiber'
-import { Suspense, useEffect, useRef } from "react";
+import { Suspense, useEffect, useMemo, useRef } from "react";
 import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { EffectComposer, Bloom, Vignette, Noise } from '@react-three/postprocessing'
 import { Html, OrbitControls, useProgress } from "@react-three/drei"
 import React from "react";
+import { fragmentShader, vertexShader } from "../shaders/portal.shader";
 
 function LightBulb(props: any) {
   return (
@@ -27,10 +28,51 @@ function LightFocus(props: any) {
   );
 }
 
+function ImportPortal() {
+  const { nodes } = useLoader(GLTFLoader, '/3d/portal.glb')
+
+  const portalRef = useRef<THREE.Mesh>();
+  useFrame((state) => {
+    const { clock } = state;
+    if (portalRef.current) {
+      (portalRef.current.material as THREE.ShaderMaterial).uniforms.u_time.value = clock.getElapsedTime();
+    }
+  });
+
+  const data = useMemo(
+    () => ({
+      uniforms: {
+        u_time: {
+          value: 0
+        },
+        u_resolution: {
+          value: {
+            x: window.innerWidth * window.devicePixelRatio || 256,
+            y: window.innerHeight * window.devicePixelRatio || 256
+          }
+        }
+      },
+      fragmentShader,
+      vertexShader
+    }),
+    []
+  );
+
+  return (
+    <group>
+      <mesh {...nodes.Cube001}></mesh>
+      <mesh {...nodes.Portal} ref={portalRef}>
+        <shaderMaterial vertexShader={data.vertexShader} fragmentShader={data.fragmentShader} uniforms={data.uniforms} />
+      </mesh>
+      <mesh {...nodes.Gate001}>
+        <meshBasicMaterial color={[0, 1, 1]}/>
+      </mesh>
+    </group>
+  )
+}
+
 function ImportScene() {
   const gltf = useLoader(GLTFLoader, '/3d/portal.glb')
-
-  console.log({ gltf })
 
   return (
     <primitive object={gltf.scene} toneMapped={false} />
@@ -57,12 +99,6 @@ function Loader() {
 }
 
 export default function Scene() {
-  const controlsRef = useRef<any>();
-
-  useEffect(() => {
-
-  }, [])
-
   return (
     <div className="w-full h-full">
       <Canvas
@@ -73,10 +109,10 @@ export default function Scene() {
         linear
       >
         <Suspense fallback={<Loader />}>
-          <ImportScene />
-          <OrbitControls ref={controlsRef} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} enableZoom={false} />
-          <ambientLight color={"white"} intensity={0.3} />
-          <LightBulb position={[-1, -1, 0.6]} intensity={2} color={'red'} />
+          <ImportPortal />
+          {/* <OrbitControls ref={controlsRef} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} enableZoom={false} /> */}
+          <ambientLight color={"white"} intensity={10} />
+          <LightBulb position={[-1, -1, 0.6]} intensity={1} color={'red'} />
           {/* <LightBulb position={[0, 3, -3]} intensity={12} color={'white'} /> */}
           <LightFocus position={[0, 6, -4]} intensity={20} color={'white'} />
           <mesh position={[-0.9, -0.62, 0]}>
