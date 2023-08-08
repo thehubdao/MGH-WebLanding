@@ -41,13 +41,13 @@ export default function ScrollTitleUI({ title, imageUrl }: ScroolTitleProps) {
     <>
       <div className="w-full overflow-hidden">
         <div ref={textElement}>
-          <p className={`font-humane text-8xl md:text-[200px] lg:text-[220px] ${imageUrl ? 'text-gray-light' : 'text-black'} whitespace-nowrap leading-[0.8] opacity-50 -translate-x-1/2`}>{title}</p>
+          <p className={`font-humane text-8xl md:text-[200px] lg:text-[220px] ${imageUrl ? 'text-gray-light' : 'text-lm_icons'} whitespace-nowrap leading-[0.8] opacity-50 -translate-x-1/2`}>{title}</p>
         </div>
         <div ref={textElement2}>
-          <p className={`font-humane text-8xl md:text-[200px] lg:text-[220px] ${imageUrl ? 'text-gray-light' : 'text-black'} whitespace-nowrap leading-[0.8] opacity-50`}>{title}</p>
+          <p className={`font-humane text-8xl md:text-[200px] lg:text-[220px] ${imageUrl ? 'text-gray-light' : 'text-lm_icons'} whitespace-nowrap leading-[0.8] opacity-50`}>{title}</p>
         </div>
         <div ref={textElement3}>
-          <p className={`font-humane text-8xl md:text-[200px] lg:text-[220px] ${imageUrl ? 'text-gray-light' : 'text-black'} whitespace-nowrap leading-[0.8] opacity-50 -translate-x-1/2`}>{title}</p>
+          <p className={`font-humane text-8xl md:text-[200px] lg:text-[220px] ${imageUrl ? 'text-gray-light' : 'text-lm_icons'} whitespace-nowrap leading-[0.8] opacity-50 -translate-x-1/2`}>{title}</p>
         </div>
       </div>
       <div className="w-[360px] md:w-[690px] lg:w-[1050px] h-[300px] md:h-[600px] lg:h-[774px] absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-[52%]">
