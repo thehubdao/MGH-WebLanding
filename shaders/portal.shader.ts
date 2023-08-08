@@ -169,10 +169,11 @@ void main() {
     float c2 = ( r + st.x * 0.2 ) / 1.;
 
     vec3 portal = vec3(smoothstep( abs(sin(u_time/6.)), 1., c ), smoothstep( 0.4*abs(sin(u_time/10.)), 1., c ), smoothstep( .0, 1., c ));
-    vec3 tint = vec3(0.2, 0.6, 1.);
-    float brightness = smoothstep( 0., 0.8, c2 ) * portal.z;
+    // vec3 portal = vec3(smoothstep( .0, 1., c ), smoothstep( .0, 1., c ), smoothstep( .0, 1., c ));
+    vec3 tint = vec3(0.09, 0.73, 0.95);
+    float brightness = smoothstep( 0., 1.0, c2 ) * portal.z;
     // gl_FragColor = vec4(portal+(portal.z-portal.x), 1.0);
-    gl_FragColor = vec4(vec3(portal+brightness)*tint, 1.0);
+    gl_FragColor = vec4(vec3(brightness*2. + portal) * tint, 1.0);
     // gl_FragColor = vec4(0.0, 1.0, vUv.x,1.0);
 }
 `;
