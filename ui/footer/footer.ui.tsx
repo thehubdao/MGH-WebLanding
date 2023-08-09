@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import SocialIcon from './socialIcon.component';
-import { ExternalLink, IconForm, PageLocation } from '../enums/common.enum';
+import SocialIcon from '../../components/socialIcon.component';
+import { ExternalLink, IconForm, PageLocation } from '../../enums/common.enum';
 
-export default function Footer() {
+export default function FooterUI() {
   return (
     <>
       {/* footer */}

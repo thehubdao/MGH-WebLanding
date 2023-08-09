@@ -6,7 +6,7 @@ import ScrollTitleUI from "../../components/scrollTitle.component";
 import { ExternalLink } from "../../enums/common.enum";
 import { Advisors, Advisors2, Team, Team2 } from "../../data/people.data";
 import { Investors, Partners } from "../../data/partnersAndInvestors.data";
-import VideoComponent from "../../components/video.component";
+import VideoUI from "../../ui/video/video.ui";
 
 export default function AboutUs() {
 
@@ -119,7 +119,7 @@ export default function AboutUs() {
         </div>
 
         <div className="w-full mt-28 flex justify-center items-center mb-40 lg:mb-72">
-          <VideoComponent url="https://www.youtube.com/embed/NKFRWvfdOqU"/>
+          <VideoUI url="https://www.youtube.com/embed/NKFRWvfdOqU"/>
         </div>
       </main>
     </>

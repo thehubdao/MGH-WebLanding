@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from 'react';
 import { ReactElement } from "react";
-import Footer from "../components/footer.component";
 import Menu from "../components/menu";
+import FooterUI from "../ui/footer/footer.ui";
 
 
 interface IDefaultLayout {
@@ -38,7 +38,7 @@ export default function DefaultLayout({ children }: IDefaultLayout) {
       </main>
       <footer className="mb-20">
         {
-          !excludedFooterUrls.includes(url) && <Footer />
+          !excludedFooterUrls.includes(url) && <FooterUI />
         }
       </footer>
     </>
