@@ -1,5 +1,5 @@
 import SocialIcon from "../../components/socialIcon.component";
-import { IconForm } from "../../enums/common.enum";
+import { ExternalLink, IconForm } from "../../enums/common.enum";
 
 export default function Soon() {
   return (
@@ -12,14 +12,14 @@ export default function Soon() {
         <h1 className='font-humane text-9xl lg:text-[320px] leading-[0.7]'>COMING SOON</h1>
         <p className="font-medium text-base lg:text-xl text-center">we are still buidling this view<br />in the meantime, PLEASE STAY IN TOUCH  :)</p>
         <div className='flex gap-2 lg:gap-8 pt-12'>
-          <SocialIcon iconForm={IconForm.Big} iconRef='m' link='https://medium.com/@THEHUB_DAO' alt='medium link' />
-          <SocialIcon iconForm={IconForm.Big} iconRef='i' link='https://www.instagram.com/thehub_dao/' alt='instagram link' />
-          <SocialIcon iconForm={IconForm.Big} iconRef='l' link='https://www.linkedin.com/company/the-hub-dao/' alt='linkedin link' />
-          <SocialIcon iconForm={IconForm.Big} iconRef='w' link='https://twitter.com/THE_HUB_DAO' alt='twitter link' />
-          <SocialIcon iconForm={IconForm.Big} iconRef='t' link='https://t.me/thehub_dao' alt='telegram link' />
-          <SocialIcon iconForm={IconForm.Big} iconRef='a' link='https://discord.gg/J35NGdPWgq' alt='discord link' />
-          <SocialIcon iconForm={IconForm.Big} iconRef='M' link='mailto:info@thedac.info' alt='The Hub DAO email' />
-          <SocialIcon iconForm={IconForm.Big} iconRef='e' link='https://etherscan.io/token/0x8765b1a0eb57ca49be7eacd35b24a574d0203656' alt='etherscan link' />
+          <SocialIcon iconForm={IconForm.Regular} iconRef='m' link={ExternalLink.Medium} alt='medium link' />
+          <SocialIcon iconForm={IconForm.Regular} iconRef='i' link={ExternalLink.Instagram} alt='instagram link' />
+          <SocialIcon iconForm={IconForm.Regular} iconRef='l' link={ExternalLink.Linkedin} alt='linkedin link' />
+          <SocialIcon iconForm={IconForm.Regular} iconRef='w' link={ExternalLink.Twitter} alt='twitter link' />
+          <SocialIcon iconForm={IconForm.Regular} iconRef='t' link={ExternalLink.Telegram} alt='telegram link' />
+          <SocialIcon iconForm={IconForm.Regular} iconRef='a' link={ExternalLink.Discord} alt='discord link' />
+          <SocialIcon iconForm={IconForm.Regular} iconRef='M' link={ExternalLink.MailTo} alt='The Hub DAO email' />
+          <SocialIcon iconForm={IconForm.Regular} iconRef='e' link={ExternalLink.ETherScan} alt='etherscan link' />
         </div>
       </div>
     </div>

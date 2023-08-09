@@ -4,6 +4,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
     "./layouts/**/*.{js,ts,jsx,tsx}",
+    "./ui/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -12,6 +13,7 @@ module.exports = {
         'humane': ['var(--humane-font)', 'sans-serif'],
         'poppins': ['var(--poppins-font)', 'sans-serif'],
         'neue': ['var(--neue-font)', 'sans-serif'],
+        'neueExtended': ['var(--neue-extended-font)', 'sans-serif'],
         'toggleIcons': ['var(--toggle-icons-font)', 'sans-serif'],
         'icons': ['var(--icons-font)', 'sans-serif'],
       },

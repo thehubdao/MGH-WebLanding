@@ -21,6 +21,14 @@ export const enum ExternalLink{
   Snapshot = 'https://snapshot.org/#/metagamehub.eth',
   Spatial = 'https://www.spatial.io/s/The-Metaverse-Seminars-62fbbb0dabce1e00010f75c8?share=2349173727968720925',
   GitHub = 'https://github.com/metagamehub',
+  Medium = 'https://medium.com/@THEHUB_DAO',
+  Instagram = 'https://www.instagram.com/thehub_dao/',
+  Twitter = 'https://twitter.com/thehub_dao',
+  Telegram = 'https://t.me/thehub_dao',
+  DiscordFooter = 'https://discord.gg/J35NGdPWgq',
+  ETherScan = 'https://etherscan.io/token/0x8765b1a0eb57ca49be7eacd35b24a574d0203656',
+  MailTo = 'mailto:info@thedac.info'
+
 }
 
 
