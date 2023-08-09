@@ -93,7 +93,7 @@ export default function MenuUI (){
                         </div>
                       </Link>
                       <Link href={ExternalLink.Snapshot} target='_blank' className='flex mt-3'>
-                        <p className='font-work text-xs text-lm_icons font-bold'>GOVERNACE</p>
+                        <p className='font-work text-xs text-lm_icons font-bold'>GOVERNANCE</p>
                         <div className='relative w-3 h-3'>
                           <Image src={'/icons/textIcon.png'} alt={'text logo'} fill className="cursor-pointer ml-2" />
                         </div>
