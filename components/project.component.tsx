@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import Footer from "../components/footer.component";
 import { PageLocation } from "../enums/common.enum";
 import Box from "../components/box.component";
 import { ProjectInterface } from "../interfaces/data.interface";
@@ -16,27 +15,18 @@ export default function ProjectsComponent({ project }: ProjectProps) {
   const titleSize = (size: number) => {
     switch (size) {
       case 70:
-        return 'lg:text-[70px] leading-none'
-        break;
+        return 'lg:text-[70px] leading-none';
       case 85:
-        return 'lg:text-[85px] leading-none'
-        break;
+        return 'lg:text-[85px] leading-none';
       case 95:
-        return 'lg:text-[95px] leading-none'
-        break;
+        return 'lg:text-[95px] leading-none';
       default:
-        return 'lg:text-[70px] leading-none'
-        break;
+        return 'lg:text-[70px] leading-none';
     }
   }
 
   return (
     <>
-      <div className="absolute w-12 h-12 top-8 left-8">
-        <Link href={PageLocation.Home}>
-          <Image src='/icons/mgh.svg' fill={true} alt="MetaGameHub logo" />
-        </Link>
-      </div>
       <main className=" pt-28 pb-20">
         <div className="flex flex-col xl:flex-row mb-0 gap-8 pr-7 md:pr-20 xl:pr-56 pl-7">
           <div className=" w-full xl:w-[40%] text-end flex flex-wrap justify-end">
@@ -48,7 +38,7 @@ export default function ProjectsComponent({ project }: ProjectProps) {
               </Link>
             </div>
             <div className="w-3/4 xl:w-full">
-              <h1 className="font-neue text-2xl sm:text-[40px] text-lm_text_gray font-bold mt-11">{project.tag}</h1>
+              <h1 className="font-neue text-2xl sm:text-[40px] text-lm_gray font-bold mt-11">{project.tag}</h1>
               <p className={`font-neue text-3xl sm:text-[50px] ${titleSize(project.fontTitle)} text-lm_icons font-bold`}>{parse(project.title)}</p>
             </div>
             <div className="mt-10 md:mt-20 w-full">
@@ -181,8 +171,6 @@ export default function ProjectsComponent({ project }: ProjectProps) {
             </div>
           </div>
         </div>
-
-        <Footer />
       </main>
     </>
   )

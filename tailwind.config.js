@@ -3,6 +3,8 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./layouts/**/*.{js,ts,jsx,tsx}",
+    "./ui/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -11,6 +13,9 @@ module.exports = {
         'humane': ['var(--humane-font)', 'sans-serif'],
         'poppins': ['var(--poppins-font)', 'sans-serif'],
         'neue': ['var(--neue-font)', 'sans-serif'],
+        'neueExtended': ['var(--neue-extended-font)', 'sans-serif'],
+        'toggleIcons': ['var(--toggle-icons-font)', 'sans-serif'],
+        'icons': ['var(--icons-font)', 'sans-serif'],
       },
       colors: {
         gray: {
@@ -20,12 +25,12 @@ module.exports = {
         bg_vector: '#F1F5F9',
         hover_img: '#242424',
         //
-        lm_fill_gray: '#F5F7FF',
+        lm_fill: '#F5F7FF',
         lm_fill_white: '#FFFFFF',
         lm_g_shadow: '#D3D9E6',
         lm_accent: '#1AB3F3',
         lm_icons: '#54575C',
-        lm_text_gray: '#D9D9D9'
+        lm_gray: '#D9D9D9'
       },
       boxShadow:{
         'boxes': '-19.197px -13.8645px 25.5959px #FFFFFF, 11.7315px 11.7315px 35.1944px #D3D9E6;',

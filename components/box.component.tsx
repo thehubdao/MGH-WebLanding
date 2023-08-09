@@ -1,4 +1,4 @@
-import { ReactElement } from 'react'
+import { ReactElement } from 'react';
 
 interface BoxProps {
     children?: ReactElement
@@ -6,7 +6,7 @@ interface BoxProps {
 
 export default function Box({ children}: BoxProps) {
     return (
-        <div className={`bg-lm_fill_gray border-light rounded-3xl shadow-boxes w-full` }>
+        <div className={`bg-lm_fill border-light rounded-3xl shadow-boxes w-full` }>
             {children}
         </div>
     )

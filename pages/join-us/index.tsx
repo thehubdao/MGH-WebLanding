@@ -1,27 +1,19 @@
-import Link from "next/link";
-import Image from "next/image";
 import Button from "../../components/button.component";
-import Footer from "../../components/footer.component";
 import ScrollTitleUI from "../../components/scrollTitle.component";
-import { ExternalLink, PageLocation } from "../../enums/common.enum";
+import { ExternalLink } from "../../enums/common.enum";
 
 export default function AboutUs() {
   return (
     <>
-      <div className="absolute w-12 h-12 top-8 left-8">
-        <Link href={PageLocation.Home}>
-          <Image src='/icons/mgh.svg' fill={true} alt="MetaGameHub logo" />
-        </Link>
-      </div>
-      <main className=" pt-28 pb-20">
+      <main className="pt-4">
 
         <div className="flex flex-col xl:flex-row mb-0 xl:mb-16 gap-8">
           <div className=" w-full xl:w-1/4 pl-10 lg:pl-20 2xl:pl-36 ">
-            <h1 className="font-neue text-4xl text-lm_text_gray font-bold mt-11">THE HUB<br />DAO</h1>
+            <h1 className="font-neue text-4xl text-lm_gray font-bold mt-11">THE HUB<br />DAO</h1>
             <p className="font-neue text-4xl text-lm_icons font-bold">JOIN US!</p>
           </div>
           <div className=" w-full xl:w-3/4 pr-10 lg:pr-20 2xl:pr-40 text-end">
-            <h1 className="font-neue text-7xl md:text-9xl lg:text-[170px] 2xl:text-[243px] text-lm_icons font-bold">THE HUB<br />DAO <br /> FAMILY</h1>
+            <h1 className="font-neue text-7xl md:text-9xl lg:text-[170px] 2xl:text-[180px] text-lm_icons font-bold">THE HUB<br />DAO <br /> FAMILY</h1>
           </div>
         </div>
 
@@ -52,7 +44,6 @@ export default function AboutUs() {
             <p className="font-humane text-6xl md:text-8xl text-lm_icons">JOIN OUR METAVERSE SEMINARS</p>
           </Button>
         </div>
-        <Footer />
       </main>
     </>
   )
