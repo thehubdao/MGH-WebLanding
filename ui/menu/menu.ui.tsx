@@ -14,7 +14,8 @@ export default function MenuUI (){
     const headerList = [
       {
         name: "METAVERSE EXPLORER",
-        route: PageLocation.Home,
+        route: ExternalLink.MetaVerseExplorer,
+        newTab: true,
       },
       {
         name: "THE HUB PLATFORM",
@@ -46,7 +47,7 @@ export default function MenuUI (){
               className="cursor-pointer flex justify-start items-start ml-7"
             />
           </Link>
-          <div className={`font-toggleIcons text-3xl pr-[50px] ${isNavOpen ? 'hidden' : ''}`} onClick={() => { handleToggleClick() }}>
+          <div className={`font-toggleIcons text-3xl pr-[50px] cursor-pointer ${isNavOpen ? 'hidden' : ''}`} onClick={() => { handleToggleClick() }}>
             b
           </div>
         </div>
@@ -79,7 +80,7 @@ export default function MenuUI (){
                       <SocialIcon iconForm={IconForm.Regular} iconRef='e' link={ExternalLink.ETherScan} alt='etherscan link' />
                     </div>
                     <div className='mt-9'>
-                      <Link href={PageLocation.Home} className='flex' onClick={handleToggleClick}>
+                      <Link href={ExternalLink.MetaVerseExplorer} className='flex' onClick={handleToggleClick} target='_blank'>
                         <p className='font-work text-xs text-lm_icons font-bold'>METAVERSE EXPLORER</p>
                         <div className='relative w-3 h-3'>
                           <Image src={'/icons/textIcon.png'} alt={'text logo'} fill className="cursor-pointer ml-2" />
@@ -104,7 +105,7 @@ export default function MenuUI (){
                     <p className="font-neue text-4xl text-lm_icons font-bold">ENTER THE <br /> HUB</p>
                   </div>
                 </div>
-                <div className="absolute top-0 right-0 pr-[50px] pt-9 font-toggleIcons text-xl" onClick={handleToggleClick}>
+                <div className="absolute top-0 right-0 pr-[50px] pt-9 font-toggleIcons text-xl cursor-pointer" onClick={handleToggleClick}>
                   x
                 </div>
               </div>

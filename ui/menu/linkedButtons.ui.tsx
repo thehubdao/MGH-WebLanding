@@ -1,9 +1,10 @@
 import Link from "next/link";
-import { PageLocation } from "../../enums/common.enum";
+import { ExternalLink, PageLocation } from "../../enums/common.enum";
 
 interface ListProp {
   name: string;
-  route: PageLocation;
+  route: PageLocation | ExternalLink;
+  newTab?: boolean;
 }
 
 interface LinkedButtonsUIProps {
@@ -18,7 +19,7 @@ export default function LinkedButtonsUI({ handleToggleClick, headerList }: Linke
       {
         headerList.map(item => {
           return (
-            <Link key={item.name} href={`/${item.route}`}>
+            <Link key={item.name}  href={item.newTab ?`${item.route}` : `/${item.route}`} target={item.newTab ? '_blank' : '_self'}>
               {/*Button */}
               <div className='flex items-center justify-start cursor-pointer' onClick={handleToggleClick}>
                 <div className="font-bold flex w-full text-lm_gray ">
