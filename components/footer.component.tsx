@@ -12,7 +12,7 @@ export default function Footer() {
           <p className='text-lm_icons text-lg text-center font-semibold mb-6 mx-8'>
             Business & Partnership Proposals
           </p>
-          <div className='flex justify-around xl:w-[57%] pt-4'>
+          <div className='flex justify-around w-full xl:w-[57%] pt-4'>
             <SocialIcon iconForm={IconForm.Regular} iconRef='m' link={ExternalLink.Medium} alt='medium link' />
             <SocialIcon iconForm={IconForm.Regular} iconRef='i' link={ExternalLink.Instagram} alt='instagram link' />
             <SocialIcon iconForm={IconForm.Regular} iconRef='l' link={ExternalLink.Linkedin} alt='linkedin link' />
