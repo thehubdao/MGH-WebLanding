@@ -1,12 +1,15 @@
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { Canvas, useFrame, useThree, extend } from "@react-three/fiber";
 import { useLoader } from '@react-three/fiber'
-import { Suspense, useEffect, useMemo, useRef } from "react";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { EffectComposer, Bloom, Vignette, Noise } from '@react-three/postprocessing'
 import { Html, OrbitControls, useProgress } from "@react-three/drei"
 import React from "react";
 import { fragmentShader, vertexShader } from "../shaders/portal.shader";
+import { gsap } from "gsap";
+
+extend({ OrbitControls });
 
 function LightBulb(props: any) {
   return (
@@ -60,24 +63,24 @@ function ImportPortal() {
 
   return (
     <group>
-      <mesh {...nodes.Cube001}></mesh>
-      <mesh {...nodes.Portal} ref={portalRef}>
+      <mesh {...nodes.Portal}></mesh>
+      <mesh {...nodes.Portal_gate} ref={portalRef}>
         <shaderMaterial vertexShader={data.vertexShader} fragmentShader={data.fragmentShader} uniforms={data.uniforms} />
       </mesh>
-      <mesh {...nodes.Gate001}>
-        <meshBasicMaterial color={[0, 1, 1]}/>
+      <mesh {...nodes.Portal_lights}>
+        <meshBasicMaterial color={[0, 1, 1]} />
       </mesh>
     </group>
   )
 }
 
-function ImportScene() {
+/* function ImportScene() {
   const gltf = useLoader(GLTFLoader, '/3d/portal.glb')
 
   return (
     <primitive object={gltf.scene} toneMapped={false} />
   )
-}
+} */
 
 /* function Rig() {
   const { camera } = useThree()
@@ -94,27 +97,98 @@ function ImportScene() {
 function Loader() {
   const { active, progress, errors, item, loaded, total } = useProgress();
   return <Html fullscreen>
-    <p className="text-xs text-center pt-6">{progress} % loaded</p>
+    <p className="text-3xl bg-green-500 text-center pt-6">{progress} % loaded</p>
   </Html>;
 }
 
+const ImagePlane = ({ texture }: { texture: THREE.Texture }) => {
+  const planeRef = useRef();
+
+  return (
+    <mesh ref={planeRef} position={[0, 0, -5]} color='transparet'>
+      <planeGeometry args={[1, 1]} />
+      <meshBasicMaterial map={texture} transparent />
+    </mesh>
+  );
+};
+
+function Plane() {
+  const imagePaths = [
+    '/animation/enter_the_hub/enter_the_hub_00000.png',
+    '/animation/enter_the_hub/enter_the_hub_00001.png',
+    '/animation/enter_the_hub/enter_the_hub_00002.png',
+    '/animation/enter_the_hub/enter_the_hub_00003.png',
+    '/animation/enter_the_hub/enter_the_hub_00004.png',
+    '/animation/enter_the_hub/enter_the_hub_00005.png',
+    '/animation/enter_the_hub/enter_the_hub_00006.png',
+    '/animation/enter_the_hub/enter_the_hub_00007.png',
+    '/animation/enter_the_hub/enter_the_hub_00008.png',
+    '/animation/enter_the_hub/enter_the_hub_00009.png',
+    '/animation/enter_the_hub/enter_the_hub_00010.png',
+    '/animation/enter_the_hub/enter_the_hub_00011.png',
+    '/animation/enter_the_hub/enter_the_hub_00012.png',
+    '/animation/enter_the_hub/enter_the_hub_00013.png',
+    '/animation/enter_the_hub/enter_the_hub_00014.png',
+    '/animation/enter_the_hub/enter_the_hub_00015.png',
+    '/animation/enter_the_hub/enter_the_hub_00016.png',
+    '/animation/enter_the_hub/enter_the_hub_00017.png',
+    '/animation/enter_the_hub/enter_the_hub_00018.png',
+    '/animation/enter_the_hub/enter_the_hub_00019.png',
+    '/animation/enter_the_hub/enter_the_hub_00020.png',
+    '/animation/enter_the_hub/enter_the_hub_00021.png',
+    '/animation/enter_the_hub/enter_the_hub_00022.png',
+    '/animation/enter_the_hub/enter_the_hub_00023.png',
+    '/animation/enter_the_hub/enter_the_hub_00024.png',
+    '/animation/enter_the_hub/enter_the_hub_00025.png',
+    '/animation/enter_the_hub/enter_the_hub_00026.png',
+    '/animation/enter_the_hub/enter_the_hub_00027.png',
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
+  const textureArray: THREE.Texture[] = [];
+  const FPS = 12;
+
+  imagePaths.map((image) => {
+    const texture = useLoader(THREE.TextureLoader, image);
+    textureArray.push(texture);
+  })
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => {
+        if (prevIndex == imagePaths.length - 1) {
+          clearInterval(interval);
+          return prevIndex;
+        }
+        return (prevIndex + 1) % imagePaths.length;
+      });
+    }, 1000 / FPS);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (<ImagePlane texture={textureArray[currentImageIndex]} />)
+};
+
 export default function Scene() {
+
   return (
     <div className="w-full h-full">
       <Canvas
         shadows={true}
         className='w-full h-full'
-        camera={{ position: [0, 0, 4], fov: 25 }}
+        camera={{ position: [0, 0, 0], fov: 25 }}
         gl={{ antialias: true, toneMapping: THREE.NoToneMapping }}
         linear
+        color='white'
       >
         <Suspense fallback={<Loader />}>
           <ImportPortal />
           {/* <OrbitControls ref={controlsRef} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} enableZoom={false} /> */}
           <ambientLight color={"white"} intensity={10} />
-          <LightBulb position={[-1, -1, 0.6]} intensity={1} color={'red'} />
+          {/* <LightBulb position={[-1, -1, 0.6]} intensity={1} color={'red'} /> */}
           {/* <LightBulb position={[0, 3, -3]} intensity={12} color={'white'} /> */}
-          <LightFocus position={[0, 6, -4]} intensity={20} color={'white'} />
+          {/* <LightFocus position={[0, 6, -4]} intensity={20} color={'white'} /> */}
           <mesh position={[-0.9, -0.62, 0]}>
             {/* <boxGeometry attach="geometry" args={[1, 0.2, 1]} /> */}
             <meshStandardMaterial attach="material" color={"#5f6b63"} />
@@ -126,6 +200,8 @@ export default function Scene() {
             <Vignette eskil={false} offset={0.1} darkness={1.1} />
             <Noise opacity={0.1} />
           </EffectComposer> */}
+          <Plane />
+          <OrbitControls />
         </Suspense>
       </Canvas>
     </div>
