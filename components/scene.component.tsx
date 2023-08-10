@@ -106,7 +106,7 @@ const ImagePlane = ({ texture }: { texture: THREE.Texture }) => {
 
   return (
     <mesh ref={planeRef} position={[0, 0, -5]} color='transparet'>
-      <planeGeometry args={[1, 1]} />
+      <planeGeometry args={[2, 2]} />
       <meshBasicMaterial map={texture} transparent />
     </mesh>
   );
