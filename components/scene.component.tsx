@@ -5,12 +5,14 @@ import * as THREE from 'three'
 import { gsap } from "gsap";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { fragmentShader, vertexShader } from "../shaders/portal.shader";
+import { Leva, button, useControls } from "leva";
+import { useRouter } from "next/router";
 // import { Bloom, EffectComposer, Noise, Vignette } from "@react-three/postprocessing";
 
 function Loader() {
   const { active, progress, errors, item, loaded, total } = useProgress();
   return <Html fullscreen>
-    <p className="text-3xl bg-green-500 text-center pt-6">{progress} % loaded</p>
+    <p className="text-3xl text-white text-center pt-6">{progress} % loaded</p>
   </Html>;
 }
 
@@ -50,7 +52,14 @@ function PortalTitleAnimation() {
   const textures = useLoader(THREE.TextureLoader, imagePaths);
   const FPS = 17;
 
-  useEffect(() => {
+  const router = useRouter()
+
+  if (router.asPath.split('#')[1] === 'debug')
+    useControls('The HUB title', { 'repeat animation': button(() => ejectAnimation()), });
+
+  const ejectAnimation = () => {
+    setCurrentImageIndex(0);
+
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex: number) => {
         if (prevIndex == imagePaths.length - 1) {
@@ -61,6 +70,11 @@ function PortalTitleAnimation() {
       });
     }, 1000 / FPS);
 
+    return interval;
+  };
+
+  useEffect(() => {
+    const interval = ejectAnimation();
     return () => clearInterval(interval);
   }, []);
 
