@@ -5,6 +5,7 @@ import * as THREE from 'three'
 import { gsap } from "gsap";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { fragmentShader, vertexShader } from "../shaders/portal.shader";
+// import { Bloom, EffectComposer, Noise, Vignette } from "@react-three/postprocessing";
 
 function Loader() {
   const { active, progress, errors, item, loaded, total } = useProgress();
@@ -130,6 +131,11 @@ export default function Scene() {
           <pointLight position={[15, 15, 15]} intensity={4} />
           <ImportPortal />
           <PortalTitleAnimation />
+          {/* <EffectComposer>
+            <Bloom intensity={1} radius={0.92} luminanceThreshold={0.7} luminanceSmoothing={0.3} height={300} mipmapBlur />
+            <Vignette eskil={false} offset={0.1} darkness={1.1} />
+            <Noise opacity={0.1} />
+          </EffectComposer> */}
         </Suspense>
       </Canvas>
     </div>
