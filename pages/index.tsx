@@ -8,8 +8,16 @@ import Card from '../components/card.component';
 import { CardForm, ExternalLink, PageLocation } from '../enums/common.enum';
 import { NavigationCards } from '../data/navigationCards.data';
 import { BackedBy } from '../data/partnersAndInvestors.data';
+import { Leva } from 'leva';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+  const router = useRouter();
+  const [showDebugger, setShowDebugger] = useState<boolean>(false);
+  useEffect(() => {
+    setShowDebugger(router.asPath.split('#')[1] != 'debug');
+  }, [router])
   return (
     <>
       <Head>
@@ -99,6 +107,10 @@ export default function Home() {
         </div>
         <Footer />
       </main>
+      <Leva
+        collapsed // default = false, when true the GUI is collpased
+        hidden={showDebugger} // default = false, when true the GUI is hidden
+      />
     </>
   )
 }
