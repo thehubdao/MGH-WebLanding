@@ -1,13 +1,11 @@
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
-import { Html, useProgress, OrbitControls } from "@react-three/drei"
+import { Html, useProgress, OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import * as THREE from 'three'
-import { gsap } from "gsap";
+import * as THREE from 'three';
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { fragmentShader, vertexShader } from "../shaders/portal.shader";
-import { Leva, button, useControls } from "leva";
-import { useRouter } from "next/router";
-// import { Bloom, EffectComposer, Noise, Vignette } from "@react-three/postprocessing";
+import { button, folder, useControls } from "leva";
+import { Bloom, EffectComposer, Noise, Vignette } from "@react-three/postprocessing";
 
 function Loader() {
   const { active, progress, errors, item, loaded, total } = useProgress();
@@ -52,10 +50,7 @@ function PortalTitleAnimation() {
   const textures = useLoader(THREE.TextureLoader, imagePaths);
   const FPS = 17;
 
-  const router = useRouter()
-
-  if (router.asPath.split('#')[1] === 'debug')
-    useControls('The HUB title', { 'repeat animation': button(() => ejectAnimation()), });
+  useControls('The HUB title', { 'repeat animation': button(() => ejectAnimation()), });
 
   const ejectAnimation = () => {
     setCurrentImageIndex(0);
@@ -78,22 +73,68 @@ function PortalTitleAnimation() {
     return () => clearInterval(interval);
   }, []);
 
-  return (
-    <mesh position={[0, 0, -5]} color='transparet'>
-      <planeGeometry args={[2.5, 2.5]} />
-      <meshBasicMaterial map={textures[currentImageIndex]} transparent />
-    </mesh>
-  )
+  return <mesh position={[0, 0, -1]} color='transparent'>
+    <planeGeometry args={[0.5, 0.5]} />
+    <meshBasicMaterial map={textures[currentImageIndex]} transparent />
+  </mesh>
+
 };
 
 function ImportPortal() {
-  const { nodes } = useLoader(GLTFLoader, '/3d/portal.glb')
-
+  const { nodes } = useLoader(GLTFLoader, '/3d/portal.glb');
   const portalRef = useRef<THREE.Mesh>();
+
+  const { portalRcolor } = useControls('Portal shader', {
+    portalRcolor: {
+      value: 0,
+      min: 0,
+      max: 1,
+    }
+  });
+  const { portalGcolor } = useControls('Portal shader', {
+    portalGcolor: {
+      value: 1,
+      min: 0,
+      max: 1,
+    }
+  });
+  const { portalBcolor } = useControls('Portal shader', {
+    portalBcolor: {
+      value: 1,
+      min: 0,
+      max: 1,
+    }
+  });
+
+  const { lightRcolor } = useControls('Portal lights', {
+    lightRcolor: {
+      value: 1,
+      min: 0,
+      max: 1,
+    }
+  });
+  const { lightGcolor } = useControls('Portal lights', {
+    lightGcolor: {
+      value: 1,
+      min: 0,
+      max: 1,
+    }
+  });
+  const { lightBcolor } = useControls('Portal lights', {
+    lightBcolor: {
+      value: 1,
+      min: 0,
+      max: 1,
+    }
+  });
+
   useFrame((state) => {
     const { clock } = state;
     if (portalRef.current) {
       (portalRef.current.material as THREE.ShaderMaterial).uniforms.u_time.value = clock.getElapsedTime();
+      (portalRef.current.material as THREE.ShaderMaterial).uniforms.u_portalColor.value.r = portalRcolor;
+      (portalRef.current.material as THREE.ShaderMaterial).uniforms.u_portalColor.value.g = portalGcolor;
+      (portalRef.current.material as THREE.ShaderMaterial).uniforms.u_portalColor.value.b = portalBcolor;
     }
   });
 
@@ -107,6 +148,13 @@ function ImportPortal() {
           value: {
             x: window.innerWidth * window.devicePixelRatio || 256,
             y: window.innerHeight * window.devicePixelRatio || 256
+          }
+        },
+        u_portalColor: {
+          value: {
+            r: portalRcolor,
+            g: portalGcolor,
+            b: portalBcolor
           }
         }
       },
@@ -123,13 +171,55 @@ function ImportPortal() {
         <shaderMaterial vertexShader={data.vertexShader} fragmentShader={data.fragmentShader} uniforms={data.uniforms} />
       </mesh>
       <mesh {...nodes.Portal_lights}>
-        <meshBasicMaterial color={[0, 1, 1]} />
+        <meshBasicMaterial color={[lightRcolor, lightGcolor, lightBcolor]} />
       </mesh>
     </group>
   )
 }
 
 export default function Scene() {
+  const { ambientLightIntensity } = useControls('General Lights', {
+    ambientLightIntensity: {
+      value: 2.5,
+      min: 0,
+      max: 20,
+    }
+  });
+  const { ambientLightColor } = useControls('General Lights', {
+    ambientLightColor: '#fff'
+  });
+  const { activePostprocessing } = useControls('Post-Processing', {
+    activePostprocessing: false
+  });
+  const { intensityBloom, radiusBloom, luminanceThresholdBloom, luminanceSmoothingBloom, heightBloom } = useControls('Post-Processing', {
+    'Bloom Settings': folder({
+      intensityBloom: {
+        value: 2,
+        min: 0,
+        max: 10
+      },
+      radiusBloom: {
+        value: 0.92,
+        min: 0,
+        max: 1
+      },
+      luminanceThresholdBloom: {
+        value: 0.1,
+        min: 0,
+        max: 1
+      },
+      luminanceSmoothingBloom: {
+        value: 0.3,
+        min: 0,
+        max: 1
+      },
+      heightBloom: {
+        value: 300,
+        min: 0,
+        max: 900
+      }
+    })
+  });
   return (
     <div className="w-full h-full">
       <Canvas
@@ -142,14 +232,17 @@ export default function Scene() {
       >
         <Suspense fallback={<Loader />}>
           <OrbitControls maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} enableZoom={false} />
-          <pointLight position={[15, 15, 15]} intensity={4} />
+          <ambientLight intensity={ambientLightIntensity} color={ambientLightColor} />
           <ImportPortal />
           <PortalTitleAnimation />
-          {/* <EffectComposer>
-            <Bloom intensity={1} radius={0.92} luminanceThreshold={0.7} luminanceSmoothing={0.3} height={300} mipmapBlur />
-            <Vignette eskil={false} offset={0.1} darkness={1.1} />
-            <Noise opacity={0.1} />
-          </EffectComposer> */}
+          {
+            activePostprocessing &&
+            <EffectComposer>
+              <Bloom intensity={intensityBloom} radius={radiusBloom} luminanceThreshold={luminanceThresholdBloom} luminanceSmoothing={luminanceSmoothingBloom} height={heightBloom} mipmapBlur />
+              <Vignette eskil={false} offset={0.1} darkness={1.1} />
+              <Noise opacity={0.1} />
+            </EffectComposer>
+          }
         </Suspense>
       </Canvas>
     </div>
