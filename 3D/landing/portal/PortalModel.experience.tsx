@@ -2,9 +2,9 @@ import { useFrame, useLoader } from "@react-three/fiber";
 import { useControls } from "leva";
 import { useMemo, useRef } from "react";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { fragmentShader, vertexShader } from "../../shaders/portal.shader";
+import { fragmentShader, vertexShader } from "../../../shaders/portal.shader";
 
-export default function Portal() {
+export default function PortalModel() {
   const { nodes } = useLoader(GLTFLoader, '/3d/portal.glb');
   const portalRef = useRef<THREE.Mesh>();
 
@@ -91,7 +91,8 @@ export default function Portal() {
   return (
     <group>
       <mesh {...nodes.Portal}></mesh>
-      <mesh {...nodes.Portal_gate} ref={portalRef}>
+      <mesh ref={portalRef} position={[0, -0.1, -15]}>
+        <circleGeometry args={[1.75, 12]} />
         <shaderMaterial vertexShader={data.vertexShader} fragmentShader={data.fragmentShader} uniforms={data.uniforms} />
       </mesh>
       <mesh {...nodes.Portal_lights}>

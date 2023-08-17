@@ -1,8 +1,8 @@
 import * as THREE from 'three';
 import { Suspense } from 'react';
 import { Canvas } from "@react-three/fiber";
-import Experience from '../landing/index.experience';
-import Loader from '../common/loader.experience';
+import Experience from '../../3D/landing/index.experience';
+import Loader from '../../3D/common/loader.experience';
 
 export default function LandingLauncher() {
 

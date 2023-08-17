@@ -1,6 +1,6 @@
 import { useControls } from "leva";
 
-export default function AmbientLight() {
+export default function Lights() {
   const { ambientLightIntensity } = useControls('General Lights', {
     ambientLightIntensity: {
       value: 2.5,
@@ -12,7 +12,5 @@ export default function AmbientLight() {
     ambientLightColor: '#fff'
   });
 
-  return (
-    <ambientLight intensity={ambientLightIntensity} color={ambientLightColor} />
-  )
+  return (<ambientLight intensity={ambientLightIntensity} color={ambientLightColor} />)
 }
