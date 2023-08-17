@@ -2,15 +2,15 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '../components/footer.component';
-import Scene from '../components/scene.component';
 import IconBox from '../components/iconBox.component';
 import Card from '../components/card.component';
-import { CardForm, ExternalLink, PageLocation } from '../enums/common.enum';
+import { CardForm } from '../enums/common.enum';
 import { NavigationCards } from '../data/navigationCards.data';
 import { BackedBy } from '../data/partnersAndInvestors.data';
 import { Leva } from 'leva';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+import LandingLauncher from '../components/launcher/landingLauncher.component';
 
 export default function Home() {
   const router = useRouter();
@@ -31,7 +31,7 @@ export default function Home() {
       <main className='font-work pb-20'>
         <div className='flex justify-center items-center bg-[#3f8550] w-full h-screen text-white relative'>
           <div className='absolute inset-0 w-full h-full bg-black'>
-            <Scene />
+            <LandingLauncher />
           </div>
           {/* <div className='absolute w-12 h-12 top-8 left-8 lg:top-24 lg:left-24 border-t border-l border-white'></div>
           <div className='absolute w-12 h-12 top-8 right-8 lg:top-24 lg:right-24 border-t border-r border-white'></div>
