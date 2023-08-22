@@ -15,7 +15,7 @@ export default function Experience() {
       src: ['/audio/test.mp3'],
       autoplay: true,
       loop: true,
-      volume: 1,
+      volume: 0.01,
     });
     Howler.pos(0, 0, 0);
     ambientSound.current.pos(0, 0, 10);
