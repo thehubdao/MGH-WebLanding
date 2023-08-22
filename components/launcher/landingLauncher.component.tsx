@@ -11,7 +11,7 @@ export default function LandingLauncher() {
       <Canvas
         shadows={true}
         className='w-full h-full'
-        camera={{ position: [0, 0, .1], fov: 25 }}
+        camera={{ position: [0, 0, 0.01], fov: 25 }}
         gl={{ antialias: true, toneMapping: THREE.NoToneMapping }}
         linear
         color='white'
