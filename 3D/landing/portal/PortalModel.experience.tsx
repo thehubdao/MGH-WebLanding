@@ -5,7 +5,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { fragmentShader, vertexShader } from "../../../shaders/portal.shader";
 
 export default function PortalModel() {
-  const { nodes } = useLoader(GLTFLoader, '/3d/portal.glb');
+  const { nodes } = useLoader(GLTFLoader, '/3d/landing/PORTAL.glb');
   const portalRef = useRef<THREE.Mesh>();
 
   const { portalRcolor } = useControls('Portal shader', {

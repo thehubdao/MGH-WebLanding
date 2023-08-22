@@ -1,7 +1,7 @@
-import PortalModel from "./PortalModel.experience";
+import PortalModel from "./portalModel.experience";
 import PortalTitleAnimation from "./PortalTitleAnimation.experience";
 
-export default function PortalScene() {  
+export default function PortalScene() {
 
   return (<>
     <PortalModel />
