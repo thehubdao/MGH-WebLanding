@@ -7,6 +7,7 @@ import Postprocessing from './postprocessing.experience';
 import Lights from '../common/lights';
 import PortalScene from './portal/portalScene.experience';
 import PlatformScene from './platform/platformScene.experience';
+import MouseMove from '../common/mouseMove';
 
 export default function Experience() {
   const ambientSound = useRef<Howl>();
@@ -31,11 +32,10 @@ export default function Experience() {
   })
 
   return <>
-    <OrbitControls maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} enableZoom={false} />
-
     <Lights />
     <PortalScene />
     <PlatformScene />
+    <MouseMove />
 
     <Postprocessing />
   </>
