@@ -231,32 +231,32 @@ export const Investors: PartnersAndInvestorsInterface[] = [
 export const BackedBy: PartnersAndInvestorsInterface[] = [
     {
         url: PartnersAndInvestorsLink.Polygon,
-        urlImage: '/investors/investors-1.png',
+        urlImage: '/backedBy/group-1.png',
         alt: 'polygon'
     },
     {
         url: PartnersAndInvestorsLink.SandBox,
-        urlImage: '/investors/investors-4.png',
+        urlImage: '/backedBy/group-2.png',
         alt: 'sandbox'
     },
     {
         url: PartnersAndInvestorsLink.Decentraland,
-        urlImage: '/partners/Group-184.png',
+        urlImage: '/backedBy/group-3.png',
         alt: 'decentraland'
     },
     {
         url: PartnersAndInvestorsLink.Brinc,
-        urlImage: '/investors/investors-3.png',
+        urlImage: '/backedBy/group-4.png',
         alt: 'brinc'
     },
     {
         url: PartnersAndInvestorsLink.Ocean,
-        urlImage: '/investors/investors-2.png',
+        urlImage: '/backedBy/group-5.png',
         alt: 'ocean'
     },
     {
         url: PartnersAndInvestorsLink.Lukso,
-        urlImage: '/partners/lukso.png',
+        urlImage: '/backedBy/group-6.png',
         alt: 'Lukso'
     },
 ]
