@@ -9,15 +9,15 @@ export default function PlatformScreens() {
   return (
     <group>
       <mesh {...nodes.PLATFORM_SCREENS}>
-        <meshBasicMaterial color={[255, 255, 255]} />
+        <meshBasicMaterial color={[0.4, 0.4, 0.4]} />
       </mesh>
       <mesh {...nodes.PLATFORM_STRUCTURE}>
 
       </mesh>
-      {/* <mesh {...nodes.PLATFORM_UI}>
+      <mesh {...nodes.PLATFORM_UI}>
         <meshBasicMaterial map={texture} transparent />
-        <meshBasicMaterial color={[255, 255, 0]} /> 
-      </mesh> */}
+        {/* <meshBasicMaterial color={[255, 255, 0]} />  */}
+      </mesh>
     </group>
   )
 }

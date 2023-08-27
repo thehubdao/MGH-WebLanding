@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { Suspense, useRef } from 'react';
+import { Suspense } from 'react';
 import { Canvas } from "@react-three/fiber";
 import Experience from '../../3D/landing/index.experience';
 import Loader from '../../3D/common/loader.experience';

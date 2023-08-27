@@ -1,15 +1,30 @@
 import { useEffect, useRef } from 'react';
 import { Howl } from 'howler';
-import { OrbitControls } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
 import Postprocessing from './postprocessing.experience';
-import Lights from '../common/lights';
+import Lights from '../common/lights.experience';
 import PortalScene from './portal/portalScene.experience';
 import PlatformScene from './platform/platformScene.experience';
-import MouseMove from '../common/mouseMove';
+import MouseMove from '../common/mouseMove.experience';
+import { useControls } from 'leva';
 
 export default function Experience() {
+  const { near, far, fogColor } = useControls('Fog', {
+    near: {
+      value: 10,
+      min: 0,
+      max: 20,
+
+    },
+    far: {
+      value: 80,
+      min: 50,
+      max: 200
+    },
+    fogColor: '#00ffff'
+  });
+
   const ambientSound = useRef<Howl>();
   const handleHowler = () => {
     ambientSound.current = new Howl({
@@ -27,9 +42,7 @@ export default function Experience() {
     handleHowler();
   }, []);
 
-  useFrame(({ camera }) => {
-    Howler.orientation(camera.rotation.y, 0, 0);
-  })
+  useFrame(({ camera }) => { Howler.orientation(camera.rotation.y, 0, 0) })
 
   return <>
     <Lights />
@@ -37,6 +50,7 @@ export default function Experience() {
     <PlatformScene />
     <MouseMove />
 
+    <fog attach="fog" color={fogColor} near={near} far={far} />
     <Postprocessing />
   </>
 }
