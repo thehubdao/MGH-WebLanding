@@ -64,7 +64,7 @@ export const ProjectsData: CardProjectInterface[] = [
     url: ProjectLocation.MetagameHub,
     metaverseLogo: "/projects/logos/xone.svg",
     metaverse: "xone",
-    tag: "Mobimetaverse First Experience",
+    tag: "Mobile First Experience",
     title: "METAGAMEHUB"
   },
   {

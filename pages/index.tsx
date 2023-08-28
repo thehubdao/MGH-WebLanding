@@ -29,31 +29,7 @@ export default function Home() {
           <div className='absolute w-12 h-12 bottom-8 right-8 lg:bottom-24 lg:right-24 border-b border-r border-white'></div>
           <div className='absolute w-12 h-12 bottom-8 left-8 lg:bottom-24 lg:left-24 border-b border-l border-white'></div>
           <div className='flex flex-col justify-center items-center relative h-fit'>
-            <div className='hidden absolute xl:flex flex-col items-end top-12 right-[102%] cursor-pointer group'>
-              <div className='w-6 h-[2px] bg-white mb-2 group-hover:w-4/5 transition-all duration-500'></div>
-              <div className='leading-none text-right text-lg font-light group-hover:font-semibold group-hover:bg-white group-hover:text-lm_icons group-hover:p-4 transition-all duration-300'>
-                <Link href={ExternalLink.MetaVerseExplorer} target='_blank' rel='noreferrer' className='block'>
-                  FIND<br />UNDERVALUED<br />LANDS
-                </Link>
-              </div>
-            </div>
-            <div className='hidden absolute xl:flex flex-col bottom-2/5 left-[102%] cursor-pointer w-48 group'>
-              <div className='w-6 h-[2px] bg-white mb-2 group-hover:w-4/5 transition-all duration-500'></div>
-              <div className='leading-none text-lg font-light group-hover:font-semibold group-hover:bg-white group-hover:text-lm_icons group-hover:p-4 transition-all duration-300'>
-                <Link href={ExternalLink.DclEdit} target='_blank' rel='noreferrer' className='block'>
-                  BUILD ON ANY VIRTUAL WORLD
-                </Link>
-              </div>
-            </div>
-            <div className='hidden absolute xl:flex items-center top-full -translate-y-[46px] left-0 cursor-pointer group'>
-              <div className='w-[3px] h-6 bg-white mr-2 group-hover:h-10 transition-all duration-300'></div>
-              <div className='leading-none text-lg font-light group-hover:font-semibold group-hover:bg-white group-hover:text-lm_icons group-hover:p-4 transition-all duration-300'>
-                <Link href={ExternalLink.MetagameHubExperience} target='_blank' rel='noreferrer' className='block'>
-                  EXPERIENCE THE METAVERSE
-                </Link>
-              </div>
-            </div>
-            <h1 className='text-[8.5px] lg:text-[21px] font-medium tracking-[0.45em] leading-none'>THE ENGINE OF THE METAVERSE</h1>
+            <h1 className='text-[8.5px] lg:text-[21px] font-medium tracking-[0.45em] leading-none'>YOUR HOME IN THE METAVERSE</h1>
             {/* <Link href={PageLocation.TheHub} className='font-humane text-9xl lg:text-[320px] leading-none cursor-pointer'>ENTER THE HUB</Link> */}
             <a href={PageLocation.TheHub} className='font-humane text-9xl lg:text-[320px] leading-none cursor-pointer'>ENTER THE HUB</a>
           </div>
@@ -88,7 +64,7 @@ export default function Home() {
                 <div key={index}>
                   <Link href={investor.url} target="_blank">
                     <IconBox big={true}>
-                      <Image src={investor.urlImage} alt={investor.alt} width={210} height={92}/>
+                      <Image src={investor.urlImage} alt={investor.alt} width={290} height={100}/>
                     </IconBox>
                   </Link>
                 </div>

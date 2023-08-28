@@ -10,7 +10,7 @@ export default function AboutUs() {
         <div className="flex flex-col xl:flex-row mb-0 xl:mb-16 gap-8">
           <div className=" w-full xl:w-1/4 pl-10 lg:pl-20 2xl:pl-36 ">
             <h1 className="font-neue text-4xl text-lm_gray font-bold mt-11">THE HUB<br />DAO</h1>
-            <p className="font-neue text-4xl text-lm_icons font-bold">JOIN US!</p>
+            <p className="font-neue text-4xl text-lm_icons font-bold">JOIN US</p>
           </div>
           <div className=" w-full xl:w-3/4 pr-10 lg:pr-20 2xl:pr-40 text-end">
             <h1 className="font-neue text-7xl md:text-9xl lg:text-[170px] 2xl:text-[180px] text-lm_icons font-bold">THE HUB<br />DAO <br /> FAMILY</h1>

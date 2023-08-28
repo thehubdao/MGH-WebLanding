@@ -86,7 +86,7 @@ export default function MenuUI (){
                           <Image src={'/icons/textIcon.png'} alt={'text logo'} fill className="cursor-pointer ml-2" />
                         </div>
                       </Link>
-                      <Link href={PageLocation.Privacity} className='flex mt-3' onClick={handleToggleClick}>
+                      <Link href={PageLocation.Privacy} className='flex mt-3' onClick={handleToggleClick}>
                         <p className='font-work text-xs text-lm_icons font-bold'>PRIVACY POLICY</p>
                         <div className='relative w-3 h-3'>
                           <Image src={'/icons/textIcon.png'} alt={'text logo'} fill className="cursor-pointer ml-2" />

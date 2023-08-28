@@ -24,7 +24,7 @@ export default function Card({ imageUrl, altImages, floatImageUrl, children, url
             </div>
           }
         </div>
-        <div className={`${form === CardForm.Vertical ? 'h-[130px]' : 'h-[115px] flex justify-center items-center text-center'}`}>
+        <div className={`${form === CardForm.Vertical ? 'h-[130px]' : 'h-[115px] flex justify-center items-start mt-8 text-center'}`}>
           <div className={`${form === CardForm.Vertical && 'h-full'} leading-none group-hover:scale-105 transition-transform duration-200`}>
             {children}
           </div>

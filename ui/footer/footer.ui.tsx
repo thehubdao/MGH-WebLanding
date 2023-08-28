@@ -33,7 +33,7 @@ export default function FooterUI() {
               <p className='text-xl my-3'>GitHub</p>
             </Link>
             <Link href={ExternalLink.TheHubDao} target='_blank'>
-              <p className='text-xl my-3'>Learn more</p>
+              <p className='text-xl my-3'>Learn More</p>
             </Link>
           </div>
           <div className='text-right xl:text-left'>
@@ -52,11 +52,7 @@ export default function FooterUI() {
       {/* terms */}
       <div className='pt-24'>
         <p className='text-center text-[15px] text-lm_icons'>
-          <Link href={PageLocation.Soon}>
-            <span>Terms of Use </span>
-          </Link>
-          |
-          <Link href={PageLocation.Privacity}>
+          <Link href={PageLocation.Privacy}>
             <span> Privacy Policy</span>
           </Link>
         </p>

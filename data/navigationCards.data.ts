@@ -28,7 +28,7 @@ export const NavigationCards: NavigationInterface[] = [
         imageUrl: '/cards/4.png',
         url: PageLocation.JoinUs,
         floatImageUrl: '/cards/float/4.png',
-        title: 'JOIN US!',
+        title: 'JOIN US',
         description:'Help us shape the future<br/>of the Internet'
     },
 

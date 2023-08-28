@@ -43,7 +43,7 @@ export const enum PageLocation{
   JoinUs = '/join-us',
   Projects = '/projects',
   Soon = '/soon',
-  Privacity = '/privacity'
+  Privacy = '/privacy'
 }
 
 export const enum PartnersAndInvestorsLink{
