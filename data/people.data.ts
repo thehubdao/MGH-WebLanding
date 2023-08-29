@@ -189,9 +189,6 @@ export const Advisors: PersonCarrouselInterface[] = [
     url: '/advisors/advisor-5.png',
     alt: 'Dr. Biyan Mienert'
   },
-];
-
-export const Advisors2: PersonCarrouselInterface[] = [
   {
     name: 'Nova Lorraine',
     role: 'Creative & Branding Advisor',
