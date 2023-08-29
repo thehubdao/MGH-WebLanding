@@ -1,25 +1,28 @@
-import { A11y } from 'swiper';
+import { A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Person from './person.component';
+import { PersonCarrouselInterface } from '../interfaces/data.interface';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/scrollbar';
-import { PersonCarrouselInterface } from '../interfaces/data.interface';
 
 interface MembersProps {
-    members: PersonCarrouselInterface[]
-    loop: boolean
+    members: PersonCarrouselInterface[];
+    loop: boolean;
+    reverse: boolean;
+
 }
 
-export default function PersonCarrousel({members, loop}: MembersProps){
+export default function PersonCarrousel({members, loop, reverse}: MembersProps){
 
     return (
     <Swiper
       // install Swiper modules
-        modules={[A11y]}
+      modules={[A11y, Autoplay]} // Agrega el módulo Autoplay
+      autoplay={{ delay: 3000, disableOnInteraction: false, reverseDirection: reverse}}
         slidesPerView={1}
-        loop={loop? true: false}
+        loop={loop}
         breakpoints={{
           640: {
             slidesPerView: 2,

@@ -4,7 +4,7 @@ import IconBox from "../../components/iconBox.component";
 import PersonCarrousel from "../../components/personCarrousel.component";
 import ScrollTitleUI from "../../components/scrollTitle.component";
 import { ExternalLink } from "../../enums/common.enum";
-import { Advisors, Advisors2, Team, Team2 } from "../../data/people.data";
+import { Advisors, Team, Team2 } from "../../data/people.data";
 import { Investors, Partners } from "../../data/partnersAndInvestors.data";
 import VideoUI from "../../ui/video/video.ui";
 
@@ -56,8 +56,8 @@ export default function AboutUs() {
         </div>
 
         <div className="w-full mt-20">
-          <PersonCarrousel members={Team} loop={true} />
-          <PersonCarrousel members={Team2} loop={true} />
+          <PersonCarrousel members={Team} loop={true} reverse={false}/>
+          <PersonCarrousel members={Team2} loop={true} reverse={true}/>
         </div>
 
         <div className="flex flex-col md:flex-row gap-8 mt-28 items-end">
@@ -72,8 +72,7 @@ export default function AboutUs() {
         </div>
 
         <div className="w-full mt-20">
-          <PersonCarrousel members={Advisors} loop={false} />
-          <PersonCarrousel members={Advisors2} loop={false} />
+          <PersonCarrousel members={Advisors} loop={true} reverse={false}/>
         </div>
 
         <div className="flex justify-center mt-32 lg:mt-52">
