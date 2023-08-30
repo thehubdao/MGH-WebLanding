@@ -1,7 +1,7 @@
 import TitleAnimation from "../../common/titleAnimation.experience";
 import Window from "../window.experience";
 import PlatformCharacter from "./platformCharacter.experience";
-import PlatformScreens from "./platformModel.experience";
+import PlatformScreens from "./platformScreens.experience";
 
 export default function PlatformScene() {
   return <>
@@ -11,7 +11,7 @@ export default function PlatformScene() {
       image_paths={['/animation/platform/PLATFORM.gif']}
       titleLabel="Platform title"
       position={{ x: 3.8, y: .2, z: -7 }}
-      size={{ width: 4, height: 2.7 }}
+      size={{ width: 4, height: 4 }}
     />
     <Window position={[0, 0, -4]} />
   </>

@@ -56,10 +56,11 @@ export default function TitleAnimation({
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    if (groupRef.current)
-      groupRef.current.lookAt(camera.position);
-  }, [position.x, position.y, position.z])
+  //! Delete to update on github
+  // useEffect(() => {
+  //   if (groupRef.current)
+  //     groupRef.current.lookAt(camera.position);
+  // }, [position.x, position.y, position.z])
 
   return <group ref={groupRef} position={[position.x, position.y, position.z]}>
     <mesh>

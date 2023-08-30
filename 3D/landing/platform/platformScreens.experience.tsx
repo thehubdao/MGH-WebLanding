@@ -1,10 +1,9 @@
 import { useLoader } from "@react-three/fiber";
-import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import PlatformUi from "./platformUi.experience";
 
 export default function PlatformScreens() {
-  const { nodes } = useLoader(GLTFLoader, '/3d/landing/platform/SCREENS.glb');
-  const texture = useLoader(THREE.TextureLoader, '/3D/landing/texture/UI_Texture.png');
+  const { nodes } = useLoader(GLTFLoader, '/3d/landing/platform/SCREENS.glb',);
 
   return (
     <group>
@@ -14,10 +13,7 @@ export default function PlatformScreens() {
       <mesh {...nodes.PLATFORM_STRUCTURE}>
 
       </mesh>
-      <mesh {...nodes.PLATFORM_UI}>
-        <meshBasicMaterial map={texture} transparent />
-        {/* <meshBasicMaterial color={[255, 255, 0]} />  */}
-      </mesh>
+      <PlatformUi node={nodes.PLATFORM_UI} />
     </group>
   )
 }
