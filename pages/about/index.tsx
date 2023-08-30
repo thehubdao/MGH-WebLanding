@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import IconBox from "../../components/iconBox.component";
-import PersonCarrousel from "../../components/personCarrousel.component";
 import ScrollTitleUI from "../../components/scrollTitle.component";
 import { ExternalLink } from "../../enums/common.enum";
 import { Advisors, Team, Team2 } from "../../data/people.data";
 import { Investors, Partners } from "../../data/partnersAndInvestors.data";
 import VideoUI from "../../ui/video/video.ui";
+import CarrouselTeamUI from "../../ui/carrousel/carrouselTeam.ui";
+import CarrouselAdvisorsUI from "../../ui/carrousel/carrouselAdvisors.ui";
 
 export default function AboutUs() {
 
@@ -55,24 +56,12 @@ export default function AboutUs() {
           </div>
         </div>
 
-        <div className="w-full mt-20">
-          <PersonCarrousel members={Team} loop={true} reverse={false}/>
-          <PersonCarrousel members={Team2} loop={true} reverse={true}/>
-        </div>
-
-        <div className="flex flex-col md:flex-row gap-8 mt-28 items-end">
-          <div className=" w-full md:w-2/4 pl-10 lg:pl-24">
-            <h1 className="font-neue text-4xl text-lm_gray font-bold">NEXT UP</h1>
-            <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">OUR <br /> ADVISORS</h1>
-          </div>
-          <div className=" w-full md:w-2/4 pr-10 lg:pr-20 text-end mb-16">
-            <h1 className="font-neue text-4xl text-lm_gray font-bold">THE HUB<br />DAO</h1>
-            <p className="font-neue text-4xl text-lm_icons font-bold">CORE ADVISORS</p>
-          </div>
+        <div className="mt-20">
+          <CarrouselTeamUI members={Team} members2={Team2} startTrigger="top 2%"/>
         </div>
 
         <div className="w-full mt-20">
-          <PersonCarrousel members={Advisors} loop={true} reverse={false}/>
+          <CarrouselAdvisorsUI members={Advisors} startTrigger="top 2%"/>
         </div>
 
         <div className="flex justify-center mt-32 lg:mt-52">
@@ -85,7 +74,7 @@ export default function AboutUs() {
               <div key={index}>
                 <Link href={partner.url} target="_blank">
                   <IconBox big={false}>
-                    <Image src={partner.urlImage} alt={partner.alt} width={144} height={33}/>
+                    <Image src={partner.urlImage} alt={partner.alt} width={144} height={33} />
                   </IconBox>
                 </Link>
               </div>
@@ -103,7 +92,7 @@ export default function AboutUs() {
               <div key={index}>
                 <Link href={investor.url} target="_blank">
                   <IconBox big={true}>
-                    <Image src={investor.urlImage} alt={investor.alt} width={210} height={92}/>
+                    <Image src={investor.urlImage} alt={investor.alt} width={210} height={92} />
                   </IconBox>
                 </Link>
               </div>
@@ -118,7 +107,7 @@ export default function AboutUs() {
         </div>
 
         <div className="w-full mt-28 flex justify-center items-center mb-40 lg:mb-72">
-          <VideoUI url="https://www.youtube.com/embed/NKFRWvfdOqU"/>
+          <VideoUI url="https://www.youtube.com/embed/NKFRWvfdOqU" />
         </div>
       </main>
     </>
