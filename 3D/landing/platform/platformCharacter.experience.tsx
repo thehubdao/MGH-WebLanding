@@ -5,7 +5,7 @@ import { Group, SkinnedMesh } from 'three';
 
 export default function PlatformCharacter() {
   const group: React.MutableRefObject<Group | undefined> = useRef();
-  const alienPosition = useRef({ x: 3, y: -2, z: -5 });
+  const alienPosition = useRef({ x: 2.5, y: -2, z: -5 });
   const { nodes, materials, animations } = useGLTF('/3d/landing/platform/ALIEN_WORKING.glb');
   const { actions } = useAnimations(animations, group);
 
@@ -23,7 +23,7 @@ export default function PlatformCharacter() {
   return (
     <group ref={group} dispose={null} position={[alienPosition.current.x, alienPosition.current.y, alienPosition.current.z]}>
       <group name="Scene">
-        <group name="Armature" rotation={[Math.PI / 2, 0, Math.PI * 14 / 12]} scale={0.008}>
+        <group name="Armature" rotation={[Math.PI / 2, 0, Math.PI * 15 / 12]} scale={0.008}>
           <primitive object={nodes.mixamorigHips} />
           <skinnedMesh frustumCulled={false} name="ALIEN001" geometry={alienMesh.geometry} material={materials.CHARACTER} skeleton={alienMesh.skeleton} />
         </group>
