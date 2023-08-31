@@ -1,5 +1,5 @@
 import TitleAnimation from "../../common/titleAnimation.experience";
-import PortalModel from "./portalStructure.experience";
+import PortalModel from "./portalModel.experience";
 
 export default function PortalScene() {
   const IMAGE_PATHS = [
