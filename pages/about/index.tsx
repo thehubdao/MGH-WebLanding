@@ -57,7 +57,7 @@ export default function AboutUs() {
         </div>
 
         <div className="mt-20">
-          <CarrouselTeamUI members={Team} members2={Team2} startTrigger="top 2%"/>
+          <CarrouselTeamUI members={Team} members2={Team2} startTrigger="top 6%"/>
         </div>
 
         <div className="w-full mt-20">
