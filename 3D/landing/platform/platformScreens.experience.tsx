@@ -1,9 +1,8 @@
-import { useLoader } from "@react-three/fiber";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import PlatformUi from "./platformUi.experience";
+import { useGLTF } from "@react-three/drei";
 
 export default function PlatformScreens() {
-  const { nodes } = useLoader(GLTFLoader, '/3d/landing/platform/SCREENS.glb',);
+  const { nodes } = useGLTF('/3d/landing/platform/SCREENS.glb',);
 
   return (
     <group>
