@@ -92,7 +92,7 @@ export default function PortalModel() {
     <group>
       <mesh {...nodes.Portal}></mesh>
       <mesh ref={portalRef} position={[0, -0.1, -15]}>
-        <circleGeometry args={[1.75, 12]} />
+        <circleGeometry args={[1.75, 12]}/>
         <shaderMaterial vertexShader={data.vertexShader} fragmentShader={data.fragmentShader} uniforms={data.uniforms} />
       </mesh>
       <mesh {...nodes.Portal_lights}>
