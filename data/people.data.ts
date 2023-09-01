@@ -151,6 +151,13 @@ export const Team2: PersonCarrouselInterface[] = [
     url: '/team/t-21.png',
     alt: 'JAIRO CRIOLLO'
   },
+  {
+    name: 'TATIANA RINCON',
+    role: 'Designer and 3D Artist',
+    description: "DIgital and Multimedia Designer with a fashion photography background, I am passionate for visual experiences in 3D and effectively mixing form and function.",
+    url: '/team/t-22.png',
+    alt: 'TATIANA RINCON'
+  },
 ];
 
 export const Advisors: PersonCarrouselInterface[] = [
@@ -189,9 +196,6 @@ export const Advisors: PersonCarrouselInterface[] = [
     url: '/advisors/advisor-5.png',
     alt: 'Dr. Biyan Mienert'
   },
-];
-
-export const Advisors2: PersonCarrouselInterface[] = [
   {
     name: 'Nova Lorraine',
     role: 'Creative & Branding Advisor',
