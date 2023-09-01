@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Scene from '../components/scene.component';
 import IconBox from '../components/iconBox.component';
 import Card from '../components/card.component';
-import { CardForm, ExternalLink, PageLocation } from '../enums/common.enum';
+import { CardForm, PageLocation } from '../enums/common.enum';
 import { NavigationCards } from '../data/navigationCards.data';
 import { BackedBy } from '../data/partnersAndInvestors.data';
 
@@ -39,7 +39,7 @@ export default function Home() {
         </div>
         {/* card section */}
         <div id='hub'>
-          <h2 className='text-center text-[35px] text-gray-dark font-light py-32 mt-32 tracking-[3.5px] px-5'>THE HUB provides you with the picks and shovels <br className='hidden lg:inline-block' /> to have a seamless Metaverse journey</h2>
+          <h2 className='text-center text-2xl text-lm_icons font-normal py-32 mt-32 font-neueExtended tracking-[3.5px] uppercase'>THE HUB provides you with the picks and <br className='hidden lg:inline-block' /> shovels to have a seamless Metaverse journey</h2>
           <div className='flex justify-center flex-wrap gap-y-10 gap-x-56 xl:gap-x-10 2xl:gap-x-16'>
             {
               NavigationCards.map((card, index) => (

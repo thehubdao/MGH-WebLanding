@@ -37,12 +37,12 @@ export default function ProjectsComponent({ project }: ProjectProps) {
                 </div>
               </Link>
             </div>
-            <div className="w-3/4 xl:w-full">
-              <h1 className="font-neue text-2xl sm:text-[40px] text-lm_gray font-bold mt-11">{project.tag}</h1>
-              <p className={`font-neue text-3xl sm:text-[50px] ${titleSize(project.fontTitle)} text-lm_icons font-bold`}>{parse(project.title)}</p>
+            <div className="w-3/4 xl:w-full font-neueExtended">
+              <h1 className="font-neueExtended text-2xl sm:text-[40px] text-lm_gray font-bold mt-11">{project.tag}</h1>
+              <p className={`font-neueExtended text-3xl sm:text-[50px] ${titleSize(project.fontTitle)} text-lm_icons font-bold`}>{parse(project.title)}</p>
             </div>
             <div className="mt-10 md:mt-20 w-full">
-              <p className="font-neue text-3xl sm:text-4xl text-lm_icons font-bold">
+              <p className="font-neueExtended text-3xl sm:text-4xl text-lm_icons font-bold">
                 PROJECT SUMMARY
               </p>
             </div>
@@ -52,7 +52,7 @@ export default function ProjectsComponent({ project }: ProjectProps) {
               </p>
             </div>
             <div className="mt-10 md:mt-20 w-full">
-              <p className="font-neue text-3xl sm:text-4xl text-lm_icons font-bold">
+              <p className="font-neueExtended text-3xl sm:text-4xl text-lm_icons font-bold">
                 OUR APPROACH
               </p>
             </div>
@@ -162,7 +162,7 @@ export default function ProjectsComponent({ project }: ProjectProps) {
           </div>
           <div className="flex flex-wrap justify-center items-center w-full xl:w-[40%] xl:ml-10 mt-10">
             <div>
-              <p className="font-neue text-3xl sm:text-4xl text-lm_icons font-bold mt-5">
+              <p className="font-neueExtended text-3xl sm:text-4xl text-lm_icons font-bold mt-5">
                 RESULTS
               </p>
               <p className="font-light font-work text-sm text-lm_icons mt-5">
