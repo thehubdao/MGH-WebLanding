@@ -9,8 +9,8 @@ export default function Projects() {
   return (
     <>
       <main className=" pt-28 pb-20">
-        <div className="flex flex-col xl:flex-row mb-0 gap-8">
-          <div className=" w-full xl:w-1/4 pl-10 lg:pl-20 font-neueExtended">
+        <div className="flex flex-col xl:flex-row mb-0 gap-8 font-neueExtended">
+          <div className=" w-full xl:w-1/4 pl-10 lg:pl-20">
             <h1 className="text-2xl sm:text-4xl text-lm_gray font-bold mt-11">THE HUB<br />DAO</h1>
             <p className="text-2xl sm:text-4xl text-lm_icons font-bold">BUILD</p>
           </div>
