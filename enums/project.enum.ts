@@ -9,3 +9,17 @@ export enum ProjectLocation{
     MetagameHub = '/projects/metagamehub',
     TheHub = '/projects/the-hub'
 }
+
+export type ProjectOptionsKey = keyof typeof ProjectOption;
+
+export enum ProjectOption{
+    decentraland = "Decentraland",
+    sandbox = "Sandbox",
+    spatial = "Spatial",
+    'somnium-space' = "Somnium Space",
+    'xone-games' = "Xone games",
+    experiences = "Experiences",
+    galleries = "Galleries",
+    headquarters = "Headquarters",
+    weareables = "Weareables"
+}
