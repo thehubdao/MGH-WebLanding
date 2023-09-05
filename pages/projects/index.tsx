@@ -3,8 +3,15 @@ import Image from "next/image";
 import Card from "../../components/card.component";
 import { ProjectsData } from "../../data/cardProject.data";
 import { CardForm, PageLocation } from "../../enums/common.enum";
+import { useState } from "react";
+import { ProjectOption, ProjectOptionsKey } from "../../enums/project.enum";
+import ProjectsFilterUI from "../../ui/project/projectsFilter.ui";
 
 export default function Projects() {
+  const [project, setProject] = useState(ProjectOption.decentraland);
+  const filterProject = (project: ProjectOptionsKey) => {
+    setProject(ProjectOption[project]);
+  }
   
   return (
     <>
@@ -23,6 +30,10 @@ export default function Projects() {
           <div className="row ">
             <p className="lg:w-[1060px] font-light font-work text-xl">As a leading provider of custom metaverse experiences, we have had the privilege of <br className="hidden lg:inline-block" /> co-creating with some of the most forward-thinking brands in the industry.<br className="hidden lg:inline-block" /> Our unique approach turns regular metaverse users into brand ambassadors, fostering a <br className="hidden lg:inline-block" />community that is as engaged as it is diverse. We believe in the power of co-creation, <br className="hidden lg:inline-block" /> and our projects reflect this commitment.</p>
           </div>
+        </div>
+        
+        <div className="mt-32  px-[15%] lg:px-[20%]">
+          <ProjectsFilterUI project={project} setProject={(project: ProjectOptionsKey) => filterProject(project)}/>
         </div>
 
         <div className='flex flex-wrap justify-center px-10 lg:px-20 gap-8 mt-32'>
