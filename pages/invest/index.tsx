@@ -15,8 +15,8 @@ export default function Invest() {
             </div>
           </div>
           <div className=" w-full mt-14 xl:mt-0">
-            <h1 className=" text-7xl md:text-9xl lg:text-[200px] text-lm_icons text-center xl:text-start">INVEST</h1>
-            <p className="font-work font-light  text-lg md:text-[22px] text-center xl:text-start px-4 sm:px-0">Navigate through the Metaverse and find the most <br className="hidden sm:inline-block"/> valuable LANDs across virtual worlds</p>
+            <h1 className=" text-7xl md:text-9xl lg:text-[200px] text-lm_icons text-center xl:text-start font-neueExtended">INVEST</h1>
+            <p className="font-work font-light  text-lg md:text-[22px] text-center xl:text-start mt-6 px-4 sm:px-0 leading-[150%] tracking-[1.76px]">Navigate through the Metaverse and find the most <br className="hidden sm:inline-block"/> valuable LANDs across virtual worlds</p>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-12 mt-12 mx-8 xl:mx-0 xl:mr-20'>
                 <Box>
                     <div className='flex justify-between items-center min-h-[115px]'>

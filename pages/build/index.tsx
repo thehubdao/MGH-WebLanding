@@ -8,10 +8,10 @@ export default function Build() {
     <>
       <main className="font-poppins pt-20 xl:pt-0">
         <div className="flex flex-col xl:flex-row gap-8 min-h-screen justify-center items-center">
-          <div className=" w-full mt-14 xl:mt-0">
-            <h1 className=" text-7xl md:text-9xl lg:text-[225px] text-lm_icons text-center">BUILD</h1>
-            <p className="font-work font-light  text-lg md:text-[22px] text-center px-4 sm:px-0">Providing interoperable building solutions for the  <br className="hidden sm:inline-block"/>future iteration of the internet</p>
-            <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12 mx-6 2xl:mx-20'>
+          <div className=" w-full mt-14 xl:mt-0 px-6 2xl:px-20">
+            <h1 className=" text-7xl md:text-9xl lg:text-[225px] text-lm_icons font-neueExtended">BUILD</h1>
+            <p className="font-work font-light  text-lg md:text-[22px] leading-[150%] tracking-[1.76px] mt-6 px-4 sm:px-0">Providing interoperable building solutions for the  <br className="hidden sm:inline-block"/>future iteration of the internet</p>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12'>
                 <Box>
                     <div className='flex justify-between items-center min-h-[115px]'>
                         <div className='pl-6 mr-5'>

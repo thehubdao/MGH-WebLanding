@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Scene from '../components/scene.component';
 import IconBox from '../components/iconBox.component';
 import Card from '../components/card.component';
-import { CardForm, ExternalLink, PageLocation } from '../enums/common.enum';
+import { CardForm, PageLocation } from '../enums/common.enum';
 import { NavigationCards } from '../data/navigationCards.data';
 import { BackedBy } from '../data/partnersAndInvestors.data';
 
@@ -39,7 +39,7 @@ export default function Home() {
         </div>
         {/* card section */}
         <div id='hub'>
-          <h2 className='text-center text-[35px] text-gray-dark font-light py-32 mt-32 tracking-[3.5px] px-5'>THE HUB provides you with the picks and shovels <br className='hidden lg:inline-block' /> to have a seamless Metaverse journey</h2>
+          <h2 className='text-center text-[22px] text-lm_icons font-normal py-32 md:py-64 px-5 font-neueExtended tracking-[3.5px] uppercase'>THE HUB provides you with the picks and <br className='hidden lg:inline-block' /> shovels to have a seamless Metaverse journey</h2>
           <div className='flex justify-center flex-wrap gap-y-10 gap-x-56 xl:gap-x-10 2xl:gap-x-16'>
             {
               NavigationCards.map((card, index) => (
@@ -56,7 +56,7 @@ export default function Home() {
           </div>
         </div>
         {/* backed section */}
-        <div className='pb-32 mb-32'>
+        <div className='pb-64'>
           <h2 className='text-center text-5xl text-gray-dark font-light pb-32 pt-64'>Backed by</h2>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-0 gap-y-6 mt-20 sm:mt-32 mx-6 md:mx-12 xl:mx-32 2xl:mx-80 place-items-center'>
             {

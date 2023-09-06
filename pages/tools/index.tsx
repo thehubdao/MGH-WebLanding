@@ -6,13 +6,13 @@ export default function Tools() {
   return (
     <>
       <main className=" pt-28 pb-20">
-        <div className="flex flex-col xl:flex-row gap-8">
+        <div className="flex flex-col xl:flex-row gap-8 font-neueExtended">
           <div className=" w-full xl:w-3/4 pl-10 lg:pl-40">
-            <h1 className="font-neue text-5xl sm:text-7xl md:text-9xl xl:text-[150px] text-lm_icons font-bold">THE HUB<br />PLATFORM</h1>
+            <h1 className="text-5xl sm:text-7xl md:text-9xl xl:text-[150px] text-lm_icons font-bold">THE HUB<br />PLATFORM</h1>
           </div>
           <div className=" w-full xl:w-1/4 pr-10 lg:pr-36 text-end">
-            <h1 className="font-neue text-4xl text-lm_gray font-bold mt-11">THE HUB<br />DAO</h1>
-            <p className="font-neue text-4xl text-lm_icons font-bold">PLATFORM</p>
+            <h1 className="text-4xl text-lm_gray font-bold mt-11">THE HUB<br />DAO</h1>
+            <p className="text-4xl text-lm_icons font-bold">PLATFORM</p>
           </div>
         </div>
 
@@ -25,6 +25,9 @@ export default function Tools() {
 
         <div className="relative w-full py-28">
           <ScrollTitleUI title={['INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE']} imageUrl='/tools/game-machine.png'/>
+        </div>
+        <div>
+        <h2 className='text-center text-2xl text-lm_icons font-medium font-work uppercase leading-[128%] tracking-[4.4px]'>NAVIGATE THE METAVERSE WITH US</h2>
         </div>
         <div className="flex flex-wrap justify-center gap-x-20 gap-y-10 md:gap-y-20 py-28 md:px-20 mb-72">
           <Button url={PageLocation.Invest} big>

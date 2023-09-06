@@ -8,10 +8,10 @@ export default function Experience() {
     <>
       <main className="font-poppins pt-20 xl:pt-0">
         <div className="flex flex-col xl:flex-row gap-8 min-h-screen justify-center items-center">
-          <div className=" w-full mt-14 xl:mt-0">
-            <h1 className=" text-5xl md:text-7xl 2xl:text-9xl text-lm_icons text-center">EXPERIENCE</h1>
-            <p className="font-work font-light  text-lg md:text-[22px] text-center px-4 sm:px-0 xl:pl-4">Use THE HUB interoperable a avatars, be rewarded for your <br className="hidden sm:inline-block"/> metaverse activities with our metaverse loyalty system.</p>
-            <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12 mx-8 2xl:mx-20'>
+          <div className=" w-full mt-14 xl:mt-0 px-6 2xl:px-20">
+            <h1 className=" text-5xl md:text-7xl 2xl:text-9xl text-lm_icons font-neueExtended">EXPERIENCE</h1>
+            <p className="font-work font-light  text-lg md:text-[22px] leading-[150%] tracking-[1.76px] mt-6">Use THE HUB interoperable a avatars, be rewarded for your <br className="hidden sm:inline-block"/> metaverse activities with our metaverse loyalty system.</p>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12'>
                 <Box>
                     <div className='flex justify-between items-center min-h-[115px]'>
                         <div className='pl-6 mr-5'>
