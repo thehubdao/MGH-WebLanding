@@ -24,7 +24,7 @@ export enum ProjectOption{
 export type MetaverseOptionsKey = keyof typeof MetaverseOptions;
 
 export enum MetaverseOptions {
-  all = "All Lands",
+  all = "All",
   decentraland = "Decentraland",
   sandbox = "Sandbox",
   spatial = "Spatial",
