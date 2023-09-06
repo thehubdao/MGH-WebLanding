@@ -13,13 +13,21 @@ export enum ProjectLocation{
 export type ProjectOptionsKey = keyof typeof ProjectOption;
 
 export enum ProjectOption{
-    decentraland = "Decentraland",
-    sandbox = "Sandbox",
-    spatial = "Spatial",
-    'somnium-space' = "Somnium Space",
-    'xone-games' = "Xone games",
-    experiences = "Experiences",
-    galleries = "Galleries",
-    headquarters = "Headquarters",
-    weareables = "Weareables"
+    // all = "all",
+    // 'xone-games' = "Xone games",
+    // experiences = "Experiences",
+    // galleries = "Galleries",
+    // headquarters = "Headquarters",
+    // weareables = "Weareables"
+}
+
+export type MetaverseOptionsKey = keyof typeof MetaverseOptions;
+
+export enum MetaverseOptions {
+  all = "All Lands",
+  decentraland = "Decentraland",
+  sandbox = "Sandbox",
+  spatial = "Spatial",
+  'somnium-space' = "Somnium space",
+  'xone-games' = "Xone games",
 }
