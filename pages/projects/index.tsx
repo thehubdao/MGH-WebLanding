@@ -1,10 +1,26 @@
 import Link from "next/link";
-import Image from "next/image";
-import Card from "../../components/card.component";
 import { ProjectsData } from "../../data/cardProject.data";
-import { CardForm, PageLocation } from "../../enums/common.enum";
+import {  PageLocation } from "../../enums/common.enum";
+import { useState } from "react";
+import { MetaverseOptions} from "../../enums/project.enum";
+import ProjectsFilterUI from "../../ui/project/projectsFilter.ui";
+import { CardProjectInterface } from "../../interfaces/data.interface";
+import ProjectCardUI from "../../ui/project/projectCard.ui";
 
 export default function Projects() {
+  const projectsData = ProjectsData;
+  const [metaverse, setMetaverse] = useState(MetaverseOptions.all);
+  const [filteredProject, setFilteredProject] = useState<CardProjectInterface[]>(ProjectsData);
+
+  //filter projects by metaverse
+  const filterProject = (metaverse: MetaverseOptions) => {
+    setMetaverse(metaverse);
+    if (metaverse !== MetaverseOptions.all){
+      setFilteredProject(projectsData.filter((project) => project.metaverse === metaverse));
+    } else{
+      setFilteredProject(projectsData);
+    }
+  }
   
   return (
     <>
@@ -24,25 +40,13 @@ export default function Projects() {
             <p className="lg:w-[1060px] font-light font-work text-xl">As a leading provider of custom metaverse experiences, we have had the privilege of <br className="hidden lg:inline-block" /> co-creating with some of the most forward-thinking brands in the industry.<br className="hidden lg:inline-block" /> Our unique approach turns regular metaverse users into brand ambassadors, fostering a <br className="hidden lg:inline-block" />community that is as engaged as it is diverse. We believe in the power of co-creation, <br className="hidden lg:inline-block" /> and our projects reflect this commitment.</p>
           </div>
         </div>
+        
+        <div className="mt-32  px-[15%] lg:px-[20%]">
+          <ProjectsFilterUI metaverse={metaverse} setMetaverse={(metaverse: MetaverseOptions) => filterProject(metaverse)}/>
+        </div>
 
         <div className='flex flex-wrap justify-center px-10 lg:px-20 gap-8 mt-32'>
-          {
-            ProjectsData.map((project, index) => (
-              <div key={index}>
-                <Card imageUrl={project.imageUrl} altImages={project.tag} url={project.url} form={CardForm.Vertical}>
-                  <div className="flex px-5 h-full justify-between items-center">
-                    <div>
-                      <Image src={project.metaverseLogo} width={100} height={100} alt={project.tag} className="rounded-full p-3 bg-lm_gray" />
-                    </div>
-                    <div className="text-end font-neueExtended">
-                      <h1 className="text-sm text-lm_gray font-bold uppercase">{project.tag}</h1>
-                      <p className="text-xl sm:text-4xl text-lm_icons font-bold uppercase" dangerouslySetInnerHTML={{__html: project.title}}></p>
-                    </div>
-                  </div>
-                </Card>
-              </div>
-            ))
-          }
+          <ProjectCardUI projects={filteredProject} />
         </div>
 
         <div className="flex justify-center my-28 md:my-52 xl:my-72 ">
