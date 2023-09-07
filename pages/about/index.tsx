@@ -13,14 +13,14 @@ export default function AboutUs() {
 
   return (
     <>
-      <main className=" pt-4">
-        <div className="flex flex-col xl:flex-row mb-0 xl:mb-48 gap-8">
+      <main className="pt-4">
+        <div className="flex flex-col xl:flex-row mb-0 xl:mb-48 gap-8 font-neueExtended ">
           <div className=" w-full xl:w-3/4 pl-10 lg:pl-40">
-            <h1 className="font-neue text-7xl md:text-9xl xl:text-[150px] 2xl:text-[210px] text-lm_icons font-bold">THE HUB<br />DAO</h1>
+            <h1 className="text-7xl md:text-9xl xl:text-[150px] 2xl:text-[210px] text-lm_icons font-bold">THE HUB<br />DAO</h1>
           </div>
           <div className=" w-full xl:w-1/4 pr-10 lg:pr-36 text-end">
-            <h1 className="font-neue text-4xl text-lm_gray font-bold mt-11">THE HUB<br />DAO</h1>
-            <p className="font-neue text-4xl text-lm_icons font-bold">ABOUT</p>
+            <h1 className="text-4xl text-lm_gray font-bold mt-11">THE HUB<br />DAO</h1>
+            <p className="text-4xl text-lm_icons font-bold">ABOUT</p>
           </div>
         </div>
 
@@ -45,14 +45,14 @@ export default function AboutUs() {
           </Link>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-8 mt-36 items-end">
+        <div className="flex flex-col md:flex-row gap-8 mt-36 items-end font-neueExtended ">
           <div className=" w-full md:w-2/4 pl-10 lg:pl-32">
-            <h1 className="font-neue text-4xl text-lm_gray font-bold">THE HUB<br />DAO</h1>
-            <p className="font-neue text-4xl text-lm_icons font-bold">CORE TEAM</p>
+            <h1 className="text-4xl text-lm_gray font-bold">THE HUB<br />DAO</h1>
+            <p className="text-4xl text-lm_icons font-bold">CORE TEAM</p>
           </div>
           <div className=" w-full md:w-2/4 pr-10 lg:pr-32 text-end">
-            <h1 className="font-neue text-4xl text-lm_gray font-bold">NEXT UP</h1>
-            <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">MEET <br /> THE TEAM</h1>
+            <h1 className="text-4xl text-lm_gray font-bold">NEXT UP</h1>
+            <h1 className="text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">MEET <br /> THE TEAM</h1>
           </div>
         </div>
 
@@ -65,7 +65,7 @@ export default function AboutUs() {
         </div>
 
         <div className="flex justify-center mt-32 lg:mt-52">
-          <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">PARTNERS</h1>
+          <h1 className="font-neueExtended text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">PARTNERS</h1>
         </div>
 
         <div className='flex flex-wrap justify-center gap-x-5 gap-y-9 mt-32 mx-6 xl:mx-12 2xl:mx-20'>
@@ -83,7 +83,7 @@ export default function AboutUs() {
         </div>
 
         <div className="flex justify-center mt-32 lg:mt-52">
-          <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">INVESTORS</h1>
+          <h1 className="font-neueExtended text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">INVESTORS</h1>
         </div>
 
         <div className='flex flex-wrap justify-center gap-x-4 gap-y-6 mt-32 mx-6 md:mx-20 lg:mx-40 2xl:mx-72'>
@@ -102,7 +102,7 @@ export default function AboutUs() {
 
         <div className="flex flex-col md:flex-row gap-8 mt-72 items-end">
           <div className=" w-full pr-10 lg:pr-32 text-end">
-            <h1 className="font-neue text-4xl md:text-6xl xl:text-8xl text-lm_icons font-bold">WHAT <br /> LIES AHEAD?</h1>
+            <h1 className="font-neueExtended text-4xl md:text-6xl xl:text-8xl text-lm_icons font-bold">WHAT <br /> LIES AHEAD?</h1>
           </div>
         </div>
 

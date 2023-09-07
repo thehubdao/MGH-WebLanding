@@ -6,7 +6,7 @@ export default function FooterUI() {
   return (
     <>
       {/* footer */}
-      <div className='flex flex-col xl:flex-row justify-between items-center '>
+      <div className='flex flex-col xl:flex-row justify-between items-center font-work '>
         {/* footer contact */}
         <div className='xl:w-2/4 flex flex-col items-center'>
           <p className='text-lm_icons text-lg text-center font-semibold mb-6 mx-8'>
@@ -50,7 +50,7 @@ export default function FooterUI() {
         </div>
       </div>
       {/* terms */}
-      <div className='pt-24'>
+      <div className='pt-24 font-work'>
         <p className='text-center text-[15px] text-lm_icons'>
           <Link href={PageLocation.Privacy}>
             <span> Privacy Policy</span>

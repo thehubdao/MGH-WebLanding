@@ -49,14 +49,14 @@ export default function CarrouselAdvisorsUI({ members, startTrigger }: Carrousel
   return (
     <>
       <div className="w-full overflow-hidden" ref={container}>
-        <div className="flex flex-col md:flex-row gap-8 md:mt-10 md:mb-32 items-end">
+        <div className="flex flex-col md:flex-row gap-8 md:mt-10 md:mb-32 items-end font-neueExtended ">
           <div className=" w-full md:w-2/4 pl-10 lg:pl-24">
-            <h1 className="font-neue text-4xl text-lm_gray font-bold">NEXT UP</h1>
-            <h1 className="font-neue text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">OUR <br /> ADVISORS</h1>
+            <h1 className="text-4xl text-lm_gray font-bold">NEXT UP</h1>
+            <h1 className="text-5xl md:text-7xl xl:text-[150px] text-lm_icons font-bold">OUR <br /> ADVISORS</h1>
           </div>
           <div className=" w-full md:w-2/4 pr-10 lg:pr-20 text-end mb-5 md:mb-16">
-            <h1 className="font-neue text-4xl text-lm_gray font-bold">THE HUB<br />DAO</h1>
-            <p className="font-neue text-4xl text-lm_icons font-bold">CORE ADVISORS</p>
+            <h1 className="text-4xl text-lm_gray font-bold">THE HUB<br />DAO</h1>
+            <p className="text-4xl text-lm_icons font-bold">CORE ADVISORS</p>
           </div>
         </div>
         <div className="flex space-x-12 w-fit" ref={carrousel}>

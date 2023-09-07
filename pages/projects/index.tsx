@@ -25,13 +25,13 @@ export default function Projects() {
   return (
     <>
       <main className=" pt-28 pb-20">
-        <div className="flex flex-col xl:flex-row mb-0 gap-8">
+        <div className="flex flex-col xl:flex-row mb-0 gap-8 font-neueExtended">
           <div className=" w-full xl:w-1/4 pl-10 lg:pl-20">
-            <h1 className="font-neue text-2xl sm:text-4xl text-lm_gray font-bold mt-11">THE HUB<br />DAO</h1>
-            <p className="font-neue text-2xl sm:text-4xl text-lm_icons font-bold">BUILD</p>
+            <h1 className="text-2xl sm:text-4xl text-lm_gray font-bold mt-11">THE HUB<br />DAO</h1>
+            <p className="text-2xl sm:text-4xl text-lm_icons font-bold">BUILD</p>
           </div>
           <div className=" w-full xl:w-3/4 pr-10 lg:pr-20 text-end">
-            <h1 className="font-neue text-6xl md:text-9xl lg:text-[170px] 2xl:text-[225px] text-lm_icons font-bold">PROJECTS</h1>
+            <h1 className="text-6xl md:text-9xl lg:text-[170px] 2xl:text-[225px] text-lm_icons font-bold">PROJECTS</h1>
           </div>
         </div>
 
