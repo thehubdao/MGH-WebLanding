@@ -3,6 +3,8 @@ import { useControls } from "leva";
 import { useMemo, useRef } from "react";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { fragmentShader, vertexShader } from "../../../shaders/portal.shader";
+import { Sparkles } from "@react-three/drei";
+import * as THREE from "three";
 
 export default function PortalModel() {
   const { nodes } = useLoader(GLTFLoader, '/3d/landing/PORTAL.glb');
@@ -88,16 +90,24 @@ export default function PortalModel() {
     []
   );
 
+  const color2 = new THREE.Color(0x00ffff);
+
   return (
     <group>
       <mesh {...nodes.Portal}></mesh>
       <mesh ref={portalRef} position={[0, -0.1, -15]}>
-        <circleGeometry args={[1.75, 12]}/>
+        <circleGeometry args={[1.75, 12]} />
         <shaderMaterial vertexShader={data.vertexShader} fragmentShader={data.fragmentShader} uniforms={data.uniforms} />
       </mesh>
       <mesh {...nodes.Portal_lights}>
         <meshBasicMaterial color={[lightRcolor, lightGcolor, lightBcolor]} />
       </mesh>
+      <Sparkles
+        size={2}
+        scale={[1.2, 1.2, 11]}
+        position-z={-9}
+        color={color2}
+      />
     </group>
   )
 }
