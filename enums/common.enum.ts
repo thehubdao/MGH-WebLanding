@@ -10,7 +10,7 @@ export const enum IconForm {
 
 export const enum ExternalLink{
   MetaVerseExplorer = 'https://app.thehubdao.xyz/metaverseexplorer',
-  TheHubDao = 'https://docs.thehubdao.xyz/',
+  TheHubDao = 'https://hubdaoxyz.notion.site/Docs-c6c3b6b7a0654d7a892f08e1bde77c0b?pvs=4',
   DclEdit = 'https://dcl-edit.com/',
   MetahubShop = 'https://www.metahub.shop/',
   MetagameHubExperience ='https://linktr.ee/metagamehub.experiences',
