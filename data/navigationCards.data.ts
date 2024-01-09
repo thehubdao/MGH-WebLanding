@@ -2,20 +2,20 @@ import { ExternalLink, PageLocation } from "../enums/common.enum";
 import { NavigationInterface } from "../interfaces/data.interface";
 
 export const NavigationCards: NavigationInterface[] = [
-    {
+/*     {
         imageUrl: '/cards/1.png',
         url: ExternalLink.MetaVerseExplorer,
         floatImageUrl: '/cards/float/1.png',
         title: 'METAVERSE EXPLORER',
         description:'Browse Virtual Worlds with <br/> unparalleled insights and <br/> simplicity',
         newTab:true
-    },
+    }, */
     {
         imageUrl: '/cards/2.png',
         url: PageLocation.Tools,
         floatImageUrl: '/cards/float/2.png',
         title: 'The Hub Platform',
-        description:'For a simple Metaverse journey'
+        description:'Homebase for creators of interoperable 3D content'
     },
     {
         imageUrl: '/cards/3.png',
@@ -29,7 +29,7 @@ export const NavigationCards: NavigationInterface[] = [
         url: PageLocation.JoinUs,
         floatImageUrl: '/cards/float/4.png',
         title: 'JOIN US',
-        description:'Help us shape the future<br/>of the Internet'
+        description:'Help us shape the future<br/>of the 3D Internet'
     },
 
 

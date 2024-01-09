@@ -11,7 +11,7 @@ export default function Tools() {
             <h1 className="text-5xl sm:text-7xl md:text-9xl xl:text-[150px] text-lm_icons font-bold">THE HUB<br />PLATFORM</h1>
           </div>
           <div className=" w-full xl:w-1/4 pr-10 lg:pr-36 text-end">
-            <h1 className="text-4xl text-lm_gray font-bold mt-11">THE HUB<br />DAO</h1>
+            <h1 className="text-4xl text-lm_gray font-bold mt-11">THE HUB</h1>
             <p className="text-4xl text-lm_icons font-bold">PLATFORM</p>
           </div>
         </div>
@@ -19,7 +19,7 @@ export default function Tools() {
         <div className="px-10 lg:px-20 2xl:px-36 w-full flex relative">
           <div className="row">
             <div className="w-44 h-[2px] bg-lm_icons mb-7 mt-7 "></div>
-              <p className="sm:w-[530px] font-light font-work text-xl">The all-in-one suite of tools <br className="hidden sm:inline-block"/> for investing, building, and <br className="hidden sm:inline-block"/> experiencing the Metaverse</p>
+              <p className="sm:w-[530px] font-light font-work text-xl">Providing the picks and shovels for creators in the 3D Internet </p>
           </div>
         </div>
 
@@ -27,17 +27,17 @@ export default function Tools() {
           <ScrollTitleUI title={['INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE']} imageUrl='/tools/game-machine.png'/>
         </div>
         <div>
-        <h2 className='text-center text-2xl text-lm_icons font-medium font-work uppercase leading-[128%] tracking-[4.4px]'>NAVIGATE THE METAVERSE WITH US</h2>
+        <h2 className='text-center text-2xl text-lm_icons font-medium font-work uppercase leading-[128%] tracking-[4.4px]'>Navigate the 3D Internet with us!</h2>
         </div>
         <div className="flex flex-wrap justify-center gap-x-20 gap-y-10 md:gap-y-20 py-28 md:px-20 mb-72">
           <Button url={PageLocation.Invest} big>
-            <p className="font-humane text-[135px] text-lm_icons">INVEST</p>
+            <p className="font-humane text-[135px] text-lm_icons">Citizens Portal</p>
           </Button>
           <Button url={PageLocation.Build} big>
-            <p className="font-humane text-[135px] text-lm_icons">BUILD</p>
+            <p className="font-humane text-[135px] text-lm_icons">Explorer</p>
           </Button>
           <Button url={PageLocation.Experience} big>
-            <p className="font-humane text-[135px] text-lm_icons">EXPERIENCE</p>
+            <p className="font-humane text-[135px] text-lm_icons">Our Experiences</p>
           </Button>
         </div>
       </main>

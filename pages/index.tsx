@@ -29,7 +29,7 @@ export default function Home() {
           <div className='absolute w-12 h-12 bottom-8 right-8 lg:bottom-24 lg:right-24 border-b border-r border-white'></div>
           <div className='absolute w-12 h-12 bottom-8 left-8 lg:bottom-24 lg:left-24 border-b border-l border-white'></div>
           <div className='flex flex-col justify-center items-center relative h-fit'>
-            <h1 className='text-[8.5px] lg:text-[21px] font-medium tracking-[0.45em] leading-none'>YOUR HOME IN THE METAVERSE</h1>
+            <h1 className='text-[8.5px] lg:text-[21px] font-medium tracking-[0.45em] leading-none'>THE HOME OF CREATORS</h1>
             {/* <Link href={PageLocation.TheHub} className='font-humane text-9xl lg:text-[320px] leading-none cursor-pointer'>ENTER THE HUB</Link> */}
             <a href={PageLocation.TheHub} className='font-humane text-9xl lg:text-[320px] leading-none cursor-pointer'>ENTER THE HUB</a>
           </div>
@@ -39,7 +39,7 @@ export default function Home() {
         </div>
         {/* card section */}
         <div id='hub'>
-          <h2 className='text-center text-[22px] text-lm_icons font-normal py-32 md:py-64 px-5 font-neueExtended tracking-[3.5px] uppercase'>THE HUB provides you with the picks and <br className='hidden lg:inline-block' /> shovels to have a seamless Metaverse journey</h2>
+          <h2 className='text-center text-[22px] text-lm_icons font-normal py-32 md:py-64 px-5 font-neueExtended tracking-[3.5px] uppercase'>THE HUB is a Web3 platform enabling interoperable 3D user generated content</h2>
           <div className='flex justify-center flex-wrap gap-y-10 gap-x-56 xl:gap-x-10 2xl:gap-x-16'>
             {
               NavigationCards.map((card, index) => (
@@ -64,7 +64,7 @@ export default function Home() {
                 <div key={index}>
                   <Link href={investor.url} target="_blank">
                     <IconBox big={true}>
-                      <Image src={investor.urlImage} alt={investor.alt} width={290} height={100}/>
+                      <Image src={investor.urlImage} alt={investor.alt} width={290} height={100} />
                     </IconBox>
                   </Link>
                 </div>
