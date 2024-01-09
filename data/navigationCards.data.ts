@@ -15,7 +15,7 @@ export const NavigationCards: NavigationInterface[] = [
         url: PageLocation.Tools,
         floatImageUrl: '/cards/float/2.png',
         title: 'The Hub Platform',
-        description:'Homebase for creators of interoperable 3D content'
+        description:'Homebase for creators of <br/>interoperable 3D content'
     },
     {
         imageUrl: '/cards/3.png',
