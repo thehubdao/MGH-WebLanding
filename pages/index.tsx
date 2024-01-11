@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Head>
         <title>THE HUB DAO</title>
-        <meta name="description" content="The Hub DAO is your ultimate destination for all things metaverse. As a one stop shop for investing, building, and experiencing virtual worlds, we offer a wide range of tools and resources to help you get the most out of your metaverse journey. From price estimation tools and development editors to immersive experiences and community-driven decision-making, we have everything you need to take your virtual adventures to the next level. Join The Hub DAO community today and start exploring the infinite possibilities of the metaverse!" />
+        <meta name="description" content="Welcome to THE HUB, the ultimate platform for 3D user generated content. Our platform and resources have helped thousands of creators save money and time while navigating the ever-evolving 3D internet. Whether you're a seasoned 3D modeller or just getting started, THE HUB is the one-stop shop for everything you need to have a seamless creator journey. Join us and let's shape the future of the internet together!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:image" content="/thehub.svg" />
         <link rel="icon" href="/favicon.ico" />
