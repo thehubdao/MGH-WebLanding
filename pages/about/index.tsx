@@ -100,16 +100,6 @@ export default function AboutUs() {
             ))
           }
         </div>
-
-        <div className="flex flex-col md:flex-row gap-8 mt-72 items-end">
-          <div className=" w-full pr-10 lg:pr-32 text-end">
-            <h1 className="font-neueExtended text-4xl md:text-6xl xl:text-8xl text-lm_icons font-bold">WHAT <br /> LIES AHEAD?</h1>
-          </div>
-        </div>
-
-        <div className="w-full mt-28 flex justify-center items-center mb-40 lg:mb-72">
-          <VideoUI url="https://www.youtube.com/embed/NKFRWvfdOqU" />
-        </div>
       </main>
     </>
   )
