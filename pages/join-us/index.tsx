@@ -28,7 +28,7 @@ export default function AboutUs() {
           <ScrollTitleUI title={['INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE INVEST BUILD EXPERIENCE']} imageUrl='/images/bunny-2.png'/>
         </div>
         <div>
-          <h2 className='text-center text-2xl text-lm_icons font-medium py-32 tracking-[4.4px]'>JOIN US TO SHAPE THE FUTURE OF THE OPEN METAVERSE TOGETHER!</h2>
+          <h2 className='text-center text-2xl text-lm_icons font-medium py-32 tracking-[4.4px]'>JOIN US TO SHAPE THE FUTURE OF THE INTERNET TOGETHER!</h2>
         </div>
         <div className="flex flex-wrap justify-center gap-x-10 gap-y-10 md:gap-y-20 py-28 md:px-20 mb-64">
           <Button url={ExternalLink.Linkedin} extra newTab={true}>

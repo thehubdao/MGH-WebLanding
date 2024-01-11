@@ -30,7 +30,7 @@ export default function Tools() {
         <h2 className='text-center text-2xl text-lm_icons font-medium font-work uppercase leading-[128%] tracking-[4.4px]'>Navigate the 3D Internet with us!</h2>
         </div>
         <div className="flex flex-wrap justify-center gap-x-20 gap-y-10 md:gap-y-20 py-28 md:px-20 mb-72">
-          <Button url={PageLocation.Invest} big>
+          <Button url={PageLocation["Citizens-Portal"]} big>
             <p className="font-humane text-[100px] md:text-[135px] text-lm_icons">Citizens Portal</p>
           </Button>
           <Button url={PageLocation.Build} big>

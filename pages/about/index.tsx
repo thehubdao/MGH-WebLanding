@@ -29,7 +29,8 @@ export default function AboutUs() {
             <div className="w-full h-[2px] mb-7">
               <div className="w-44 h-[2px] bg-lm_icons float-right"></div>
             </div>
-            <p className="w-auto xl:w-[500px] 2xl:w-[700px] font-light font-work text-xl">Welcome to THE HUB DAO, the ultimate platform for anyone looking to invest, build, and experience the metaverse. Our platform and resources have helped thousands of investors, builders, brands, and creators save money and time while navigate the ever-evolving metaverse. Whether you&apos;re a seasoned virtual worlds veteran or just getting started, THE HUB is the one-stop shop for everything you need to have a seamless metaverse journey. Join us and let&apos;s shape the future of the internet together!</p>
+            <p className="w-auto xl:w-[500px] 2xl:w-[700px] font-light font-work text-xl">Welcome to THE HUB, the ultimate platform for 3D user generated content. Our platform and resources have helped thousands of creators save money and time while navigating the ever-evolving 3D internet. Whether you're a seasoned 3D modeller or just getting started, THE HUB is the one-stop shop for everything you need to have a seamless creator journey. Join us and let's shape the future of the internet together!
+</p>
           </div>
         </div>
 

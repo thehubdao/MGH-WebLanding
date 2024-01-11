@@ -43,7 +43,8 @@ export const enum PageLocation{
   JoinUs = '/join-us',
   Projects = '/projects',
   Soon = '/soon',
-  Privacy = '/privacy'
+  Privacy = '/privacy',
+  'Citizens-Portal'='https://www.hubcitizens.xyz/'
 }
 
 export const enum PartnersAndInvestorsLink{
