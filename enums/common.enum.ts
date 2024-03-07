@@ -38,12 +38,13 @@ export const enum PageLocation{
   Tools = '/tools',
   Invest = '/invest',
   Build = '/build',
-  Experience = '/experience',
+  Experience = 'https://github.com/thehubdao/MGH-WebLanding.git',
   AboutTheHub = '/about',
   JoinUs = '/join-us',
   Projects = '/projects',
   Soon = '/soon',
   Privacy = '/privacy',
+  Explorer='https://app.thehubdao.xyz/metaverseexplorer'
   'Citizens-Portal'='https://www.hubcitizens.xyz/'
 }
 

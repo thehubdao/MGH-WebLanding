@@ -33,10 +33,10 @@ export default function Tools() {
           <Button url={PageLocation["Citizens-Portal"]} big>
             <p className="font-humane text-[100px] md:text-[135px] text-lm_icons">Citizens Portal</p>
           </Button>
-          <Button url={PageLocation.Build} big>
+          <Button url={PageLocation.Explorer} big>
             <p className="font-humane text-[100px] md:text-[135px] text-lm_icons">Explorer</p>
           </Button>
-          <Button url={PageLocation.Experience} big>
+          <Button url={PageLocation.Projects} big>
             <p className="font-humane text-[100px] md:text-[135px] text-lm_icons">Our Experiences</p>
           </Button>
         </div>
