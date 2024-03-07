@@ -44,7 +44,7 @@ export const enum PageLocation{
   Projects = '/projects',
   Soon = '/soon',
   Privacy = '/privacy',
-  Explorer='https://app.thehubdao.xyz/metaverseexplorer'
+  Explorer='https://app.thehubdao.xyz/metaverseexplorer',
   'Citizens-Portal'='https://www.hubcitizens.xyz/'
 }
 
