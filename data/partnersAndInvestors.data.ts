@@ -254,9 +254,9 @@ export const BackedBy: PartnersAndInvestorsInterface[] = [
         urlImage: '/backedBy/group-5.png',
         alt: 'ocean'
     },
-/*     {
+    {
         url: PartnersAndInvestorsLink.Lukso,
         urlImage: '/backedBy/group-6.png',
         alt: 'Lukso'
-    }, */
+    },
 ]
