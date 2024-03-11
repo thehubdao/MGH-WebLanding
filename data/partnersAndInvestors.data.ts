@@ -221,11 +221,11 @@ export const Investors: PartnersAndInvestorsInterface[] = [
         urlImage: '/partners/Group-184.png',
         alt: 'decentraland'
     },
-    {
+/*     {
         url: PartnersAndInvestorsLink.Lukso,
         urlImage: '/partners/lukso.png',
         alt: 'Lukso'
-    },
+    }, */
 ]
 
 export const BackedBy: PartnersAndInvestorsInterface[] = [
