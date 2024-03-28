@@ -20,7 +20,6 @@ export default function FooterUI() {
             <SocialIcon iconForm={IconForm.Regular} iconRef='t' link={ExternalLink.Telegram} alt='telegram link' />
             <SocialIcon iconForm={IconForm.Regular} iconRef='a' link={ExternalLink.Discord} alt='discord link' />
             <SocialIcon iconForm={IconForm.Regular} iconRef='M' link={ExternalLink.MailTo} alt='The Hub DAO email' />
-            <SocialIcon iconForm={IconForm.Regular} iconRef='e' link={ExternalLink.ETherScan} alt='etherscan link' />
           </div>
         </div>
         {/* footer links */}
