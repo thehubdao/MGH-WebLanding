@@ -20,7 +20,7 @@ export const enum ExternalLink{
   Discord = 'https://discord.com/invite/J35NGdPWgq',
   Snapshot = 'https://snapshot.org/#/metagamehub.eth',
   Spatial = 'https://www.spatial.io/s/The-Metaverse-Seminars-62fbbb0dabce1e00010f75c8?share=2349173727968720925',
-  GitHub = 'https://github.com/metagamehub',
+  GitHub = 'https://github.com/thehubdao',
   Medium = 'https://medium.com/@THEHUB_DAO',
   Instagram = 'https://www.instagram.com/thehub_dao/',
   Twitter = 'https://twitter.com/thehub_dao',
