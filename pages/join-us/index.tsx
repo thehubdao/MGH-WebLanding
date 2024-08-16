@@ -37,12 +37,6 @@ export default function AboutUs() {
           <Button url={ExternalLink.Discord} extra newTab={true}>
             <p className="font-humane text-6xl md:text-8xl text-lm_icons">JOIN THE COMMUNITY</p>
           </Button>
-          <Button url={ExternalLink.Snapshot} extra newTab={true}>
-            <p className="font-humane text-6xl md:text-8xl text-lm_icons">APPLY FOR GRANTS</p>
-          </Button>
-          <Button url={ExternalLink.Spatial} extra newTab={true}>
-            <p className="font-humane text-6xl md:text-8xl text-lm_icons">JOIN OUR METAVERSE SEMINARS</p>
-          </Button>
         </div>
       </main>
     </>
