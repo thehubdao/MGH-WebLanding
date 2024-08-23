@@ -42,7 +42,7 @@ export const enum PageLocation{
   AboutTheHub = '/about',
   JoinUs = '/join-us',
   Projects = '/projects',
-  Soon = '/soon',
+  Soon = 'https://portal.thehubdao.xyz/',
   Privacy = '/privacy',
   Explorer='https://app.thehubdao.xyz/metaverseexplorer',
   'Citizens-Portal'='https://www.hubcitizens.xyz/'

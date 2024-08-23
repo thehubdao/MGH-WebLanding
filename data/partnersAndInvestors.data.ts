@@ -254,4 +254,20 @@ export const BackedBy: PartnersAndInvestorsInterface[] = [
         urlImage: '/backedBy/group-5.png',
         alt: 'ocean'
     },
+    {
+        url: PartnersAndInvestorsLink.Ocean,
+        urlImage: '/backedBy/group-5.png',
+        alt: 'ocean'
+    },
+    {
+        url: PartnersAndInvestorsLink.Ocean,
+        urlImage: '/backedBy/group-5.png',
+        alt: 'ocean'
+    },
+    {
+        url: PartnersAndInvestorsLink.Ocean,
+        urlImage: '/backedBy/group-7.png',
+        alt: 'ocean'
+    },
+
 ]

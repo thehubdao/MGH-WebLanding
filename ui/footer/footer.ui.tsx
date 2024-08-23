@@ -40,7 +40,7 @@ export default function FooterUI() {
               <p className='text-xl my-3'>Community</p>
             </Link>
             <Link href={PageLocation.Soon}>
-              <p className='text-xl my-3'>THE HUB App</p>
+              <p className='text-xl my-3'>Citizens Portal</p>
             </Link>
             <Link href={ExternalLink.Snapshot} target='_blank'>
               <p className='text-xl my-3'>Governance</p>
