@@ -147,7 +147,7 @@ export const Team2: PersonCarrouselInterface[] = [
   {
     name: 'JAIRO CRIOLLO',
     role: 'Backend Developer',
-    description: "System engineer student focused on Web3 backend and Unity, developing task as objectives on MGH projects",
+    description: "System engineer student focused on Web3 backend and Unity, developing task as objectives on THE HUB projects",
     url: '/team/t-21.png',
     alt: 'JAIRO CRIOLLO'
   },
